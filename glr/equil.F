@@ -836,7 +836,7 @@ cjb      keeping same symbols should transmit better to code below
                   call baswline(STDOUT,msg)
                   write(msg,'(25x,2e14.6)') b4,b2
                   call baswline(STDOUT,msg)
-                  call kaboom(0)
+                  stop 0
               endif
               qub(i,j)=  (b2-ppar(i,j)+pperp(i,j))/b(i,j)
               
@@ -1857,7 +1857,7 @@ c**** A diagnostic message is sent out and the problem is terminmated.
           call baswline(STDOUT,msg(l))
       enddo
 
-      call kaboom(0)
+      stop 0
 
       end ! errorend
 
