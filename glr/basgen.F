@@ -95,6 +95,7 @@
 
       integer optlist(32),nopt
       integer l
+      real stepcpu
       character*80 msg
 
       startime=second()
