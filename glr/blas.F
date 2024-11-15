@@ -5178,12 +5178,13 @@ c
       real ranf, sw, t, random, ranold
       integer i
       common /rantab/ t(33)
-      external random
+      !external random
       data ranold /0./
 c
       if (sw.lt.0.) go to 10
 c
-      ranf = random (t, 32)
+      call random_number(t)
+      ranf = t(1)
       ranold = ranf
       return
 c
