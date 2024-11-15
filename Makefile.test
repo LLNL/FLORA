@@ -1,0 +1,54 @@
+# Makefile for Fortran project
+# TQ 15 Nov 2024
+
+
+# Compiler and flags
+FC = gfortran
+LDFLAGS = -lblas -lm
+FFLAGS = -finit-integer=0 -finit-real=zero -fdefault-real-8 -fdefault-integer-8 -fdefault-double-8 \
+         -fimplicit-none -fno-second-underscore -fallow-argument-mismatch -cpp -ffixed-line-length-132
+DEFINES = -DNINPUT=1000 -DFPSIZE=8 -DISZ=8 -DYES=1 -DOK=0 -DDONE=1 -DSTDOUT=6 -DPi=3.141592653 -DECHARG=4.8e-10
+
+
+# Files
+SOURCE_FILES = glr/my_mod.F glr/*F
+OBJECTS = $(addprefix $(OBJ_DIR)/, $(patsubst %.F, %.o, $(notdir $(SOURCE_FILES))))
+
+
+# Define the directories
+BUILD   = build
+MOD_DIR = $(BUILD)/modules
+OBJ_DIR = $(BUILD)/objs
+
+
+# Output executable
+EXEC = flora.x
+MOD  = flora-mod.f
+MODSO = $(OBJ_DIR)/my_mod.so
+
+.PHONY: all clean mods
+
+# Default target: build executable
+all: $(EXEC)
+
+mods: $(MOD_DIR) $(OBJ_DIR)
+	@echo "building modules..."
+	$(FC) glr/$(MOD) -shared -o $(MODSO) $(LDFLAGS) $(FFLAGS) $(DEFINES)
+	@mv *.mod $(MOD_DIR)/
+
+$(EXEC): mods $(OBJ_DIR)
+	@echo "Linking executable..."
+	$(FC) glr/$(MOD) glr/*.F -o $(EXEC) $(LDFLAGS) $(FFLAGS) $(DEFINES) -I$(MOD_DIR)
+
+# Ensure the MOD_DIR exists before trying to place modules in it
+$(MOD_DIR):
+	@echo "Creating module directory $(MOD_DIR)..."
+	@mkdir -p $(MOD_DIR)
+
+$(OBJ_DIR):
+	@echo "Creating object directory $(OBJ_DIR)..."
+	@mkdir -p $(OBJ_DIR)
+
+clean:
+	rm -rf $(MOD_DIR) $(OBJ_DIR)
+	rm *.mod
