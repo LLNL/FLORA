@@ -276,6 +276,7 @@ cjb   ie not over half the range
           mspin=in
           mspout=m
 !          call gchange("Splines",0)
+          call allocate_arrays_Splines(mspin, mspout)
       endif
       
       if (n > 0) then ! Calculate increments

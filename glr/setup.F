@@ -519,17 +519,18 @@ cjb    and especially its possible dependence on monotonic bvac(i) as in ks
       end ! pob2poz
 
       subroutine storage ! Allocate and clear storage
-            use ArraySizes 
-            use Matrix 
-            use Const_4
-            use Const_5
-            use Const_7
-            use Const_8
+        use ArraySizes
+        use Matrix
+        use Fstor
+        use GEnergy
+        use Glrexec
+        use Const_4
+        use Const_5
+        use Const_7
+        use Const_8
 
       ! Verify array sizes
       implicit none
-      integer :: size
-      size = 0
 
       ksimp=2*(ksimp/2)+1 ! need an odd number for Simpson
 
@@ -543,11 +544,10 @@ cjb    and especially its possible dependence on monotonic bvac(i) as in ks
       call allocate_arrays_Const_7(ix,jx)
       call allocate_arrays_Const_8(ix,jx,ksimp,lda)
 
+      call allocate_arrays_Fstor(ix, jx, kxx)
+      call allocate_arrays_GEnergy(ix,jx)
+      call allocate_arrays_Glrexec(kxx)
       call allocate_arrays_Matrix(kxx, jx, lda)
-
-!      call gchange("GEnergy",0)
-!      call gchange("Fstor",0)
-!      call gchange("Glrexec",0)
 
       ! Initialize arrays
       call myzero(kxx*9,0.0,a1(1,1),1)

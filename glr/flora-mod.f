@@ -31,7 +31,26 @@
         real, allocatable :: csp2(:)        ! Real array of size mspin
         real, allocatable :: csp3(:)        ! Real array of size mspin
         real, allocatable :: csp4(:)        ! Real array of size mspin
-      
+
+        contains
+
+          ! Allocate subroutine
+          subroutine allocate_arrays_Splines(mspin_in, mspout_in)
+            integer, intent(in) :: mspin_in, mspout_in
+        
+            ! Assign values from input arguments
+            mspin = mspin_in
+            mspout = mspout_in
+        
+            ! Allocate arrays based on the given dimensions
+            allocate(lsp(mspout))
+            allocate(dsp(mspout))
+            allocate(csp1(mspin))
+            allocate(csp2(mspin))
+            allocate(csp3(mspin))
+            allocate(csp4(mspin))
+        
+          end subroutine allocate_arrays_Splines
       
       end module Splines
       
@@ -644,6 +663,24 @@
       
         real :: exbratio = -1.0   ! omegexb = exbratio*omegstr
         real :: alfrigid = 1.0    ! Larger for faster decay of rigid rotor dpdpsi/p
+
+        contains
+
+          ! Subroutine to allocate arrays in Fstor
+          subroutine allocate_arrays_Fstor(ix, jx, kxx)
+            implicit none
+        
+            integer, intent(in) :: ix, jx, kxx  ! Input dimensions
+        
+            ! Allocate arrays with specified sizes
+            allocate(f1(ix, jx), f2(ix, jx), f3(ix, jx), f4(ix, jx), f5(ix, jx), f7(ix, jx))
+            allocate(g1(ix, jx), g2(ix, jx), g3(ix, jx), g4(ix, jx))
+            allocate(b(ix, jx), rho(ix, jx), qub(ix, jx), r(ix, jx), yyy(ix, jx), xxx(ix, jx))
+            allocate(xioo(kxx), xio(kxx), xiol(kxx), xroo(kxx), xro(kxx), xrol(kxx))
+            allocate(omstri1(jx), omgbi1(jx), omstri34(jx), omstri66(jx), omstr148(jx))
+            allocate(omebj1(ix), omstrj1(ix))
+        
+          end subroutine allocate_arrays_Fstor
       
       end module Fstor
       
@@ -657,6 +694,36 @@
         real, dimension(:), allocatable :: quad, quad1  ! Arrays for quad and quad1
         real, dimension(:), allocatable :: rxi, rxr  ! Arrays for rxi and rxr
         real, dimension(:), allocatable :: xig, xigo, xrg, xrgo  ! Arrays for xig, xigo, xrg, xrgo
+
+        contains
+
+          ! Subroutine to allocate arrays in GEnergy
+          subroutine allocate_arrays_GEnergy(ix, jx)
+            implicit none
+        
+            integer, intent(in) :: ix, jx  ! Input dimensions
+        
+            ! Allocate arrays with specified sizes
+            allocate(drxi(ix, jx))
+            allocate(drxio(ix, jx))
+            allocate(drxr(ix, jx))
+            allocate(drxro(ix, jx))
+            allocate(dxiz2(ix))
+            allocate(dxrz2(ix))
+            allocate(dum1(ix))
+            allocate(dum2(ix))
+            allocate(psuma(jx, 12))
+            allocate(psumb(jx, 4))
+            allocate(quad(12))
+            allocate(quad1(4))
+            allocate(rxi(jx))
+            allocate(rxr(jx))
+            allocate(xig(ix))
+            allocate(xigo(ix))
+            allocate(xrg(ix))
+            allocate(xrgo(ix))
+        
+          end subroutine allocate_arrays_GEnergy
       
       end module GEnergy
       
@@ -671,6 +738,20 @@
       module Glrexec
         implicit none
         real, dimension(:,:), allocatable :: rhs1b, rhs2b 
+
+        contains
+
+          ! Subroutine to allocate arrays in Glrexec
+          subroutine allocate_arrays_Glrexec(kxx)
+            implicit none
+        
+            integer, intent(in) :: kxx  ! Input dimension
+        
+            ! Allocate arrays with specified sizes
+            allocate(rhs1b(kxx, 1))
+            allocate(rhs2b(kxx, 1))
+        
+          end subroutine allocate_arrays_Glrexec
       
       end module Glrexec
       
