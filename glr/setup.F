@@ -521,9 +521,12 @@ cjb    and especially its possible dependence on monotonic bvac(i) as in ks
       subroutine storage ! Allocate and clear storage
             use ArraySizes 
             use Matrix 
+            use Const_4
 
       ! Verify array sizes
       implicit none
+      integer :: size
+      size = 0
 
       ksimp=2*(ksimp/2)+1 ! need an odd number for Simpson
 
@@ -532,7 +535,13 @@ cjb    and especially its possible dependence on monotonic bvac(i) as in ks
       kbw=min(ix-1,jx-1)
       lda=3*kbw+1
 
-      ! Allocate global dynamic arrays
+
+      call allocate_arrays_Const_4(size)
+      call allocate_arrays_Matrix(kxx, jx, lda)
+!      call allocate_arrays_Const_5(size)
+!      call allocate_arrays_Const_7(size)
+
+
 !      call gchange("Const_4",0)
 !      call gchange("Const_5",0)
 !      call gchange("Const_7",0)
@@ -540,7 +549,6 @@ cjb    and especially its possible dependence on monotonic bvac(i) as in ks
 !      call gchange("GEnergy",0)
 !      call gchange("Fstor",0)
 !      call gchange("Glrexec",0)
-!      call gchange("Matrix",0)
 
       ! Initialize arrays
       call myzero(kxx*9,0.0,a1(1,1),1)

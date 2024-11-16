@@ -248,6 +248,37 @@
       
         real, dimension(:), allocatable :: psi, z, u, v, dpsi, dz, vpsi, uuz
         real, dimension(:), allocatable :: vpsih, uuzh
+
+        contains
+
+        ! Subroutine to allocate arrays (set array size here)
+        subroutine allocate_arrays_Const_4(size)
+          integer, intent(in) :: size  ! Example: size of the arrays
+      
+          ! Allocate arrays based on the given size
+          allocate(psi(size))
+          allocate(z(size))
+          allocate(u(size))
+          allocate(v(size))
+          allocate(dpsi(size))
+          allocate(dz(size))
+          allocate(vpsi(size))
+          allocate(uuz(size))
+          allocate(vpsih(size))
+          allocate(uuzh(size))
+      
+          ! Initialize arrays to zero (optional, based on your needs)
+          psi = 0.0
+          z = 0.0
+          u = 0.0
+          v = 0.0
+          dpsi = 0.0
+          dz = 0.0
+          vpsi = 0.0
+          uuz = 0.0
+          vpsih = 0.0
+          uuzh = 0.0
+        end subroutine allocate_arrays_Const_4
       
       end module Const_4
       
@@ -258,6 +289,42 @@
         real, dimension(:), allocatable :: xrtime, time, enpot, tenergy, enkin
         real, dimension(:,:), allocatable :: xrspz, xrsppsi, xflute 
         real, dimension(:), allocatable :: timengy, tenrel, enbend, encurve, enflr
+
+        contains
+          ! Subroutine to allocate arrays in Const_5
+          subroutine allocate_arrays(size)
+            integer, intent(in) :: size  ! Size for 1D arrays
+        
+            allocate(xrtime(size))
+            allocate(time(size))
+            allocate(enpot(size))
+            allocate(tenergy(size))
+            allocate(enkin(size))
+            allocate(xrspz(size, size))
+            allocate(xrsppsi(size, size))
+            allocate(xflute(size, size))
+            allocate(timengy(size))
+            allocate(tenrel(size))
+            allocate(enbend(size))
+            allocate(encurve(size))
+            allocate(enflr(size))
+        
+            ! Optional: Initialize arrays to zero
+            xrtime = 0.0
+            time = 0.0
+            enpot = 0.0
+            tenergy = 0.0
+            enkin = 0.0
+            xrspz = 0.0
+            xrsppsi = 0.0
+            xflute = 0.0
+            timengy = 0.0
+            tenrel = 0.0
+            enbend = 0.0
+            encurve = 0.0
+            enflr = 0.0
+        
+          end subroutine allocate_arrays
       
       end module Const_5
       
@@ -283,6 +350,79 @@
         real, dimension(:), allocatable :: hzt1, hzt2, hzt3, hzt2ks, hzt3ks
         real, dimension(:), allocatable :: dterjb
         real :: betring = 0.0    ! Peak hot electron perpendicular beta, wrt bmn1
+
+        contains
+
+          ! Subroutine to allocate arrays in Const_7
+          subroutine allocate_arrays(size)
+            integer, intent(in) :: size  ! Size for 1D arrays
+        
+            allocate(h12(size))
+            allocate(hzt0(size))
+            allocate(h34(size))
+            allocate(abp(size))
+            allocate(bbp(size))
+            allocate(cbp(size))
+            allocate(abf(size))
+            allocate(bbf(size))
+            allocate(cbf(size))
+            allocate(hp3(size))
+            allocate(htrans(size))
+            allocate(abq(size))
+            allocate(bbq(size))
+            allocate(cbq(size))
+            allocate(ebp(size))
+            allocate(fbp(size))
+            allocate(gbp(size))
+            allocate(hp0(size))
+            allocate(hpm(size))
+            allocate(hpme(size))
+            allocate(hflr(size))
+            allocate(hzp0(size))
+            allocate(hzp1(size))
+            allocate(hzp2(size))
+            allocate(hzp3(size))
+            allocate(hzt1(size))
+            allocate(hzt2(size))
+            allocate(hzt3(size))
+            allocate(hzt2ks(size))
+            allocate(hzt3ks(size))
+            allocate(dterjb(size))
+        
+            ! Optional: Initialize arrays to zero
+            h12 = 0.0
+            hzt0 = 0.0
+            h34 = 0.0
+            abp = 0.0
+            bbp = 0.0
+            cbp = 0.0
+            abf = 0.0
+            bbf = 0.0
+            cbf = 0.0
+            hp3 = 0.0
+            htrans = 0.0
+            abq = 0.0
+            bbq = 0.0
+            cbq = 0.0
+            ebp = 0.0
+            fbp = 0.0
+            gbp = 0.0
+            hp0 = 0.0
+            hpm = 0.0
+            hpme = 0.0
+            hflr = 0.0
+            hzp0 = 0.0
+            hzp1 = 0.0
+            hzp2 = 0.0
+            hzp3 = 0.0
+            hzt1 = 0.0
+            hzt2 = 0.0
+            hzt3 = 0.0
+            hzt2ks = 0.0
+            hzt3ks = 0.0
+            dterjb = 0.0
+        
+          end subroutine allocate_arrays
       
       end module Const_7
       
@@ -444,20 +584,40 @@
         real, allocatable, dimension(:) :: bc  ! Boundary conditions or vector for right-hand side
         real, allocatable, dimension(:) :: rhs1, rhs2  ! Right-hand side vectors for the system
         real, allocatable, dimension(:,:) :: abar  ! 2D array used in the system (perhaps for LU factorization)
+
+        contains
       
-      end module Matrix
-      
-      module TMInput
-        implicit none
-      
-        ! Declare input variables with appropriate types
-        integer :: long = 1  ! Switch which sets hot electron z-length as elongated (long==1) or regular (long==0)
-        real :: rw1 = 0.0   ! Equal, or slightly less (within one grid cell), to rw, if zero, gets set to rw
-        real :: zmax = 0.0  ! Maximum z of the domain
-        integer :: info      ! Returned by dgbtrf and dgbtrs
-        real :: bsub         ! Value subtracted from bvac
-        real :: frbvac = 0.0  ! Allowed range is 0. to 1.-delta
-        logical :: dobvsub = .false.  ! If true, subtract frbvac*bvac(ix)
+          ! Subroutine to allocate the arrays
+          subroutine allocate_arrays_Matrix(kxx, jx, lda)
+            implicit none
+            integer, intent(in) :: kxx, jx, lda
+        
+            ! Allocate 1D and 2D arrays with the provided sizes
+            allocate(ipvt(kxx))            ! Pivot indices for LU decomposition
+            allocate(a1(kxx, 9))           ! Coefficient matrix a1
+            allocate(a2(kxx, 9))           ! Coefficient matrix a2
+            allocate(a3(kxx, 9))           ! Coefficient matrix a3
+            allocate(b1(kxx, 3))           ! Coefficient matrix b1
+            allocate(bc(jx))               ! Boundary condition vector bc
+            allocate(rhs1(kxx))            ! Right-hand side vector rhs1
+            allocate(rhs2(kxx))            ! Right-hand side vector rhs2
+            allocate(abar(lda, kxx))       ! 2D array abar
+        
+          end subroutine allocate_arrays_Matrix
+          
+        end module Matrix
+        
+        module TMInput
+          implicit none
+        
+          ! Declare input variables with appropriate types
+          integer :: long = 1  ! Switch which sets hot electron z-length as elongated (long==1) or regular (long==0)
+          real :: rw1 = 0.0   ! Equal, or slightly less (within one grid cell), to rw, if zero, gets set to rw
+          real :: zmax = 0.0  ! Maximum z of the domain
+          integer :: info      ! Returned by dgbtrf and dgbtrs
+          real :: bsub         ! Value subtracted from bvac
+          real :: frbvac = 0.0  ! Allowed range is 0. to 1.-delta
+          logical :: dobvsub = .false.  ! If true, subtract frbvac*bvac(ix)
       
       end module TMInput
       
