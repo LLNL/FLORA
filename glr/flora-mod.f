@@ -290,41 +290,30 @@
         real, dimension(:,:), allocatable :: xrspz, xrsppsi, xflute 
         real, dimension(:), allocatable :: timengy, tenrel, enbend, encurve, enflr
 
-        contains
-          ! Subroutine to allocate arrays in Const_5
-          subroutine allocate_arrays(size)
-            integer, intent(in) :: size  ! Size for 1D arrays
-        
-            allocate(xrtime(size))
-            allocate(time(size))
-            allocate(enpot(size))
-            allocate(tenergy(size))
-            allocate(enkin(size))
-            allocate(xrspz(size, size))
-            allocate(xrsppsi(size, size))
-            allocate(xflute(size, size))
-            allocate(timengy(size))
-            allocate(tenrel(size))
-            allocate(enbend(size))
-            allocate(encurve(size))
-            allocate(enflr(size))
-        
-            ! Optional: Initialize arrays to zero
-            xrtime = 0.0
-            time = 0.0
-            enpot = 0.0
-            tenergy = 0.0
-            enkin = 0.0
-            xrspz = 0.0
-            xrsppsi = 0.0
-            xflute = 0.0
-            timengy = 0.0
-            tenrel = 0.0
-            enbend = 0.0
-            encurve = 0.0
-            enflr = 0.0
-        
-          end subroutine allocate_arrays
+      contains
+      
+        ! Subroutine to allocate arrays in Const_5
+        subroutine allocate_arrays_Const_5(nmax, ix, jx, nps, neng)
+          implicit none
+      
+          integer, intent(in) :: nmax, ix, jx, nps, neng  ! Input dimensions
+      
+          ! Allocate arrays with specified sizes
+          allocate(xrtime(nmax))
+          allocate(xrspz(ix, nps))
+          allocate(xrsppsi(jx, 2 * nps))
+          allocate(time(nmax))
+          allocate(xflute(ix, nps))
+          allocate(enpot(neng))
+          allocate(tenergy(neng))
+          allocate(enkin(neng))
+          allocate(timengy(neng))
+          allocate(tenrel(neng))
+          allocate(enbend(neng))
+          allocate(encurve(neng))
+          allocate(enflr(neng))
+      
+        end subroutine allocate_arrays_Const_5
       
       end module Const_5
       
@@ -354,75 +343,45 @@
         contains
 
           ! Subroutine to allocate arrays in Const_7
-          subroutine allocate_arrays(size)
-            integer, intent(in) :: size  ! Size for 1D arrays
+          subroutine allocate_arrays_Const_7(ix, jx)
+            implicit none
         
-            allocate(h12(size))
-            allocate(hzt0(size))
-            allocate(h34(size))
-            allocate(abp(size))
-            allocate(bbp(size))
-            allocate(cbp(size))
-            allocate(abf(size))
-            allocate(bbf(size))
-            allocate(cbf(size))
-            allocate(hp3(size))
-            allocate(htrans(size))
-            allocate(abq(size))
-            allocate(bbq(size))
-            allocate(cbq(size))
-            allocate(ebp(size))
-            allocate(fbp(size))
-            allocate(gbp(size))
-            allocate(hp0(size))
-            allocate(hpm(size))
-            allocate(hpme(size))
-            allocate(hflr(size))
-            allocate(hzp0(size))
-            allocate(hzp1(size))
-            allocate(hzp2(size))
-            allocate(hzp3(size))
-            allocate(hzt1(size))
-            allocate(hzt2(size))
-            allocate(hzt3(size))
-            allocate(hzt2ks(size))
-            allocate(hzt3ks(size))
-            allocate(dterjb(size))
+            integer, intent(in) :: ix, jx  ! Input dimensions
         
-            ! Optional: Initialize arrays to zero
-            h12 = 0.0
-            hzt0 = 0.0
-            h34 = 0.0
-            abp = 0.0
-            bbp = 0.0
-            cbp = 0.0
-            abf = 0.0
-            bbf = 0.0
-            cbf = 0.0
-            hp3 = 0.0
-            htrans = 0.0
-            abq = 0.0
-            bbq = 0.0
-            cbq = 0.0
-            ebp = 0.0
-            fbp = 0.0
-            gbp = 0.0
-            hp0 = 0.0
-            hpm = 0.0
-            hpme = 0.0
-            hflr = 0.0
-            hzp0 = 0.0
-            hzp1 = 0.0
-            hzp2 = 0.0
-            hzp3 = 0.0
-            hzt1 = 0.0
-            hzt2 = 0.0
-            hzt3 = 0.0
-            hzt2ks = 0.0
-            hzt3ks = 0.0
-            dterjb = 0.0
+            ! Allocate arrays with specified sizes
+            allocate(h12(ix))
+            allocate(hzt0(ix))
+            allocate(h34(ix))
+            allocate(abp(ix))
+            allocate(bbp(ix))
+            allocate(cbp(ix))
+            allocate(abf(ix))
+            allocate(bbf(ix))
+            allocate(cbf(ix))
+            allocate(hp3(jx))
+            allocate(htrans(ix))
+            allocate(abq(ix))
+            allocate(bbq(ix))
+            allocate(cbq(ix))
+            allocate(ebp(ix))
+            allocate(fbp(ix))
+            allocate(gbp(ix))
+            allocate(hp0(jx))
+            allocate(hpm(jx))
+            allocate(hpme(jx))
+            allocate(hflr(jx))
+            allocate(hzp0(ix))
+            allocate(hzp1(ix))
+            allocate(hzp2(ix))
+            allocate(hzp3(ix))
+            allocate(hzt1(ix))
+            allocate(hzt2(ix))
+            allocate(hzt3(ix))
+            allocate(hzt2ks(ix))
+            allocate(hzt3ks(ix))
+            allocate(dterjb(ix))
         
-          end subroutine allocate_arrays
+          end subroutine allocate_arrays_Const_7
       
       end module Const_7
       
@@ -497,6 +456,148 @@
         real, allocatable, dimension(:) :: hpkm, hpkme
         real, allocatable, dimension(:) :: droave, droterm
         real :: grow, growmax, xfreqmax, rzzrmax
+
+      contains
+
+        ! Subroutine to allocate arrays (you can adjust dimensions as needed)
+        subroutine allocate_arrays_Const_8(ix, jx, ksimp, lda)
+          implicit none
+          integer, intent(in) :: ix, jx, ksimp, lda
+      
+          ! Allocate the arrays based on the dimensions
+          allocate(bvac(ix))
+          allocate(dbvdz(ix))
+          allocate(d2bvdz2(ix))
+          allocate(d3bvdz3(ix))
+          allocate(bint(ix))
+          allocate(dp1dpsi(jx))
+          allocate(p1(jx))
+          allocate(p1k(ksimp,jx))
+          allocate(hpk0(ksimp))
+          allocate(deli1(ksimp))
+          allocate(deli2(ksimp))
+          allocate(deli3(ksimp))
+          allocate(deli4(ksimp))
+          allocate(rzz(ix,jx))
+          allocate(rzz1a(ix))
+          allocate(rzz1b(ix))
+          allocate(rzz2(ix))
+          allocate(rzz3(ix))
+          allocate(rzz1anew(ix))
+          allocate(rzz1bnew(ix))
+          allocate(rzz2new(ix))
+          allocate(rzz3new(ix))
+          allocate(rzznew(ix))
+          allocate(rzzold(ix))
+      
+          ! Allocate remaining arrays
+          allocate(rd2diff(ix))
+          allocate(rnew(ix))
+          allocate(rnewd2(ix))
+          allocate(rold(ix))
+          allocate(roldd2(ix))
+          allocate(icapi2(ix))
+          allocate(icapi3(ix))
+          allocate(icapi5(ix))
+          allocate(icap2new(ix))
+          allocate(icap3new(ix))
+          allocate(icap5new(ix))
+          allocate(dbdpsi(ix,jx))
+          allocate(phi1(ix))
+          allocate(phi2(ix))
+          allocate(pperp(ix,jx))
+          allocate(ppar(ix,jx))
+          allocate(jperpz(ix))
+          allocate(jperpb(NINPUT))
+          allocate(jparb(NINPUT))
+          allocate(jdfb(NINPUT))
+          allocate(jd2fb(NINPUT))
+          allocate(ddbparb(NINPUT))
+          allocate(ddbprpb(NINPUT))
+      
+          ! Continue allocating the remaining arrays
+          allocate(jperpbpg(NINPUT))
+          allocate(jparbpg(NINPUT))
+          allocate(jdfbpg(NINPUT))
+          allocate(jd2fbpg(NINPUT))
+          allocate(ddbparbpg(NINPUT))
+          allocate(ddbprpbpg(NINPUT))
+      
+          allocate(jparz(ix))
+          allocate(jd2fz(ix))
+          allocate(jdfz(ix))
+          allocate(jbtotz(ix))
+          allocate(jmbselfz(ix))
+          allocate(ddbprpz(ix))
+          allocate(ddbparz(ix))
+          allocate(posh(ix))
+          allocate(nosh(ix))
+          allocate(bvacnorm(ix))
+
+      
+          ! Constants with fixed values
+          allocate(bj2old(ix))
+          allocate(pperpold(ix))
+          allocate(pperpold25(ix))
+          allocate(pparold(ix))
+          allocate(betaold(ix))
+          allocate(qubold(ix))
+          allocate(qubvold(ix))
+      
+          ! Arrays for the diagnostic outputs
+          allocate(dflute3(ix))
+          allocate(qubv(ix,jx))
+          allocate(p2(jx))
+          allocate(dp2dpsi(jx))
+          allocate(dflute1(ix))
+          allocate(dflute2(ix))
+          allocate(flute1(jx))
+          allocate(flute2(jx))
+          allocate(flute3(jx))
+          allocate(dpost1(ix))
+          allocate(dpost2(ix))
+          allocate(dpost1r(ix))
+          allocate(dpost2r(ix))
+          allocate(dpostjb(ix))
+          allocate(dpostjbo(ix))
+          allocate(ptot(ix))
+          allocate(beta(ix))
+      
+          ! Arrays related to new variables
+          allocate(betanorm(ix))
+          allocate(p2k(ksimp,jx))
+          allocate(deli5(ksimp))
+          allocate(del1new(ksimp))
+          allocate(del2new(ksimp))
+          allocate(del3new(ksimp))
+          allocate(del5new(ksimp))
+      
+          ! Arrays for further diagnostics
+          allocate(pperps(ix,jx))
+          allocate(errprp(ix,jx))
+          allocate(errprl(ix-2,jx-1))
+          allocate(dqubdb(ix,jx))
+          allocate(xxxfreq(jx))
+          allocate(pperpe(ix,jx))
+          allocate(epsi(ix,jx))
+          allocate(omeg1wkb(jx))
+          allocate(omeg2wkb(jx))
+          allocate(gamwkb(jx))
+          allocate(dflute4(ix))
+          allocate(rhoave(jx))
+          allocate(xxxave(jx))
+          allocate(yyyave(jx))
+          allocate(p2t(jx))
+          allocate(dp2dpst(jx))
+          allocate(p3(jx))
+          allocate(dp3dpsi(jx))
+          allocate(hpkm(ksimp))
+          allocate(hpkme(ksimp))
+          allocate(droave(jx))
+          allocate(droterm(ix))
+          allocate(ering(ix,jx))
+      
+        end subroutine allocate_arrays_Const_8
       
       end module Const_8
       

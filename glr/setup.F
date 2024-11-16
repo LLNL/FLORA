@@ -522,6 +522,9 @@ cjb    and especially its possible dependence on monotonic bvac(i) as in ks
             use ArraySizes 
             use Matrix 
             use Const_4
+            use Const_5
+            use Const_7
+            use Const_8
 
       ! Verify array sizes
       implicit none
@@ -535,17 +538,13 @@ cjb    and especially its possible dependence on monotonic bvac(i) as in ks
       kbw=min(ix-1,jx-1)
       lda=3*kbw+1
 
+      call allocate_arrays_Const_4(ix)
+      call allocate_arrays_Const_5(nmax,ix,jx,nps,neng)
+      call allocate_arrays_Const_7(ix,jx)
+      call allocate_arrays_Const_8(ix,jx,ksimp,lda)
 
-      call allocate_arrays_Const_4(size)
       call allocate_arrays_Matrix(kxx, jx, lda)
-!      call allocate_arrays_Const_5(size)
-!      call allocate_arrays_Const_7(size)
 
-
-!      call gchange("Const_4",0)
-!      call gchange("Const_5",0)
-!      call gchange("Const_7",0)
-!      call gchange("Const_8",0)
 !      call gchange("GEnergy",0)
 !      call gchange("Fstor",0)
 !      call gchange("Glrexec",0)
