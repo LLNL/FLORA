@@ -1,0 +1,67 @@
+&flora_Coils
+  ncoil		    = 2,         !number of mirror regions
+  als 		    = 12,10,1,   ! length of the coil [cm]
+  ass		    = 25.71,12,1,! radius of coil [cm]
+  z1c		    = 34.2,      ! location of choke solenoid
+  z2c		    = 99.5,      ! location of end plug inboard solenoid
+  z3c	    	= 160,       ! location of end plug outboard solenoid
+/
+
+&flora_Const_2 
+  psi0rel		=0.50 ! half max radius for ion pressure
+  ncenter		=4e+11     ! central cell density [particles/cc] (not just electrons)
+  ztrans		=1.2       ! location of transition region?
+  ltrans		=0.1       ! transition lenth for CC vacuum (?)
+  rp1	    	=2         ! mirror ratio for sloshing ion, inner component
+  rp1ks		    =20
+  phicen		=0   ! max potential in center cell
+  phiplg		=0   ! max potential in end plug
+  xpot		    =1   ! polynomial power for potential psi-dependence 
+  ypot		    =2   ! polynomial power for potential psi-dependence
+  pfudge		=0         ! sloshing shape parameter
+  pfudgeks	    =1.99      ! sloshing shape parameter ?
+  rpxks		    =30
+  betslsh		=0.1       ! peak sloshing ion beta_perp
+  betslsks	    =30        ! sloshing, kinetic stabilizer?
+  betcent		=1e-128    ! center cell ion beta_perp
+  betcene		=1e-12     ! center cell electron beta_perp
+  betslse		=0         ! peak warm sloshing electron beta_perp
+  cold			=1e-6      ! global density minimum. Fraction of center cell density (ncenter)
+  alfcold		=0.001     ! ?
+  p2wide		=0.3       ! ion radial pressure param
+  psi3rel		=1.05 ! psi beyond which electric field = 0, relative to psi-max
+  bceng			=0         ! center cell field [G]
+  nsloshin		=4e11      ! peak plug density [cc]
+  noshinks		=4e7       ! ? (guess its peak kinetic stabilizer density)
+  pe10			=0.2         ! hot electron radial pressure param
+  psi0erel		=0.65 ! half max radius for hot electron pressure
+  p2ewide		=0.1       ! hot electron radial pressure param
+  p2flag		=0.00      ! p2, "at which p1 and p2 are constant"
+  p2floor		=0         ! p1, if p1 < p2flag
+  fring			=0.5       ! used for elongated hot electrons
+  dip		    =-1         ! dip in radial ion pressure for halo profiles
+  psihrel		=1.6  ! psi for halo, relative to psi-max
+  dpsihrel		=0.03 ! psi width, relative to psi_max from transition to halo region (?)
+/
+
+&flora_Const_3 
+  bmx1		=4000      ! magnetic field at choke cell solendoid [G]
+  bmx2		=4000      ! magnetic field at inboard end plug solenoid [G]
+  bmx3		=4000      ! magnetic field at outer end polug solenoid [G]
+  ppas2		=0.98      ! min passing pressure in choke cell, fraction of ppas1
+  dpas1		=0         ! central cell passing density
+  d1trap		=100000    ! peak density in choke cell
+  betrap		=0         ! peak choke cell beta
+  betpas1		=0.0000    ! center cell passing beta
+  ppas3			=0.96      ! max passing pressure in inboard mirror of end plug
+/
+
+&flora_Const_6
+  rw		    = 50  ! wall radius in cm
+/
+
+&flora_TMInput
+  long			=1         ! hot electron z-length: 1 is long, 0 is regular
+  rw1		    =11.99 ! ?within 1 grid cell of rw
+  zmax			=200       ! max z domain
+/
