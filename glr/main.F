@@ -1,23 +1,21 @@
       program Flora
 
-          use Const_4
-          use Const_5
-          use Const_7
-          use Const_8
-
-          use Fstor
-          use GEnergy
-          use Glrexec
+          use Const_2
+          use Const_3
+          use Coils
+          use TMInput
           implicit none
           print *, "Hi! my name is FLORA."
 
+        
+          ! Read the namelist from a file
+          open(unit=10, file='flora_in.nml', status='old')
+          read(10, nml=flora_Coils)
+          read(10, nml=flora_Const_2)
+          read(10, nml=flora_Const_3)
+          read(10, nml=flora_TMInput)
+
           call glrgen
-          !call allocate_arrays_Const_4(10)
-          !call allocate_arrays_Const_5(10,20,3,10,5)
-          !call allocate_arrays_Const_7(10,20)
-          !call allocate_arrays_Const_8(10,20,10,5)
-          !call allocate_arrays_GEnergy(10,20)
-          !call allocate_arrays_Glrexec(8)
 
       end program Flora
       

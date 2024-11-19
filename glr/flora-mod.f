@@ -1,4 +1,4 @@
-      module ArraySizes
+      module ArraySizes 
         implicit none
       
         ! Declare main parameters
@@ -225,6 +225,12 @@
         real :: psih
         real :: dpsihrel = 0.0
         real :: dpsih
+
+        namelist /flora_Const_2/ psi0rel, ncenter, ztrans, ltrans, rp1, 
+     *    rp1ks, phicen, phiplg, xpot, ypot, pfudge, pfudgeks, rpxks, 
+     *    betslsh, betslsks, betcent, betcene, betslse, cold, alfcold, 
+     *    p2wide, psi3rel, bceng, nsloshin, noshinks, pe10, psi0erel, 
+     *    p2ewide, p2flag, p2floor, fring, dip, psihrel, dpsihrel
       
       
       end module Const_2
@@ -259,6 +265,9 @@
         real :: bvx2
         real :: bvx3
         real :: z2ct
+
+        namelist /flora_Const_3/ bmx1, bmx2, bmx3, ppas2, ppas3, dpas1,
+     *        d1trap, betrap, betpas1
       
       end module Const_3
       
@@ -634,10 +643,12 @@
         implicit none
       
         integer :: ncoil = 2
-        real, dimension(:), allocatable :: ass, als, zs, bs
+        real, dimension(3) :: ass, als, zs, bs
         real :: z1c = 0.0
         real :: z2c = 0.0
         real :: z3c = 0.0
+
+        namelist /flora_coils/ ncoil, ass, als, z1c, z2c, z3c
       
       end module Coils
       
@@ -731,7 +742,7 @@
         implicit none
       
         integer :: nregions = 0
-        integer, dimension(:), allocatable :: ibvmin, ibvmax
+        integer, dimension(3) :: ibvmin, ibvmax
       
       end module Gfiducials
       
@@ -801,5 +812,6 @@
           real :: frbvac = 0.0  ! Allowed range is 0. to 1.-delta
           logical :: dobvsub = .false.  ! If true, subtract frbvac*bvac(ix)
       
-      end module TMInput
+          namelist /flora_TMInput/ long, rw1, zmax
+        end module TMInput
       
