@@ -350,8 +350,10 @@
       
         ! Declare scalar constants
         real :: lb = 1.0e9
-        real :: rw = 0.0         ! Wall radius [cm], user input
+        real :: rw = 10.0         ! Wall radius [cm], user input
         real :: cee = 3.0e10     ! Another constant
+
+        namelist /flora_Const_6/ rw
       
       end module Const_6
       
@@ -531,6 +533,7 @@
           allocate(icap3new(ix))
           allocate(icap5new(ix))
           allocate(dbdpsi(ix,jx))
+          allocate(dbdpsiold(ix))
           allocate(phi1(ix))
           allocate(phi2(ix))
           allocate(pperp(ix,jx))

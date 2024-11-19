@@ -178,7 +178,7 @@ c......readjust peak plug pressure for sloshing
       ter2=(1.-rpxi2)**2
       bstr2=bvx3**2*(-ter1+alsi*rtemp*ter2)/(-ter1+alsi*ter2)
       pfloat=((con1-don1*alsi)*bstr2**2+(con2-don2*alsi)*bstr2 \
-            +con3-don3*alsi)*(1.+p3a*dip)
+     *       +con3-don3*alsi)*(1.+p3a*dip)
 
       write(msg,'(a,3e14.6)') 'rtemp,rpxi2,ter1,ter2,bstr2,pfloat', 
      *           rtemp,rpxi2,ter1
@@ -827,7 +827,8 @@ cjb      keeping same symbols should transmit better to code below
 
 
               if (pperp(i,j) < 0) then
-                  write(msg,'(a,2i10,2e14.6)') 'i,j,pperp(i,j),p2(j),ppert', 
+                  write(msg,'(a,2i10,2e14.6)') 
+     *                       'i,j,pperp(i,j),p2(j),ppert', 
      *                       i,j,pperp(i,j),p2(j)
                   call baswline(STDOUT,msg)
                   write(msg,'(25x,e14.6)') ppert
