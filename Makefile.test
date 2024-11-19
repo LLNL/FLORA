@@ -6,7 +6,7 @@
 FC = gfortran
 LDFLAGS = -lblas 
 FFLAGS = -finit-integer=0 -finit-real=zero -fdefault-real-8 -fdefault-integer-8 -fdefault-double-8 \
-         -fimplicit-none -fno-second-underscore -fallow-argument-mismatch -cpp -ffixed-line-length-132 -g
+         -fimplicit-none -fno-second-underscore -fallow-argument-mismatch -cpp -ffixed-line-length-132 -fbounds-check -fbacktrace -g
 DEFINES = -DNINPUT=1000 -DFPSIZE=8 -DISZ=8 -DYES=1 -DOK=0 -DDONE=1 -DSTDOUT=6 -DPi=3.141592653 -DECHARG=4.8e-10
 
 
@@ -36,13 +36,14 @@ all: $(EXEC)
 
 $(EXEC): mods $(OBJ_DIR) $(OBJ)
 	@echo "Linking executable..."
-	$(FC) $(MOD) $(SRC_DIR)/*.F -o $(EXEC) $(LDFLAGS) $(FFLAGS) $(DEFINES) -I$(MOD_DIR)
+	$(FC) $(MOD) $(SRC_DIR)/*.F -o $(EXEC) $(LDFLAGS) $(FFLAGS) $(DEFINES) -I$(MOD_DIR) -I$(OBJ_DIR)
 	@mv *.mod $(MOD_DIR)/
 
 # Compile the rest of the object files
 $(OBJ): %.o: %.F mods
 	@echo "Compiling $@..."
 	$(FC) -c $< -o $@ $(FFLAGS) $(DEFINES) -I$(MOD_DIR)
+	@mv $(SRC_DIR)/*.o $(OBJ_DIR)/
 
 mods: $(MOD_DIR) $(OBJ_DIR)
 	@echo "building modules..."
