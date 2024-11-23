@@ -451,7 +451,6 @@ cjb        modified the way i did for first half
 
 
 
-
             use ArraySizes 
             use Const_1 
             use Const_1a 
@@ -693,8 +692,9 @@ cjb      endif
                   if (bsq < 0) call errorend(i,j)
                   b(i,j)=sqrt(bsq)
                   if (j == 1 .and. dowriteb) then
-                      write(msg,'(a,i10,2e14.6)') 'bsq12:  i,bvac(i)*ss,b(i,1)*ss', 
-     *                           i,bvac(i)*ss,b(i,1)*ss
+                      write(msg,'(a,i10,2e14.6)') 
+     *                   'bsq12:  i,bvac(i)*ss,b(i,1)*ss',
+     *                   i,bvac(i)*ss,b(i,1)*ss 
                       call baswline(STDOUT,msg)
                   endif
               endif

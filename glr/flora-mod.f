@@ -487,6 +487,8 @@
         real, allocatable, dimension(:) :: droave, droterm
         real :: grow, growmax, xfreqmax, rzzrmax
 
+        namelist /flora_Const_8/ dowriteb
+
       contains
 
         ! Subroutine to allocate arrays (you can adjust dimensions as needed)

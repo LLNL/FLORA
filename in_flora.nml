@@ -60,6 +60,10 @@
   rw		    = 50  ! wall radius in cm
 /
 
+&flora_Const_8
+  dowriteb = true
+/
+
 &flora_TMInput
   long			=1         ! hot electron z-length: 1 is long, 0 is regular
   rw1		    =11.99 ! ?within 1 grid cell of rw
