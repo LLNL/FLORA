@@ -176,10 +176,10 @@ c......readjust peak plug pressure for sloshing
       rpxi2=1./rpx**2
       ter1=(rtemp-rpxi2)**2
       ter2=(1.-rpxi2)**2
+
       bstr2=bvx3**2*(-ter1+alsi*rtemp*ter2)/(-ter1+alsi*ter2)
       pfloat=((con1-don1*alsi)*bstr2**2+(con2-don2*alsi)*bstr2 \
-     *       +con3-don3*alsi)*(1.+p3a*dip)
-
+            +con3-don3*alsi)*(1.+p3a*dip)
       write(msg,'(a,3e14.6)') 'rtemp,rpxi2,ter1,ter2,bstr2,pfloat', 
      *           rtemp,rpxi2,ter1
       call baswline(STDOUT,msg)
@@ -204,7 +204,8 @@ cjb     .        (-ter1ks+alsiks*ter2ks)
       pfloatks=((con1ks-don1ks*alsiks)*bstr2ks**2 
      *         +(con2ks-don2ks*alsiks)*bstr2ks+con3ks-don3ks*alsiks)
 
-      write(msg,'(a,2e14.6)') 'rtempks,rpxi2ks,ter1ks,ter2ks,bstr2ks,pfloatks', 
+      write(msg,'(a,2e14.6)') 
+     *         'rtempks,rpxi2ks,ter1ks,ter2ks,bstr2ks,pfloatks', 
      *               rtempks,rpxi2ks
       call baswline(STDOUT,msg)
       write(msg,'(46x,2e14.6)') ter1ks,ter2ks
@@ -619,7 +620,8 @@ cjb       if((ordera2/bsq3).le.epsp) then
                       write(msg,'(a,4i10)')'neg bsq3: i,j,ordera2,bsq3', 
      *                           i,j,ordera2,bsq3
                       call baswline(STDOUT,msg)
-                      call baswline(STDOUT,'at,bt,ct,bv**2,-2.*(ct+bt*bv**2+at*bv**4)')
+                      call baswline(STDOUT,
+     *                  'at,bt,ct,bv**2,-2.*(ct+bt*bv**2+at*bv**4)')
                       write(msg,'(41x,2e14.6)') at,bt
                       call baswline(STDOUT,msg)
                       write(msg,'(41x,2e14.6)') ct,bv**2
@@ -629,7 +631,8 @@ cjb       if((ordera2/bsq3).le.epsp) then
                   endif
                   b(i,j)=sqrt(bsq3)
                   if (j == 1 .and. dowriteb) then
-                      write(msg,'(a,i10,2e14.6)') 'bsq3: i,bvac(i)*ss,b(i,1)*ss', 
+                      write(msg,'(a,i10,2e14.6)') 
+     *                    'bsq3: i,bvac(i)*ss,b(i,1)*ss', 
      *                           i,bvac(i)*ss,b(i,1)*ss
                       call baswline(STDOUT,msg)
                   endif
@@ -1675,7 +1678,8 @@ cjb      do iia=1,147
 cjb this ignores flora quad1 treatment using z(2),z(3)  implement later
       write(msg,'(a,e14.6)') 'post1r unitpressure instab integral', post1r
       call baswline(STDOUT,msg)
-      write(msg,'(a,2e14.6)') 'post2r ptot/ptotinj instab integral, pnorm ', 
+      write(msg,'(a,2e14.6)') 
+     *        'post2r ptot/ptotinj instab integral, pnorm ', 
      *           post2r,pnorm
       call baswline(STDOUT,msg)
 
@@ -1767,7 +1771,8 @@ cjb  even for Post p(b), pperp approaches 0+  at injection
       btksinjo=4*pperpold(isubp)/bvac(isubp)**2
 
 
-      write(msg,'(a,2e14.6)') 'btksinj=2*pperpinj/bvac(isubp)**2,btksinjo ',\
+      write(msg,'(a,2e14.6)') 
+     *   'btksinj=2*pperpinj/bvac(isubp)**2,btksinjo ',\
                                btksinj,btksinjo
       call baswline(STDOUT,msg)
 
