@@ -1,14 +1,14 @@
 &flora_Coils
   ncoil		    = 2,         ! number of mirror regions
   als 		    = 12,10,0    ! length of the coil [cm]
-  ass		    = 25.71,25,0      ! radius of coil [cm]
+  ass		    = 25.71, 25.71, 25.71      ! radius of coil [cm]
   z1c		    = 34.2,      ! location of choke solenoid
   z2c		    = 99.5,      ! location of end plug inboard solenoid
   z3c	    	= 160,       ! location of end plug outboard solenoid
 /
 
 &flora_Const_2 
-  psi0rel		=0.50 ! half max radius for ion pressure
+  psi0rel		=0.25      ! half max radius for ion pressure
   ncenter		=4e+11     ! central cell density [particles/cc] (not just electrons)
   ztrans		=1.2       ! location of transition region?
   ltrans		=0.1       ! transition lenth for CC vacuum (?)
@@ -28,7 +28,7 @@
   betslse		=0         ! peak warm sloshing electron beta_perp
   cold			=1e-6      ! global density minimum. Fraction of center cell density (ncenter)
   alfcold		=0.001     ! ?
-  p2wide		=0.3       ! ion radial pressure param
+  p2wide		=0.9       ! ion radial pressure param
   psi3rel		=1.05 ! psi beyond which electric field = 0, relative to psi-max
   bceng			=0         ! center cell field [G]
   nsloshin		=4e11      ! peak plug density [cc]
@@ -57,7 +57,7 @@
 /
 
 &flora_Const_6
-  rw		    = 50  ! wall radius in cm
+  rw		    = 12  ! wall radius in cm
 /
 
 &flora_Const_8
@@ -67,5 +67,5 @@
 &flora_TMInput
   long			=1         ! hot electron z-length: 1 is long, 0 is regular
   rw1		    =11.99 ! ?within 1 grid cell of rw
-  zmax			=200       ! max z domain
+  zmax			=300       ! max z domain
 /
