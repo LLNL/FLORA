@@ -20,6 +20,8 @@
           read(10, nml=flora_TMInput)
 
           call glrgen
+          call glrexe
+          call glrfin
 
       end program Flora
       
