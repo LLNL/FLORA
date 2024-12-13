@@ -105,7 +105,9 @@
         real :: psiw
         real :: dvin
         real :: dvout
-      
+
+        namelist /flora_Const_1/ bias, dt, ex0, ex1, fi1, fizx, fj1,
+     *   fjrx, fpsi, fu, fv, fz, sf6, sf8
       
       end module Const_1
       

@@ -1,3 +1,7 @@
+&flora_ArraySizes
+  nmax          = 30  ! Upper limit of time steps for problem
+/
+
 &flora_Coils
   ncoil		    = 2,         ! number of mirror regions
   als 		    = 12,10,0    ! length of the coil [cm]
@@ -5,6 +9,19 @@
   z1c		    = 34.2,      ! location of choke solenoid
   z2c		    = 99.5,      ! location of end plug inboard solenoid
   z3c	    	= 160,       ! location of end plug outboard solenoid
+/
+
+&flora_Const_1
+  ex0 = 1
+  ex1 = 0 
+/
+
+&flora_Const_1a
+  mm = 4                ! Azimuthal mode number.
+  lmax = 2              ! Iteration limit.
+  ndiag = 100           ! Number of time steps between diagnostic plots.
+  kzs = 1               ! Flute mode initialization.
+  nen = 1               ! Number of time steps between energy checks.
 /
 
 &flora_Const_2 
