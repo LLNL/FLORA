@@ -15,6 +15,8 @@
         integer :: kbw = 0         ! Secondary array size, kbw = min(ix-1,jx-1)
         integer :: lda = 0         ! Secondary array size, lda = 3*kbw+1
       
+        namelist /flora_ArraySizes/ nmax
+
       end module ArraySizes
       
       module Splines
@@ -126,6 +128,7 @@
         integer :: nen = 1               ! Number of time steps between energy checks.
         integer :: lee                   ! Not initialized, may need to be set in program.
       
+        namelist /flora_Const_1a/ mm, lmax, ndiag, kzs, nen
       end module Const_1a
       
       

@@ -22,22 +22,36 @@ cjb  just some vector 0 init?
 cjb   sscal is in code.map  part of libblas.a
 
 cjb  where kxx set?:  declrd  not intlzd in vdf
+ctq  kxx is defined in setup.F, after reading ix and jx from ArraySizes
 
       do m=1,9
           mdel=(m-1)/3
           m1=m-1
           koff1=-mdel*5+m+(mdel-1)*ix
           koff2=(m-((mdel+1)*3-1))*jx+1-2*m1+7*mdel
-          koff=.5*(1+isw)*koff1+.5*(1-isw)*koff2
+          koff=.5*(1+isw)*koff1+.5*(1-isw)*koff2 
+c           if isw = 1, koff = koff1
+c           else isw = -1, koff = koff2
+          !koff=0 ! temporary fix, TQ (may break other things)
           do k=1,kxx
+              if (k < jx .or. (kxx-k) < jx) then
+              rhs1(k)=rhs1(k)+2.*a3(k,m)*xro(k)-a2(k,m)*xroo(k)
+              rhs2(k)=rhs2(k)+2.*a3(k,m)*xio(k)-a2(k,m)*xioo(k)
+              else
               rhs1(k)=rhs1(k)+2.*a3(k,m)*xro(k+koff)-a2(k,m)*xroo(k+koff)
               rhs2(k)=rhs2(k)+2.*a3(k,m)*xio(k+koff)-a2(k,m)*xioo(k+koff)
+              endif
           enddo
           if (m == 2 .or. m == 5 .or. m == 8) then
               do k=1,kxx
                   mbar=m-1-(m/4)*2
+                  if (k < jx .or. (kxx-k) < jx) then
+                  rhs1(k)=rhs1(k)+fac1*b1(k,mbar)*(xiol(k)-xioo(k))
+                  rhs2(k)=rhs2(k)+fac2*b1(k,mbar)*(xrol(k)-xroo(k))
+                  else
                   rhs1(k)=rhs1(k)+fac1*b1(k,mbar)*(xiol(k+koff)-xioo(k+koff))
                   rhs2(k)=rhs2(k)+fac2*b1(k,mbar)*(xrol(k+koff)-xroo(k+koff))
+                  endif
               enddo
           endif
       enddo
