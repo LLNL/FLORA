@@ -12,8 +12,10 @@
 /
 
 &flora_Const_1
-  ex0 = 1
-  ex1 = 0 
+  ex0 = 1      ! initial perturbation coeffecient, 1 is random
+  ex1 = 0      ! initial perturb, 1 is consine
+  sf6 = 0      ! FLR term, gyroscopic XXX
+  sf8 = 0      ! FLR term, quasi-elastic YYY
 /
 
 &flora_Const_1a
