@@ -13,7 +13,7 @@
 
 &flora_Const_1
   ex0 = 1      ! initial perturbation coeffecient, 1 is random
-  ex1 = 0      ! initial perturb, 1 is consine
+  ex1 = 1      ! initial perturb, 1 is consine
   sf6 = 0      ! FLR term, gyroscopic XXX
   sf8 = 0      ! FLR term, quasi-elastic YYY
 /
@@ -22,7 +22,7 @@
   mm = 4                ! Azimuthal mode number.
   lmax = 2              ! Iteration limit.
   ndiag = 100           ! Number of time steps between diagnostic plots.
-  kzs = 1               ! Flute mode initialization.
+  kzs = 1               ! Flute mode initialization. 1 is radially flat in psi, 0 is random.
   nen = 1               ! Number of time steps between energy checks.
 /
 
@@ -59,7 +59,7 @@
   p2floor		=0         ! p1, if p1 < p2flag
   fring			=0.5       ! used for elongated hot electrons
   dip		    =0         ! dip in radial ion pressure for halo profiles
-  psihrel		=1.6  ! psi for halo, relative to psi-max
+  psihrel		=0.8  ! psi for halo, relative to psi-max
   dpsihrel		=0.03 ! psi width, relative to psi_max from transition to halo region (?)
 /
 
@@ -80,7 +80,11 @@
 /
 
 &flora_Const_8
-  dowriteb = true
+  dowriteb = false
+  doflat = false
+  doxrlin = false
+  doxrtanh = false
+  dorzzlb = false 
 /
 
 &flora_TMInput

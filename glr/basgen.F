@@ -49,7 +49,6 @@
       call comat
       call baswline(STDOUT,'finished comat')
 
-
       call initial
       call baswline(STDOUT,'finished initial')
       call mymove(xrol,xro,kxx)
@@ -77,7 +76,7 @@
       glrgen = OK
       return
       end ! glrgen
-
+
       integer function glrexe()
       !integer function glrexe(optlist,nopt)
             use ArraySizes 

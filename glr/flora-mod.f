@@ -492,7 +492,7 @@
         real, allocatable, dimension(:) :: droave, droterm
         real :: grow, growmax, xfreqmax, rzzrmax
 
-        namelist /flora_Const_8/ dowriteb
+        namelist /flora_Const_8/  doflat, doxrlin, doxrtanh, dorzzlb, dowriteb
 
       contains
 

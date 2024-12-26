@@ -32,7 +32,6 @@ ctq  kxx is defined in setup.F, after reading ix and jx from ArraySizes
           koff=.5*(1+isw)*koff1+.5*(1-isw)*koff2 
 c           if isw = 1, koff = koff1
 c           else isw = -1, koff = koff2
-          !koff=0 ! temporary fix, TQ (may break other things)
           do k=1,kxx
               if (k < jx .or. (kxx-k) < jx) then
               rhs1(k)=rhs1(k)+2.*a3(k,m)*xro(k)-a2(k,m)*xroo(k)
