@@ -672,6 +672,7 @@
         
         real, allocatable, dimension(:) :: xioo, xio, xiol
         real, allocatable, dimension(:) :: xroo, xro, xrol
+        real, allocatable, dimension(:,:) :: xro_t
       
         real, allocatable, dimension(:) :: omstri1, omgbi1, omstri34, omstri66, omstr148
         real, allocatable, dimension(:) :: omebj1, omstrj1
@@ -688,10 +689,10 @@
         contains
 
           ! Subroutine to allocate arrays in Fstor
-          subroutine allocate_arrays_Fstor(ix, jx, kxx)
+          subroutine allocate_arrays_Fstor(ix, jx, kxx, nmax)
             implicit none
         
-            integer, intent(in) :: ix, jx, kxx  ! Input dimensions
+            integer, intent(in) :: ix, jx, kxx, nmax  ! Input dimensions
         
             ! Allocate arrays with specified sizes
             allocate(f1(ix, jx), f2(ix, jx), f3(ix, jx), f4(ix, jx), f5(ix, jx), f7(ix, jx))
@@ -700,6 +701,7 @@
             allocate(xioo(kxx), xio(kxx), xiol(kxx), xroo(kxx), xro(kxx), xrol(kxx))
             allocate(omstri1(jx), omgbi1(jx), omstri34(jx), omstri66(jx), omstr148(jx))
             allocate(omebj1(ix), omstrj1(ix))
+            allocate(xro_t(nmax,kxx))
         
           end subroutine allocate_arrays_Fstor
       
@@ -824,4 +826,14 @@
       
           namelist /flora_TMInput/ long, rw1, zmax
         end module TMInput
+
+       module ncInts
+
+          implicit none
+
+          integer(4) :: ncid
+          integer(4) :: dim_kxx, dim_n
+          integer(4) :: var_xro
+
+       end module ncInts
       

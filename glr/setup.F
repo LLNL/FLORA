@@ -546,7 +546,7 @@ cjb    and especially its possible dependence on monotonic bvac(i) as in ks
       call allocate_arrays_Const_7(ix,jx)
       call allocate_arrays_Const_8(ix,jx,ksimp,lda)
 
-      call allocate_arrays_Fstor(ix, jx, kxx)
+      call allocate_arrays_Fstor(ix, jx, kxx, nmax)
       call allocate_arrays_GEnergy(ix,jx)
       call allocate_arrays_Glrexec(kxx)
       call allocate_arrays_Matrix(kxx, jx, lda)

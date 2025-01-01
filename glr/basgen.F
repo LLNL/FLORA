@@ -73,12 +73,15 @@
       ppas2=ppas2_
       ppas3=ppas3_
 
+      ! Initialize netcdf file
+      call netcdfInit
+
       glrgen = OK
       return
-      end ! glrgen
 
+      end ! glrgen
+     
       integer function glrexe()
-      !integer function glrexe(optlist,nopt)
             use ArraySizes 
             use Const_1 
             use Const_1a 
@@ -147,6 +150,9 @@
           call baswline(STDOUT,'end of glrexe')
       endif
 
+      ! write netcdf file
+      call netcdfWrite
+
       if (n < nmax)  then
         glrexe = OK
       else
@@ -154,24 +160,24 @@
       endif
       return
       end ! glrexe
-
+
       integer function glrfin()
-      !integer function glrfin(optlist,nopt)
+      ! Finish everything up; called by ctl command 'finish'.
+      
             use ArraySizes 
             use Const_1 
 
       implicit none
 
-      ! Finish everything up; called by ctl command 'finish'.
-
-
       integer optlist(32),nopt
       character*80 msg
 
-      call writeCDF()
+
+      ! close netcdf file
+      call netcdfClose
 
 
-      !
+      ! check compute time
       totalcpu=second()
 
       write(msg,'(a,e14.6,a,i10)') 'total CPU for time-loop = ', \
