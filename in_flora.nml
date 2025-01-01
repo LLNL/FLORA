@@ -16,6 +16,7 @@
   ex1 = 1      ! initial perturb, 1 is consine
   sf6 = 0      ! FLR term, gyroscopic XXX
   sf8 = 0      ! FLR term, quasi-elastic YYY
+  dt = 1.0e-5      ! Time step.
 /
 
 &flora_Const_1a
