@@ -1,10 +1,14 @@
 
       subroutine writeCDF
               use netcdf
+              use Fstor
+              use ArraySizes
               implicit none
             
               ! NetCDF file ID and other variables
               integer(4) :: ncid, dimid, varid, ierr
+              integer(4) :: dim_kxx
+              integer(4) :: var_xro
               integer(4), parameter :: nx = 10, ny = 10
               integer :: i, j
               real :: data_array(nx, ny)
@@ -28,6 +32,7 @@
                print *, "Error defining dimension: ", trim(nf90_strerror(ierr))
                stop
              end if
+             ierr = nf90_def_dim(ncid, "kxx", INT(kxx,4), dim_kxx)
            
              ! Define the variable
              ierr = nf90_def_var(ncid, "temperature", nf90_real, [dimid, dimid], varid)
@@ -35,6 +40,8 @@
                print *, "Error defining variable: ", trim(nf90_strerror(ierr))
                stop
              end if
+
+             ierr = nf90_def_var(ncid, "XRO", nf90_double, [dim_kxx], var_xro)
            
              ! End the define mode
              ierr = nf90_enddef(ncid)
@@ -56,6 +63,8 @@
                print *, "Error writing data: ", trim(nf90_strerror(ierr))
                stop
              end if
+             print *, xro
+             ierr = nf90_put_var(ncid, var_xro, xro)
 
              ! Close the NetCDF file
              ierr = nf90_close(ncid)

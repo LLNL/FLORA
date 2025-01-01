@@ -164,9 +164,14 @@
 
       ! Finish everything up; called by ctl command 'finish'.
 
+
       integer optlist(32),nopt
       character*80 msg
 
+      call writeCDF()
+
+
+      !
       totalcpu=second()
 
       write(msg,'(a,e14.6,a,i10)') 'total CPU for time-loop = ', \
