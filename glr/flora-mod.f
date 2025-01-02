@@ -672,7 +672,7 @@
         
         real, allocatable, dimension(:) :: xioo, xio, xiol
         real, allocatable, dimension(:) :: xroo, xro, xrol
-        real, allocatable, dimension(:,:) :: xro_t
+        real, allocatable, dimension(:,:) :: xro_t, xio_t
       
         real, allocatable, dimension(:) :: omstri1, omgbi1, omstri34, omstri66, omstr148
         real, allocatable, dimension(:) :: omebj1, omstrj1
@@ -701,7 +701,7 @@
             allocate(xioo(kxx), xio(kxx), xiol(kxx), xroo(kxx), xro(kxx), xrol(kxx))
             allocate(omstri1(jx), omgbi1(jx), omstri34(jx), omstri66(jx), omstr148(jx))
             allocate(omebj1(ix), omstrj1(ix))
-            allocate(xro_t(nmax,kxx))
+            allocate(xro_t(nmax,kxx), xio_t(nmax,kxx))
         
           end subroutine allocate_arrays_Fstor
       
@@ -832,8 +832,9 @@
           implicit none
 
           integer(4) :: ncid
-          integer(4) :: dim_kxx, dim_n
-          integer(4) :: var_xro
+          integer(4) :: dim_z, dim_psi, dim_t, dim_kxx
+          integer(4) :: var_bvac, var_b, var_r, var_rho, var_pperp, var_ppar, var_epsi
+          integer(4) :: var_xro, var_xio, var_flute3
 
        end module ncInts
       
