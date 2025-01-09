@@ -8,8 +8,12 @@
       implicit none
       integer(4) :: ierr
 
+
       ! Create the NetCDF file
-      ierr = nf90_create("flora.nc", nf90_clobber, ncid)
+      if (input_file .ne. "in_flora.nml") then
+        call create_output_filename(input_file, output_file)
+      end if
+      ierr = nf90_create(output_file, nf90_clobber, ncid)
 
       ! Define dimensions
       ierr = nf90_def_dim(ncid, "z", INT(ix,4), dim_z)
@@ -82,4 +86,31 @@
 
       print *, "NetCDF file successfully written."
       end
+
+      ! Subroutine to generate output file name based on input
+      subroutine create_output_filename(input, output)
+
+        implicit none
+        character(len=256), intent(in) :: input
+        character(len=256), intent(out) :: output
+        integer :: len_input
+    
+        len_input = len_trim(input)
+        
+        ! Example: Append .nc to the input file name
+        write(output, '(A)') input(1:len_input)
+
+        ! Replace any file extension with '.nc' (if needed)
+        if (len_input > 4 .and. input(len_input-3:len_input) == '.nml') then
+           output = input(1:len_input-4) // '.nc'
+        else
+           output = input(1:len_input) // '.nc'
+        end if
+
+        print *, "FILE IO:"
+        print *, "    input: ", trim(input)
+        print *, "    output: ", trim(output)
+
+      end subroutine create_output_filename
+
 

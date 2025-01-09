@@ -836,5 +836,8 @@
           integer(4) :: var_bvac, var_b, var_r, var_rho, var_pperp, var_ppar, var_epsi
           integer(4) :: var_xro, var_xio, var_flute3
 
+          character(len=256) :: input_file = 'in_flora.nml'
+          character(len=256) :: output_file = 'flora.nc'
+
        end module ncInts
       

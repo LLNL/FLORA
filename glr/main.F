@@ -9,12 +9,16 @@
           use Const_8
           use Coils
           use TMInput
+          use ncInts
           implicit none
           print *, "Hi! my name is FLORA."
 
-        
+          ! Get the input file name from command line argument
+          call get_command_argument(1, input_file)
+          print *, "Input file is: ", input_file
+
           ! Read the namelist from a file
-          open(unit=10, file='in_flora.nml', status='old')
+          open(unit=10, file=input_file, status='old')
           read(10, nml=flora_ArraySizes)
           read(10, nml=flora_Coils)
           read(10, nml=flora_Const_1)
@@ -24,7 +28,6 @@
           read(10, nml=flora_Const_6)
           read(10, nml=flora_Const_8)
           read(10, nml=flora_TMInput)
-
 
           call glrgen
           do while (n < nmax)
