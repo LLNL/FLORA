@@ -235,8 +235,8 @@
      *    rp1ks, phicen, phiplg, xpot, ypot, pfudge, pfudgeks, rpxks, 
      *    betslsh, betslsks, betcent, betcene, betslse, cold, alfcold, 
      *    p2wide, psi3rel, bceng, nsloshin, noshinks, pe10, psi0erel, 
-     *    p2ewide, p2flag, p2floor, fring, dip, psihrel, dpsihrel
-      
+     *    p2ewide, p2flag, p2floor, fring, dip, psihrel, dpsihrel,
+     *    z0rel, z1rel, z2rel, z3rel
       
       end module Const_2
       
