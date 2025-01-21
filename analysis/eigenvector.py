@@ -27,10 +27,6 @@ j0 = 0
 
 dlogx = xro2d[-1]/xro2d[-2] - 1
 gamma = np.mean(dlogx/dt) # MHD growth rate
-import pdb
-pdb.set_trace()
+print("Growth Rate", gamma)
 
-for t in range(5):
-    plt.plot(xro[t])
-plt.show()
 
