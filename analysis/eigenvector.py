@@ -11,13 +11,17 @@ filename = sys.argv[1]
 nc = netCDF4.Dataset(filename, 'r')
 
 
-xro = nc.variables['XRO'][:]  # Read all data from 'XRO' variable
-B = nc.variables['B'][:]  
-dt = nc.variables['DT'][:]
+var = nc.variables
+dim = nc.dimensions
 
-Nt = 1600
-Nz = 150
-Np = 50
+xro = var['XRO'][:]  # Read all data from 'XRO' variable
+B = var['B'][:]  
+dt = var['DT'][:]
+
+Nt = dim['t'].size
+Nz = dim['z'].size
+Np = dim['psi'].size
+
 xro2d = xro.reshape(Nt,Nz-2,Np-2)
 
 B2d = B.reshape(Nz,Np)
