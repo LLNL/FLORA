@@ -833,6 +833,7 @@
 
           integer(4) :: ncid
           integer(4) :: dim_z, dim_psi, dim_t, dim_kxx
+          integer(4) :: var_dt
           integer(4) :: var_bvac, var_b, var_r, var_rho, var_pperp, var_ppar, var_epsi
           integer(4) :: var_xro, var_xio, var_flute3
 

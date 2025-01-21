@@ -2,6 +2,7 @@
              use netcdf
              use ArraySizes
              use ncInts
+             use Const_1
              use Const_8
              use Fstor
 
@@ -21,9 +22,12 @@
       ierr = nf90_def_dim(ncid, "t", INT(nmax,4), dim_t)
       ierr = nf90_def_dim(ncid, "kxx", INT(kxx,4), dim_kxx)
 
-      ! Define variables
-      ierr = nf90_def_var(ncid, "FLUTE3", nf90_double, var_flute3)
+      !!! Define variables
 
+      ! inputs
+      ierr = nf90_def_var(ncid, "DT", nf90_double, var_dt)
+
+      ! initial conditions
       ierr = nf90_def_var(ncid, "BVAC", nf90_double, dim_z, var_bvac)
       ierr = nf90_def_var(ncid, "B", nf90_double, [dim_psi, dim_z], var_b)
       ierr = nf90_def_var(ncid, "R", nf90_double, [dim_psi, dim_z], var_r)
@@ -32,13 +36,16 @@
       ierr = nf90_def_var(ncid, "PPAR", nf90_double, [dim_psi, dim_z], var_ppar)
       ierr = nf90_def_var(ncid, "EPSI", nf90_double, [dim_psi, dim_z], var_epsi)
 
+      ! results
       ierr = nf90_def_var(ncid, "XRO", nf90_double, [dim_kxx, dim_t], var_xro)
       ierr = nf90_def_var(ncid, "XIO", nf90_double, [dim_kxx, dim_t], var_xio)
+      ierr = nf90_def_var(ncid, "FLUTE3", nf90_double, var_flute3)
 
       ! End the define mode
       ierr = nf90_enddef(ncid)
 
       ! Write variables that are defined AFTER glrgen and BEFORE time loop
+      ierr = nf90_put_var(ncid, var_dt, dt)
       ierr = nf90_put_var(ncid, var_flute3, flute3)
 
       ierr = nf90_put_var(ncid, var_bvac, bvac)
