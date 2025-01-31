@@ -83,10 +83,10 @@
         real :: fj1 = 1.0        ! Minimum psi boundary condition, ==1 for 0 slope, ==-1 for 0 value.
         real :: fjrx = 1.0       ! Maximum psi boundary condition, ==1 for 0 slope, ==-1 for 0 value.
         
-        real :: fpsi = 0.5       ! Grid stretching parameter [0,1].
         real :: fu = 0.5         ! Grid stretching parameter [0,1].
         real :: fv = 0.5         ! Grid stretching parameter [0,1].
         real :: fz = 0.5         ! Grid stretching parameter [0,1].
+        real :: fpsi = 0.5       ! Grid stretching parameter [0,1].
         
         real :: azm = 1.0
         real :: apsim = 1.0
@@ -833,7 +833,8 @@
 
           integer(4) :: ncid
           integer(4) :: dim_z, dim_psi, dim_t, dim_kxx
-          integer(4) :: var_dt
+          integer(4) :: var_dt, var_fu, var_fv, var_fz, var_fpsi, var_sf6, var_sf8
+          integer(4) :: var_ex0, var_ex1, var_lmax, var_nmax, var_kzs, var_bias
           integer(4) :: var_mm
           integer(4) :: var_fi1, var_fj1, var_fizx, var_fjrx
           integer(4) :: var_bvac, var_b, var_r, var_rho, var_pperp, var_ppar, var_epsi

@@ -26,12 +26,20 @@
       !!! Define variables
 
       ! inputs
-      ierr = nf90_def_var(ncid, "DT", nf90_double, var_dt)
-      ierr = nf90_def_var(ncid, "MM", nf90_double, var_mm)
+      ierr = nf90_def_var(ncid, "dt", nf90_double, var_dt)
+      ierr = nf90_def_var(ncid, "mm", nf90_double, var_mm)
       ierr = nf90_def_var(ncid, "fi1", nf90_double, var_fi1)
       ierr = nf90_def_var(ncid, "fj1", nf90_double, var_fj1)
       ierr = nf90_def_var(ncid, "fizx", nf90_double, var_fizx)
       ierr = nf90_def_var(ncid, "fjrx", nf90_double, var_fjrx)
+      ierr = nf90_def_var(ncid, "sf6", nf90_double, var_sf6)
+      ierr = nf90_def_var(ncid, "sf8", nf90_double, var_sf8)
+      ierr = nf90_def_var(ncid, "ex0", nf90_double, var_ex0)
+      ierr = nf90_def_var(ncid, "ex1", nf90_double, var_ex1)
+      ierr = nf90_def_var(ncid, "lmax", nf90_double, var_lmax)
+      ierr = nf90_def_var(ncid, "nmax", nf90_double, var_nmax)
+      ierr = nf90_def_var(ncid, "kzs", nf90_double, var_kzs)
+      ierr = nf90_def_var(ncid, "bias", nf90_double, var_bias)
 
       ! initial conditions
       ierr = nf90_def_var(ncid, "BVAC", nf90_double, dim_z, var_bvac)
@@ -53,12 +61,19 @@
       ! Write variables that are defined AFTER glrgen and BEFORE time loop
       ierr = nf90_put_var(ncid, var_dt, dt)
       ierr = nf90_put_var(ncid, var_flute3, flute3)
-      print *, "BEEP", mm
       ierr = nf90_put_var(ncid, var_mm, mm)
       ierr = nf90_put_var(ncid, var_fi1, fi1)
       ierr = nf90_put_var(ncid, var_fj1, fj1)
       ierr = nf90_put_var(ncid, var_fizx, fizx)
       ierr = nf90_put_var(ncid, var_fjrx, fjrx)
+      ierr = nf90_put_var(ncid, var_sf6, sf6)
+      ierr = nf90_put_var(ncid, var_sf8, sf8)
+      ierr = nf90_put_var(ncid, var_ex0, ex0)
+      ierr = nf90_put_var(ncid, var_ex1, ex1)
+      ierr = nf90_put_var(ncid, var_lmax, lmax)
+      ierr = nf90_put_var(ncid, var_nmax, nmax)
+      ierr = nf90_put_var(ncid, var_kzs, kzs)
+      ierr = nf90_put_var(ncid, var_bias, bias)
 
       ierr = nf90_put_var(ncid, var_bvac, bvac)
       ierr = nf90_put_var(ncid, var_b, transpose(b))
