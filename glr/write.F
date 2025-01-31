@@ -3,6 +3,7 @@
              use ArraySizes
              use ncInts
              use Const_1
+             use Const_1a
              use Const_8
              use Fstor
 
@@ -26,6 +27,11 @@
 
       ! inputs
       ierr = nf90_def_var(ncid, "DT", nf90_double, var_dt)
+      ierr = nf90_def_var(ncid, "MM", nf90_double, var_mm)
+      ierr = nf90_def_var(ncid, "fi1", nf90_double, var_fi1)
+      ierr = nf90_def_var(ncid, "fj1", nf90_double, var_fj1)
+      ierr = nf90_def_var(ncid, "fizx", nf90_double, var_fizx)
+      ierr = nf90_def_var(ncid, "fjrx", nf90_double, var_fjrx)
 
       ! initial conditions
       ierr = nf90_def_var(ncid, "BVAC", nf90_double, dim_z, var_bvac)
@@ -47,6 +53,12 @@
       ! Write variables that are defined AFTER glrgen and BEFORE time loop
       ierr = nf90_put_var(ncid, var_dt, dt)
       ierr = nf90_put_var(ncid, var_flute3, flute3)
+      print *, "BEEP", mm
+      ierr = nf90_put_var(ncid, var_mm, mm)
+      ierr = nf90_put_var(ncid, var_fi1, fi1)
+      ierr = nf90_put_var(ncid, var_fj1, fj1)
+      ierr = nf90_put_var(ncid, var_fizx, fizx)
+      ierr = nf90_put_var(ncid, var_fjrx, fjrx)
 
       ierr = nf90_put_var(ncid, var_bvac, bvac)
       ierr = nf90_put_var(ncid, var_b, transpose(b))
