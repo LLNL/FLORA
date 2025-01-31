@@ -6,6 +6,7 @@
              use Const_1a
              use Const_2
              use Const_3
+             use Const_7
              use Const_8
              use Fstor
 
@@ -47,15 +48,18 @@
 
       ierr = nf90_def_var(ncid, "ncenter", nf90_double, var_ncenter)
       ierr = nf90_def_var(ncid, "nsloshin", nf90_double, var_nsloshin)
-      ierr = nf90_def_var(ncid, "var_betcent", nf90_double, var_betcent)
-      ierr = nf90_def_var(ncid, "var_betcene", nf90_double, var_betcene)
-      ierr = nf90_def_var(ncid, "var_betpas1", nf90_double, var_betpas1)
-      ierr = nf90_def_var(ncid, "var_betslsh", nf90_double, var_betslsh)
-      ierr = nf90_def_var(ncid, "var_betslse", nf90_double, var_betslse)
-      ierr = nf90_def_var(ncid, "var_ppas2", nf90_double, var_ppas2)
-      ierr = nf90_def_var(ncid, "var_ppas3", nf90_double, var_ppas3)
-      ierr = nf90_def_var(ncid, "var_dpas1", nf90_double, var_dpas1)
-      ierr = nf90_def_var(ncid, "var_d1trap", nf90_double, var_d1trap)
+      ierr = nf90_def_var(ncid, "betcent", nf90_double, var_betcent)
+      ierr = nf90_def_var(ncid, "betcene", nf90_double, var_betcene)
+      ierr = nf90_def_var(ncid, "betpas1", nf90_double, var_betpas1)
+      ierr = nf90_def_var(ncid, "betslsh", nf90_double, var_betslsh)
+      ierr = nf90_def_var(ncid, "betslse", nf90_double, var_betslse)
+      ierr = nf90_def_var(ncid, "betring", nf90_double, var_betring)
+      ierr = nf90_def_var(ncid, "ppas2", nf90_double, var_ppas2)
+      ierr = nf90_def_var(ncid, "ppas3", nf90_double, var_ppas3)
+      ierr = nf90_def_var(ncid, "dpas1", nf90_double, var_dpas1)
+      ierr = nf90_def_var(ncid, "d1trap", nf90_double, var_d1trap)
+      ierr = nf90_def_var(ncid, "phicen", nf90_double, var_phicen)
+      ierr = nf90_def_var(ncid, "phiplg", nf90_double, var_phiplg)
 
       ! initial conditions
       ierr = nf90_def_var(ncid, "BVAC", nf90_double, dim_z, var_bvac)
@@ -77,6 +81,7 @@
       ! Write variables that are defined AFTER glrgen and BEFORE time loop
       ierr = nf90_put_var(ncid, var_dt, dt)
       ierr = nf90_put_var(ncid, var_flute3, flute3)
+      print *, "flute3", flute3
       ierr = nf90_put_var(ncid, var_mm, mm)
       ierr = nf90_put_var(ncid, var_fi1, fi1)
       ierr = nf90_put_var(ncid, var_fj1, fj1)
@@ -100,10 +105,13 @@
       ierr = nf90_put_var(ncid, var_betpas1, betpas1)
       ierr = nf90_put_var(ncid, var_betslsh, betslsh)
       ierr = nf90_put_var(ncid, var_betslse, betslse)
+      ierr = nf90_put_var(ncid, var_betring, betring)
       ierr = nf90_put_var(ncid, var_dpas1, dpas1)
       ierr = nf90_put_var(ncid, var_ppas2, ppas2)
       ierr = nf90_put_var(ncid, var_ppas3, ppas3)
       ierr = nf90_put_var(ncid, var_d1trap, d1trap)
+      ierr = nf90_put_var(ncid, var_phicen, phicen)
+      ierr = nf90_put_var(ncid, var_phiplg, phiplg)
 
       ierr = nf90_put_var(ncid, var_bvac, bvac)
       ierr = nf90_put_var(ncid, var_b, transpose(b))

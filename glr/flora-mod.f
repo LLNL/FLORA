@@ -375,6 +375,8 @@
         real, dimension(:), allocatable :: dterjb
         real :: betring = 0.0    ! Peak hot electron perpendicular beta, wrt bmn1
 
+        namelist /flora_Const_7/ betring
+
         contains
 
           ! Subroutine to allocate arrays in Const_7
@@ -837,9 +839,10 @@
           integer(4) :: var_ex0, var_ex1, var_lmax, var_nmax, var_kzs, var_bias
           integer(4) :: var_mm
           integer(4) :: var_fi1, var_fj1, var_fizx, var_fjrx
-          integer(4) :: var_cold, var_dip
+          integer(4) :: var_cold, var_dip, var_phicen, var_phiplg
           integer(4) :: var_ncenter, var_nsloshin, var_betrap, var_betpas1
           integer(4) :: var_betslsh, var_betslse, var_betcent, var_betcene
+          integer(4) :: var_betring
           integer(4) :: var_ppas2, var_ppas3, var_dpas1, var_d1trap
           integer(4) :: var_bvac, var_b, var_r, var_rho, var_pperp, var_ppar, var_epsi
           integer(4) :: var_xro, var_xio, var_flute3

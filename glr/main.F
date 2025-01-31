@@ -6,6 +6,7 @@
           use Const_2
           use Const_3
           use Const_6
+          use Const_7
           use Const_8
           use Coils
           use TMInput
@@ -26,6 +27,7 @@
           read(10, nml=flora_Const_2)
           read(10, nml=flora_Const_3)
           read(10, nml=flora_Const_6)
+          read(10, nml=flora_Const_7)
           read(10, nml=flora_Const_8)
           read(10, nml=flora_TMInput)
 

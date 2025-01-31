@@ -16,7 +16,14 @@ dim = nc.dimensions
 
 xro = var['XRO'][:]  # Read all data from 'XRO' variable
 B = var['B'][:]  
-dt = var['DT'][:]
+try:
+    dt = var['dt'][:]
+except:
+    # backward compatible
+    dt = var['DT'][:]
+
+mm = var['mm'][:]
+flute3 = var['FLUTE3'][:]
 
 Nt = dim['t'].size
 Nz = dim['z'].size
@@ -31,6 +38,7 @@ j0 = 0
 
 dlogx = xro2d[-1]/xro2d[-2] - 1
 gamma = np.mean(dlogx/dt) # MHD growth rate
-print("Growth Rate", gamma)
+print(f"Growth Rate {gamma} (m = {mm})")
+print(f"Flute3 {flute3}")
 
 
