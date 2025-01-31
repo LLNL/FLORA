@@ -8,7 +8,9 @@
              use Const_3
              use Const_7
              use Const_8
+             use Coils
              use Fstor
+             use TMInput
 
       implicit none
       integer(4) :: ierr
@@ -25,6 +27,8 @@
       ierr = nf90_def_dim(ncid, "psi", INT(jx,4), dim_psi)
       ierr = nf90_def_dim(ncid, "t", INT(nmax,4), dim_t)
       ierr = nf90_def_dim(ncid, "kxx", INT(kxx,4), dim_kxx)
+      !ierr = nf90_def_dim(ncid, "ncoil", INT(ncoil,4), dim_ncoil)
+      ierr = nf90_def_dim(ncid, "coil", INT(3,4), dim_ncoil)
 
       !!! Define variables
 
@@ -61,6 +65,20 @@
       ierr = nf90_def_var(ncid, "phicen", nf90_double, var_phicen)
       ierr = nf90_def_var(ncid, "phiplg", nf90_double, var_phiplg)
 
+      ierr = nf90_def_var(ncid, "ncoil", nf90_double, var_ncoil)
+      ierr = nf90_def_var(ncid, "bceng", nf90_double, var_bceng)
+      ierr = nf90_def_var(ncid, "bmx1", nf90_double, var_bmx1)
+      ierr = nf90_def_var(ncid, "bmx2", nf90_double, var_bmx2)
+      ierr = nf90_def_var(ncid, "bmx3", nf90_double, var_bmx3)
+      ierr = nf90_def_var(ncid, "z1c", nf90_double, var_z1c)
+      ierr = nf90_def_var(ncid, "z2c", nf90_double, var_z2c)
+      ierr = nf90_def_var(ncid, "z3c", nf90_double, var_z3c)
+      ierr = nf90_def_var(ncid, "zmax", nf90_double, var_zmax)
+      ierr = nf90_def_var(ncid, "ltrans", nf90_double, var_ltrans)
+      ierr = nf90_def_var(ncid, "ztrans", nf90_double, var_ztrans)
+      ierr = nf90_def_var(ncid, "as", nf90_double, dim_ncoil, var_as)
+      ierr = nf90_def_var(ncid, "als", nf90_double, dim_ncoil, var_als)
+
       ! initial conditions
       ierr = nf90_def_var(ncid, "BVAC", nf90_double, dim_z, var_bvac)
       ierr = nf90_def_var(ncid, "B", nf90_double, [dim_psi, dim_z], var_b)
@@ -73,7 +91,7 @@
       ! results
       ierr = nf90_def_var(ncid, "XRO", nf90_double, [dim_kxx, dim_t], var_xro)
       ierr = nf90_def_var(ncid, "XIO", nf90_double, [dim_kxx, dim_t], var_xio)
-      ierr = nf90_def_var(ncid, "FLUTE3", nf90_double, var_flute3)
+      ierr = nf90_def_var(ncid, "FLUTE3", nf90_double, dim_psi, var_flute3)
 
       ! End the define mode
       ierr = nf90_enddef(ncid)
@@ -81,7 +99,6 @@
       ! Write variables that are defined AFTER glrgen and BEFORE time loop
       ierr = nf90_put_var(ncid, var_dt, dt)
       ierr = nf90_put_var(ncid, var_flute3, flute3)
-      print *, "flute3", flute3
       ierr = nf90_put_var(ncid, var_mm, mm)
       ierr = nf90_put_var(ncid, var_fi1, fi1)
       ierr = nf90_put_var(ncid, var_fj1, fj1)
@@ -113,6 +130,20 @@
       ierr = nf90_put_var(ncid, var_phicen, phicen)
       ierr = nf90_put_var(ncid, var_phiplg, phiplg)
 
+      ierr = nf90_put_var(ncid, var_ncoil, ncoil)
+      ierr = nf90_put_var(ncid, var_bceng, bceng)
+      ierr = nf90_put_var(ncid, var_bmx1, bmx1)
+      ierr = nf90_put_var(ncid, var_bmx2, bmx2)
+      ierr = nf90_put_var(ncid, var_bmx3, bmx3)
+      ierr = nf90_put_var(ncid, var_z1c, z1c)
+      ierr = nf90_put_var(ncid, var_z2c, z2c)
+      ierr = nf90_put_var(ncid, var_z3c, z3c)
+      ierr = nf90_put_var(ncid, var_zmax, zmax)
+      ierr = nf90_put_var(ncid, var_as, ass)
+      ierr = nf90_put_var(ncid, var_als, als)
+      ierr = nf90_put_var(ncid, var_ltrans, ltrans)
+      ierr = nf90_put_var(ncid, var_ztrans, ztrans)
+
       ierr = nf90_put_var(ncid, var_bvac, bvac)
       ierr = nf90_put_var(ncid, var_b, transpose(b))
       ierr = nf90_put_var(ncid, var_r, transpose(r))
@@ -141,6 +172,7 @@
              use netcdf
              use ncInts
              use Fstor
+             use Const_8
 
       implicit none
       integer(4) :: ierr

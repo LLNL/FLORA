@@ -834,7 +834,7 @@
           implicit none
 
           integer(4) :: ncid
-          integer(4) :: dim_z, dim_psi, dim_t, dim_kxx
+          integer(4) :: dim_z, dim_psi, dim_t, dim_kxx, dim_ncoil
           integer(4) :: var_dt, var_fu, var_fv, var_fz, var_fpsi, var_sf6, var_sf8
           integer(4) :: var_ex0, var_ex1, var_lmax, var_nmax, var_kzs, var_bias
           integer(4) :: var_mm
@@ -846,6 +846,9 @@
           integer(4) :: var_ppas2, var_ppas3, var_dpas1, var_d1trap
           integer(4) :: var_bvac, var_b, var_r, var_rho, var_pperp, var_ppar, var_epsi
           integer(4) :: var_xro, var_xio, var_flute3
+          integer(4) :: var_ncoil, var_z1c, var_z2c, var_z3c, var_as, var_als
+          integer(4) :: var_bceng, var_bmx1, var_bmx2, var_bmx3
+          integer(4) :: var_ltrans, var_ztrans, var_zmax
 
           character(len=256) :: input_file = 'in_flora.nml'
           character(len=256) :: output_file = 'flora.nc'
