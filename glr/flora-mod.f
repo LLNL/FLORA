@@ -8,7 +8,7 @@
         integer :: ksimp = 23      ! Number of points for Simpson's Rule integration
         integer :: nmax = 5        ! Upper limit of time steps for problem
         integer :: nps = 100       ! (Explanation needed for nps)
-        integer :: neng = 500      ! (Explanation needed for neng)
+        integer :: neng = 500      ! Size of energy save array, should be > nmax / nen
         
         ! Secondary array sizes
         integer :: kxx = 0         ! Secondary array size, kxx = (ix-2)*(jx-2)
@@ -322,6 +322,7 @@
         real, dimension(:), allocatable :: xrtime, time, enpot, tenergy, enkin
         real, dimension(:,:), allocatable :: xrspz, xrsppsi, xflute 
         real, dimension(:), allocatable :: timengy, tenrel, enbend, encurve, enflr
+        real, allocatable, dimension(:,:) :: energy_t, enkin_t, enpot_t
 
       contains
       
@@ -346,6 +347,10 @@
           allocate(encurve(neng))
           allocate(enflr(neng))
       
+          allocate(energy_t(nmax,neng))
+          allocate(enkin_t(nmax,neng))
+          allocate(enpot_t(nmax,neng))
+
         end subroutine allocate_arrays_Const_5
       
       end module Const_5
@@ -834,7 +839,7 @@
           implicit none
 
           integer(4) :: ncid
-          integer(4) :: dim_z, dim_psi, dim_t, dim_kxx, dim_ncoil
+          integer(4) :: dim_z, dim_psi, dim_t, dim_kxx, dim_ncoil, dim_eng
           integer(4) :: var_dt, var_fu, var_fv, var_fz, var_fpsi, var_sf6, var_sf8
           integer(4) :: var_ex0, var_ex1, var_lmax, var_nmax, var_kzs, var_bias
           integer(4) :: var_mm
@@ -844,11 +849,12 @@
           integer(4) :: var_betslsh, var_betslse, var_betcent, var_betcene
           integer(4) :: var_betring
           integer(4) :: var_ppas2, var_ppas3, var_dpas1, var_d1trap
-          integer(4) :: var_bvac, var_b, var_r, var_rho, var_pperp, var_ppar, var_epsi
+          integer(4) :: var_bvac, var_b, var_r, var_rho, var_pperp, var_ppar, var_epsi, var_pperpe
           integer(4) :: var_xro, var_xio, var_flute3
           integer(4) :: var_ncoil, var_z1c, var_z2c, var_z3c, var_as, var_als
           integer(4) :: var_bceng, var_bmx1, var_bmx2, var_bmx3
           integer(4) :: var_ltrans, var_ztrans, var_zmax
+          integer(4) :: var_tenergy, var_enkin, var_enpot
 
           character(len=256) :: input_file = 'in_flora.nml'
           character(len=256) :: output_file = 'flora.nc'

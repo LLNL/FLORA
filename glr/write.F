@@ -29,6 +29,7 @@
       ierr = nf90_def_dim(ncid, "kxx", INT(kxx,4), dim_kxx)
       !ierr = nf90_def_dim(ncid, "ncoil", INT(ncoil,4), dim_ncoil)
       ierr = nf90_def_dim(ncid, "coil", INT(3,4), dim_ncoil)
+      ierr = nf90_def_dim(ncid, "energy", INT(neng,4), dim_eng)
 
       !!! Define variables
 
@@ -86,12 +87,18 @@
       ierr = nf90_def_var(ncid, "RHO", nf90_double, [dim_psi, dim_z], var_rho)
       ierr = nf90_def_var(ncid, "PPERP", nf90_double, [dim_psi, dim_z], var_pperp)
       ierr = nf90_def_var(ncid, "PPAR", nf90_double, [dim_psi, dim_z], var_ppar)
+      ierr = nf90_def_var(ncid, "PPERPE", nf90_double, [dim_psi, dim_z], var_pperpe)
       ierr = nf90_def_var(ncid, "EPSI", nf90_double, [dim_psi, dim_z], var_epsi)
 
       ! results
       ierr = nf90_def_var(ncid, "XRO", nf90_double, [dim_kxx, dim_t], var_xro)
       ierr = nf90_def_var(ncid, "XIO", nf90_double, [dim_kxx, dim_t], var_xio)
       ierr = nf90_def_var(ncid, "FLUTE3", nf90_double, dim_psi, var_flute3)
+
+      ierr = nf90_def_var(ncid, "tenergy", nf90_double, [dim_eng, dim_t], var_tenergy)
+      ierr = nf90_def_var(ncid, "enkin", nf90_double, [dim_eng, dim_t], var_enkin)
+      ierr = nf90_def_var(ncid, "enpot", nf90_double, [dim_eng, dim_t], var_enpot)
+
 
       ! End the define mode
       ierr = nf90_enddef(ncid)
@@ -150,6 +157,7 @@
       ierr = nf90_put_var(ncid, var_rho, transpose(rho))
       ierr = nf90_put_var(ncid, var_pperp, transpose(pperp))
       ierr = nf90_put_var(ncid, var_ppar, transpose(ppar))
+      ierr = nf90_put_var(ncid, var_pperpe, transpose(pperpe))
       ierr = nf90_put_var(ncid, var_epsi, transpose(epsi))
       end
 
@@ -158,6 +166,7 @@
              use ncInts
              use Fstor
              use Const_1a
+             use Const_5
              use Const_8
 
       implicit none
@@ -165,13 +174,18 @@
       
       xro_t(n,:) = xro
       xio_t(n,:) = xio
-      end
 
+      energy_t(n,:) = tenergy
+      enkin_t(n,:) = enkin
+      enpot_t(n,:) = enpot
+
+      end
 
       subroutine netcdfClose
              use netcdf
              use ncInts
              use Fstor
+             use Const_5
              use Const_8
 
       implicit none
@@ -180,6 +194,10 @@
       ! Write variables
       ierr = nf90_put_var(ncid, var_xro, transpose(xro_t))
       ierr = nf90_put_var(ncid, var_xio, transpose(xio_t))
+
+      ierr = nf90_put_var(ncid, var_tenergy, transpose(energy_t))
+      ierr = nf90_put_var(ncid, var_enkin, transpose(enkin_t))
+      ierr = nf90_put_var(ncid, var_enpot, transpose(enpot_t))
 
       ! Close the NetCDF file
       ierr = nf90_close(ncid)
