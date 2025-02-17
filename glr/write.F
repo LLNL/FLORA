@@ -95,9 +95,9 @@
       ierr = nf90_def_var(ncid, "XIO", nf90_double, [dim_kxx, dim_t], var_xio)
       ierr = nf90_def_var(ncid, "FLUTE3", nf90_double, dim_psi, var_flute3)
 
-      ierr = nf90_def_var(ncid, "tenergy", nf90_double, [dim_eng, dim_t], var_tenergy)
-      ierr = nf90_def_var(ncid, "enkin", nf90_double, [dim_eng, dim_t], var_enkin)
-      ierr = nf90_def_var(ncid, "enpot", nf90_double, [dim_eng, dim_t], var_enpot)
+      ierr = nf90_def_var(ncid, "tenergy", nf90_double, dim_eng, var_tenergy)
+      ierr = nf90_def_var(ncid, "enkin", nf90_double, dim_eng, var_enkin)
+      ierr = nf90_def_var(ncid, "enpot", nf90_double, dim_eng, var_enpot)
 
 
       ! End the define mode
@@ -175,10 +175,6 @@
       xro_t(n,:) = xro
       xio_t(n,:) = xio
 
-      energy_t(n,:) = tenergy
-      enkin_t(n,:) = enkin
-      enpot_t(n,:) = enpot
-
       end
 
       subroutine netcdfClose
@@ -195,9 +191,9 @@
       ierr = nf90_put_var(ncid, var_xro, transpose(xro_t))
       ierr = nf90_put_var(ncid, var_xio, transpose(xio_t))
 
-      ierr = nf90_put_var(ncid, var_tenergy, transpose(energy_t))
-      ierr = nf90_put_var(ncid, var_enkin, transpose(enkin_t))
-      ierr = nf90_put_var(ncid, var_enpot, transpose(enpot_t))
+      ierr = nf90_put_var(ncid, var_tenergy, tenergy)
+      ierr = nf90_put_var(ncid, var_enkin, enkin)
+      ierr = nf90_put_var(ncid, var_enpot, enpot)
 
       ! Close the NetCDF file
       ierr = nf90_close(ncid)

@@ -322,7 +322,6 @@
         real, dimension(:), allocatable :: xrtime, time, enpot, tenergy, enkin
         real, dimension(:,:), allocatable :: xrspz, xrsppsi, xflute 
         real, dimension(:), allocatable :: timengy, tenrel, enbend, encurve, enflr
-        real, allocatable, dimension(:,:) :: energy_t, enkin_t, enpot_t
 
       contains
       
@@ -346,10 +345,6 @@
           allocate(enbend(neng))
           allocate(encurve(neng))
           allocate(enflr(neng))
-      
-          allocate(energy_t(nmax,neng))
-          allocate(enkin_t(nmax,neng))
-          allocate(enpot_t(nmax,neng))
 
         end subroutine allocate_arrays_Const_5
       
