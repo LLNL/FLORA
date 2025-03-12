@@ -15,7 +15,7 @@
         integer :: kbw = 0         ! Secondary array size, kbw = min(ix-1,jx-1)
         integer :: lda = 0         ! Secondary array size, lda = 3*kbw+1
       
-        namelist /flora_ArraySizes/ nmax
+        namelist /flora_ArraySizes/ nmax, neng, ix, jx
 
       end module ArraySizes
       
