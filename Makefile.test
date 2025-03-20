@@ -21,8 +21,8 @@ OBJ_DIR = $(BUILD)/objs
 # List all .F files in the source directory
 SRC = $(wildcard $(SRC_DIR)/*.F)
 
-# Convert .F files to .o files
-OBJ = $(SRC:$(SRC_DIR)/%.F=$(SRC_DIR)/%.o)
+# Convert .F files to .o files in the object directory
+OBJ = $(SRC:$(SRC_DIR)/%.F=$(OBJ_DIR)/%.o)
 
 
 # Output executable
@@ -37,14 +37,13 @@ all: $(EXEC)
 
 $(EXEC): mods $(OBJ_DIR) $(OBJ)
 	@echo "Linking executable..."
-	$(FC) $(MOD) $(SRC_DIR)/*.F -o $(EXEC) $(LDFLAGS) $(FFLAGS) $(DEFINES) -I$(MOD_DIR) -I$(OBJ_DIR) $(IFLAGS)
+	$(FC) $(MOD) $(OBJ) -o $(EXEC) $(LDFLAGS) $(FFLAGS) $(DEFINES) -I$(MOD_DIR) -I$(OBJ_DIR) $(IFLAGS)
 	@mv *.mod $(MOD_DIR)/
 
 # Compile the rest of the object files
-$(OBJ): %.o: %.F mods
+$(OBJ): $(OBJ_DIR)/%.o: $(SRC_DIR)/%.F mods
 	@echo "Compiling $@..."
 	$(FC) -c $< -o $@ $(FFLAGS) $(DEFINES) -I$(MOD_DIR) $(IFLAGS)
-	@mv $(SRC_DIR)/*.o $(OBJ_DIR)/
 
 mods: $(MOD_DIR) $(OBJ_DIR)
 	@echo "building modules..."
