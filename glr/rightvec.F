@@ -14,7 +14,7 @@ c..... br = 2*a3*xr(n) - a2*xr(n-1) + b1*(xi(l)-xi(n-1))
 c..... bi = 2*a3*xi(n) - a2*xi(n-1) + b1*(xr(l)-xr(n-1))
 c..... where br/bi are real/imaginary components of RHS vector b in Ax = b
 
-      integer :: m, mdel, m1, mbar
+      integer :: m, mdel, m1, mbar, koff, koff1, koff2
       integer :: i, j, k
       integer :: i_off, j_off
       real*8, dimension(ix,jx) :: br, bi           ! RHS vector components
@@ -105,35 +105,40 @@ c..... where br/bi are real/imaginary components of RHS vector b in Ax = b
       enddo
 
       ! Main computation loop
-      do j=2,jx-1
-          do i=2,ix-1
-              do m=1,9
-                  mdel=(m-1)/3
-                  m1=m-1
-                  ! Calculate stencil offsets
-                  i_off = mod(m-1,3) - 1  ! -1, 0, or 1
-                  j_off = mdel - 1        ! -1, 0, or 1
+      do m=1,9
+          mdel=(m-1)/3
+          m1=m-1
+          ! Calculate stencil offsets
+          i_off = mod(m-1,3) - 1  ! -1, 0, or 1
+          j_off = mdel - 1        ! -1, 0, or 1
 
-                  ! Time evolution terms
+          do j=2,jx-1
+              do i=2,ix-1
                   k = (i-2) + (j-2)*(ix-2) + 1
-                  br(i,j) = br(i,j) + 2.*a3(k,m)*
-     &                      xro_ghost(i+i_off,j+j_off)
-     &                      - a2(k,m)*
-     &                      xroo_ghost(i+i_off,j+j_off)
-                  bi(i,j) = bi(i,j) + 2.*a3(k,m)*
-     &                      xio_ghost(i+i_off,j+j_off)
-     &                      - a2(k,m)*
-     &                      xioo_ghost(i+i_off,j+j_off)
+                  
+                  ! Time evolution terms
+                  br(i,j) = br(i,j) + 2.*a3(k,m)*xro_ghost(i+i_off,j+j_off)
+     &                      - a2(k,m)*xroo_ghost(i+i_off,j+j_off)
+                  bi(i,j) = bi(i,j) + 2.*a3(k,m)*xio_ghost(i+i_off,j+j_off)
+     &                      - a2(k,m)*xioo_ghost(i+i_off,j+j_off)
+
+                  ! Debug output for first few iterations
+                  if (i == 2 .and. j == 2 .and. m <= 3) then
+                      print *, 'DEBUG: m,i,j=',m,i,j
+                      print *, 'DEBUG: i_off,j_off=',i_off,j_off
+                      print *, 'DEBUG: xro,xroo=',
+     &                        xro_ghost(i+i_off,j+j_off),
+     &                        xroo_ghost(i+i_off,j+j_off)
+                      print *, 'DEBUG: a2,a3=',a2(k,m),a3(k,m)
+                  endif
 
                   ! Coupling terms (only for m=2,5,8)
                   if (m == 2 .or. m == 5 .or. m == 8) then
                       mbar = m-1-(m/4)*2
                       br(i,j) = br(i,j) + fac1*b1(k,mbar)*
-     &                         (xiol(k)-
-     &                         xioo_ghost(i+i_off,j+j_off))
+     &                         (xiol(k)-xioo_ghost(i+i_off,j+j_off))
                       bi(i,j) = bi(i,j) + fac2*b1(k,mbar)*
-     &                         (xrol(k)-
-     &                         xroo_ghost(i+i_off,j+j_off))
+     &                         (xrol(k)-xroo_ghost(i+i_off,j+j_off))
                   endif
               enddo
           enddo
