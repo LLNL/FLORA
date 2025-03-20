@@ -74,12 +74,19 @@ c           else isw = -1, koff = koff2
                       endif
                   endif
                   
-                  rhs1(k)=rhs1(k)+2.*a3(k,m)*xro(koff_ghost)-a2(k,m)*xroo(koff_ghost)
-                  rhs2(k)=rhs2(k)+2.*a3(k,m)*xio(koff_ghost)-a2(k,m)*xioo(koff_ghost)
+                  ! Check bounds before accessing array
+                  if (koff_ghost >= 1 .and. koff_ghost <= kxx) then
+                      rhs1(k) = rhs1(k) + 2.*a3(k,m)*xro(koff_ghost) - a2(k,m)*xroo(koff_ghost)
+                      rhs2(k) = rhs2(k) + 2.*a3(k,m)*xio(koff_ghost) - a2(k,m)*xioo(koff_ghost)
+                  else
+                      ! For out-of-bounds ghost cells, use the boundary value
+                      rhs1(k) = rhs1(k) + 2.*a3(k,m)*xro(k) - a2(k,m)*xroo(k)
+                      rhs2(k) = rhs2(k) + 2.*a3(k,m)*xio(k) - a2(k,m)*xioo(k)
+                  endif
               else
                   ! Interior points - use standard stencil offset
-                  rhs1(k)=rhs1(k)+2.*a3(k,m)*xro(k+koff)-a2(k,m)*xroo(k+koff)
-                  rhs2(k)=rhs2(k)+2.*a3(k,m)*xio(k+koff)-a2(k,m)*xioo(k+koff)
+                  rhs1(k) = rhs1(k) + 2.*a3(k,m)*xro(k+koff) - a2(k,m)*xroo(k+koff)
+                  rhs2(k) = rhs2(k) + 2.*a3(k,m)*xio(k+koff) - a2(k,m)*xioo(k+koff)
               endif
           enddo
           if (m == 2 .or. m == 5 .or. m == 8) then
