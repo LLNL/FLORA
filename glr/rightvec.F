@@ -9,98 +9,143 @@
 
       implicit none
 
-c..... calculates right hand side vector for both equations,
-c..... rhs1(k)=2*a2*xr(n)-a2*xr(n-1)+b1*(xi(l)-xi(n-1)) , and
-c..... rhs2(k)=2*a3*xi(n)-a2*xi(n-1)+b1*(xr(l)-xr(n-1)) .
+c..... calculates right hand side vector for both equations in 2D form,
+c..... br = 2*a3*xr(n) - a2*xr(n-1) + b1*(xi(l)-xi(n-1))
+c..... bi = 2*a3*xi(n) - a2*xi(n-1) + b1*(xr(l)-xr(n-1))
+c..... where br/bi are real/imaginary components of RHS vector b in Ax = b
 
-      integer m,mdel,koff1,koff2,koff,k,mbar,m1
-      integer i, j, koff_ghost
+      integer :: m, mdel, m1, mbar
+      integer :: i, j, k
+      integer :: i_off, j_off
+      real*8, dimension(ix,jx) :: br, bi           ! RHS vector components
+      real*8, dimension(ix,jx) :: xro_ghost, xio_ghost  ! Ghost cell arrays
+      real*8, dimension(ix,jx) :: xroo_ghost, xioo_ghost
 
-      call myzero(kxx,0.,rhs1,1)
-      call myzero(kxx,0.,rhs2,1)
-cjb  what is  sscal?  some system call,  not in vdf  not in undefined symbols
-cjb  just some vector 0 init?
-cjb   sscal is in code.map  part of libblas.a
-
-cjb  where kxx set?:  declrd  not intlzd in vdf
-ctq  kxx is defined in setup.F, after reading ix and jx from ArraySizes
-
-      do m=1,9
-          mdel=(m-1)/3
-          m1=m-1
-          koff1=-mdel*5+m+(mdel-1)*ix
-          koff2=(m-((mdel+1)*3-1))*jx+1-2*m1+7*mdel
-          koff=.5*(1+isw)*koff1+.5*(1-isw)*koff2 
-c           if isw = 1, koff = koff1
-c           else isw = -1, koff = koff2
-          do k=1,kxx
-              ! Convert flattened index k to 2D indices i,j
-              i = mod(k-1,ix-2) + 2  ! i goes from 2 to ix-1
-              j = (k-1)/(ix-2) + 2   ! j goes from 2 to jx-1
-              
-              if (k < jx .or. (kxx-k) < jx) then
-                  ! These are boundary points - need proper ghost cell handling
-                  if (i == 2) then
-                      ! Left boundary - use fi1 condition
-                      if (fi1 > 0) then
-                          ! Neumann: zero gradient
-                          koff_ghost = k + 1
-                      else
-                          ! Dirichlet: zero value
-                          koff_ghost = k - 1
-                      endif
-                  else if (i == ix-1) then
-                      ! Right boundary - use fizx condition
-                      if (fizx > 0) then
-                          koff_ghost = k - 1
-                      else 
-                          koff_ghost = k + 1
-                      endif
-                  endif
-                  
-                  if (j == 2) then
-                      ! Bottom boundary - use fj1 condition
-                      if (fj1 > 0) then
-                          koff_ghost = k + (ix-2)
-                      else
-                          koff_ghost = k - (ix-2)
-                      endif
-                  else if (j == jx-1) then
-                      ! Top boundary - use fjrx condition
-                      if (fjrx > 0) then
-                          koff_ghost = k - (ix-2)
-                      else
-                          koff_ghost = k + (ix-2)
-                      endif
-                  endif
-                  
-                  ! Check bounds before accessing array
-                  if (koff_ghost >= 1 .and. koff_ghost <= kxx) then
-                      rhs1(k) = rhs1(k) + 2.*a3(k,m)*xro(koff_ghost) - a2(k,m)*xroo(koff_ghost)
-                      rhs2(k) = rhs2(k) + 2.*a3(k,m)*xio(koff_ghost) - a2(k,m)*xioo(koff_ghost)
-                  else
-                      ! For out-of-bounds ghost cells, use the boundary value
-                      rhs1(k) = rhs1(k) + 2.*a3(k,m)*xro(k) - a2(k,m)*xroo(k)
-                      rhs2(k) = rhs2(k) + 2.*a3(k,m)*xio(k) - a2(k,m)*xioo(k)
-                  endif
-              else
-                  ! Interior points - use standard stencil offset
-                  rhs1(k) = rhs1(k) + 2.*a3(k,m)*xro(k+koff) - a2(k,m)*xroo(k+koff)
-                  rhs2(k) = rhs2(k) + 2.*a3(k,m)*xio(k+koff) - a2(k,m)*xioo(k+koff)
-              endif
+      ! Initialize RHS arrays to zero
+      do j=1,jx
+          do i=1,ix
+              br(i,j) = 0.0
+              bi(i,j) = 0.0
+              xro_ghost(i,j) = 0.0
+              xio_ghost(i,j) = 0.0
+              xroo_ghost(i,j) = 0.0
+              xioo_ghost(i,j) = 0.0
           enddo
-          if (m == 2 .or. m == 5 .or. m == 8) then
-              do k=1,kxx
-                  mbar=m-1-(m/4)*2
-                  if (k < jx .or. (kxx-k) < jx) then
-                  rhs1(k)=rhs1(k)+fac1*b1(k,mbar)*(xiol(k)-xioo(k))
-                  rhs2(k)=rhs2(k)+fac2*b1(k,mbar)*(xrol(k)-xroo(k))
-                  else
-                  rhs1(k)=rhs1(k)+fac1*b1(k,mbar)*(xiol(k+koff)-xioo(k+koff))
-                  rhs2(k)=rhs2(k)+fac2*b1(k,mbar)*(xrol(k+koff)-xroo(k+koff))
+      enddo
+
+      ! Initialize ghost arrays with interior values
+      do j=2,jx-1
+          do i=2,ix-1
+              k = (i-2) + (j-2)*(ix-2) + 1
+              xro_ghost(i,j) = xro(k)
+              xio_ghost(i,j) = xio(k)
+              xroo_ghost(i,j) = xroo(k)
+              xioo_ghost(i,j) = xioo(k)
+          enddo
+      enddo
+
+      ! Handle boundaries
+      do j=2,jx-1
+          ! Left boundary (i=2)
+          if (fi1 > 0) then
+              ! Neumann: zero gradient
+              xro_ghost(1,j) = xro_ghost(2,j)
+              xio_ghost(1,j) = xio_ghost(2,j)
+              xroo_ghost(1,j) = xroo_ghost(2,j)
+              xioo_ghost(1,j) = xioo_ghost(2,j)
+          else
+              ! Dirichlet: zero value
+              xro_ghost(1,j) = 0.0
+              xio_ghost(1,j) = 0.0
+              xroo_ghost(1,j) = 0.0
+              xioo_ghost(1,j) = 0.0
+          endif
+
+          ! Right boundary (i=ix-1)
+          if (fizx > 0) then
+              xro_ghost(ix,j) = xro_ghost(ix-1,j)
+              xio_ghost(ix,j) = xio_ghost(ix-1,j)
+              xroo_ghost(ix,j) = xroo_ghost(ix-1,j)
+              xioo_ghost(ix,j) = xioo_ghost(ix-1,j)
+          else
+              xro_ghost(ix,j) = 0.0
+              xio_ghost(ix,j) = 0.0
+              xroo_ghost(ix,j) = 0.0
+              xioo_ghost(ix,j) = 0.0
+          endif
+      enddo
+
+      ! Handle top/bottom boundaries
+      do i=2,ix-1
+          ! Bottom boundary (j=2)
+          if (fj1 > 0) then
+              xro_ghost(i,1) = xro_ghost(i,2)
+              xio_ghost(i,1) = xio_ghost(i,2)
+              xroo_ghost(i,1) = xroo_ghost(i,2)
+              xioo_ghost(i,1) = xioo_ghost(i,2)
+          else
+              xro_ghost(i,1) = 0.0
+              xio_ghost(i,1) = 0.0
+              xroo_ghost(i,1) = 0.0
+              xioo_ghost(i,1) = 0.0
+          endif
+
+          ! Top boundary (j=jx-1)
+          if (fjrx > 0) then
+              xro_ghost(i,jx) = xro_ghost(i,jx-1)
+              xio_ghost(i,jx) = xio_ghost(i,jx-1)
+              xroo_ghost(i,jx) = xroo_ghost(i,jx-1)
+              xioo_ghost(i,jx) = xioo_ghost(i,jx-1)
+          else
+              xro_ghost(i,jx) = 0.0
+              xio_ghost(i,jx) = 0.0
+              xroo_ghost(i,jx) = 0.0
+              xioo_ghost(i,jx) = 0.0
+          endif
+      enddo
+
+      ! Main computation loop
+      do j=2,jx-1
+          do i=2,ix-1
+              do m=1,9
+                  mdel=(m-1)/3
+                  m1=m-1
+                  ! Calculate stencil offsets
+                  i_off = mod(m-1,3) - 1  ! -1, 0, or 1
+                  j_off = mdel - 1        ! -1, 0, or 1
+
+                  ! Time evolution terms
+                  k = (i-2) + (j-2)*(ix-2) + 1
+                  br(i,j) = br(i,j) + 2.*a3(k,m)*
+     &                      xro_ghost(i+i_off,j+j_off)
+     &                      - a2(k,m)*
+     &                      xroo_ghost(i+i_off,j+j_off)
+                  bi(i,j) = bi(i,j) + 2.*a3(k,m)*
+     &                      xio_ghost(i+i_off,j+j_off)
+     &                      - a2(k,m)*
+     &                      xioo_ghost(i+i_off,j+j_off)
+
+                  ! Coupling terms (only for m=2,5,8)
+                  if (m == 2 .or. m == 5 .or. m == 8) then
+                      mbar = m-1-(m/4)*2
+                      br(i,j) = br(i,j) + fac1*b1(k,mbar)*
+     &                         (xiol(k)-
+     &                         xioo_ghost(i+i_off,j+j_off))
+                      bi(i,j) = bi(i,j) + fac2*b1(k,mbar)*
+     &                         (xrol(k)-
+     &                         xroo_ghost(i+i_off,j+j_off))
                   endif
               enddo
-          endif
+          enddo
+      enddo
+
+      ! Flatten 2D arrays to 1D for output
+      do j=2,jx-1
+          do i=2,ix-1
+              k = (i-2) + (j-2)*(ix-2) + 1
+              rhs1(k) = br(i,j)
+              rhs2(k) = bi(i,j)
+          enddo
       enddo
 
       return
