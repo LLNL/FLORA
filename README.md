@@ -1,11 +1,11 @@
 # Flora Equilibrium and Stability Code
 
 ### Documentation and Papers
-User manual    [FLORA%20User%27s-,Manual,-UCID%2D20400%20(April%201985)](FLORA%20User%27s-,Manual,-UCID%2D20400%20(April%201985))
+User manual    [FLORA_User_Manual.pdf](FLORA_User_Manual.pdf)
 
 Caponi, M.Z., Cohen, B.I., and Freis, R.P., Stabilization of Flute Modes by Finite Larmor Radius and Surface Effects, Phys. Fluids 30, 1410 (1987).  [https://doi.org/10.1063/1.866254](https://doi.org/10.1063/1.866254)
     
-Dobrott, D., Kendrick, S., Freis, R.P., and Cohen, B.I., Magnetohydrodynamic Stability of Hot-Electron Stabilized Tandem Mirrors, Phys. Fluids 30, 2149 (1987).  [https://doi.org/10.1063/1.866254](https://doi.org/10.1063/1.866254)
+Dobrott, D., Kendrick, S., Freis, R.P., and Cohen, B.I., Magnetohydrodynamic Stability of Hot-Electron Stabilized Tandem Mirrors, Phys. Fluids 30, 2149 (1987).  [https://doi.org/10.1063/1.866149](https://doi.org/10.1063/1.866149)
 
 Post, R. F., T. K. Fowler, R. Bulmer, J. Byers, D. Hua, and L. Tung. "Axisymmetric tandem mirrors: stabilization and confinement studies." Fusion science and technology 47, no. 1T (2005): 49-58.   [https://www.osti.gov/servlets/purl/15014491](https://www.osti.gov/servlets/purl/15014491)
 
