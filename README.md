@@ -3,8 +3,11 @@
 ### Documentation and Papers
     [User manual] [FLORA User's Manual UCID-20400 (April 1985).pdf]
 Axisymmetric Tandem Mirrors Stabilization and Confinement Studies.pdf
+
     [Caponi, M.Z., Cohen, B.I., and Freis, R.P., Stabilization of Flute Modes by Finite Larmor Radius and Surface Effects, Phys. Fluids 30, 1410 (1987).][https://doi.org/10.1063/1.866254]
+
     [Dobrott, D., Kendrick, S., Freis, R.P., and Cohen, B.I., Magnetohydrodynamic Stability of Hot-Electron Stabilized Tandem Mirrors, Phys. Fluids 30, 2149 (1987).][https://doi.org/10.1063/1.866149]
+
     [Post, R. F., T. K. Fowler, R. Bulmer, J. Byers, D. Hua, and L. Tung. "Axisymmetric tandem mirrors: stabilization and confinement studies." Fusion science and technology 47, no. 1T (2005): 49-58.][https://www.osti.gov/servlets/purl/15014491]
 
 ### Compatibility:
