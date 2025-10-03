@@ -1,6 +1,6 @@
 # Flora Equilibrium and Stability Code
 
-### Documentation and Papers
+### Documentation and Papers:
 [FLORA_User_Manual.pdf](FLORA_User_Manual.pdf)
 
 Caponi, M.Z., Cohen, B.I., and Freis, R.P., Stabilization of Flute Modes by Finite Larmor Radius and Surface Effects, Phys. Fluids 30, 1410 (1987).  [https://doi.org/10.1063/1.866254](https://doi.org/10.1063/1.866254)
