@@ -5,7 +5,9 @@
 FLORA solves, in a 2-D domain (radial and axial dimensions) with a specified azimuthal Fourier mode, for the linearized stability of a long, thin, axisymmetric plasma equilibrium in an applied magnetic field. Before the stability equation is solved, FLORA solves a set of simple equations for pressure balance that specify the equilibrium magnetic field and plasma pressure in the long-thin limit given a simplified description of the magnetic coils. It uses an initial-value method for the linear stability problem in which an equilibrium is given an initial perturbation to its magnetic field, and the temporal behavior of the perturbation is followed. The perturbation has been Fourier expanded in the azimuthal coordinate; each azimuthal mode must be examined separately. The complex partial differential equation of motion for the perturbed radial displacement of the field lines is solved as a coupled system of two real p.d.e.'s and the solution consists of two parts, the real part and the imaginary part. The system is solved by bringing the coupling terms in each equation to the right side and using an iterative technique. [Here](docs/Flora_archive_abstract.pdf) is the full abstract with references.
 
 ### Documentation and Papers:
-[FLORA User Manual](docs/flora_manual.pdf)
+[FLORA User Manual](docs/flora_manual.pdf)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Addendum: [Limitation of FLORA equilibrium package](docs/Comment_on_FLORA_Equilibrium_Solution.pdf)
+	
 
 Post, R. F., T. K. Fowler, R. Bulmer, J. Byers, D. Hua, and L. Tung. "Axisymmetric tandem mirrors: stabilization and confinement studies." [Fusion science and technology 47, no. 1T (2005): 49-58.](docs/Axisymmetric_Tandem_Mirrors_Stabilization_and_Confinement_Studies.pdf)
 
