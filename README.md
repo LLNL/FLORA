@@ -6,8 +6,11 @@ FLORA solves, in a 2-D domain (radial and axial dimensions) with a specified azi
 
 ### Documentation and Papers:
 [FLORA User Manual](docs/flora_manual.pdf)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Addendum: [Limitation of FLORA equilibrium package](docs/Comment_on_FLORA_Equilibrium_Solution.pdf)
-	
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Addendum: [Limitation of FLORA equilibrium package](docs/Comment_on_FLORA_Equilibrium_Solution.pdf)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FLORA cases from archival microfiche. Scanned into pdf.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Microfiche set 1](docs/BOXU21_FICHE_SET1)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Microfiche set 2](docs/BOXU21_FICHE_SET2)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Microfiche set 3](docs/BOXU21_FICHE_SET3)  
 
 Post, R. F., T. K. Fowler, R. Bulmer, J. Byers, D. Hua, and L. Tung. "Axisymmetric tandem mirrors: stabilization and confinement studies." [Fusion science and technology 47, no. 1T (2005): 49-58.](docs/Axisymmetric_Tandem_Mirrors_Stabilization_and_Confinement_Studies.pdf)
 
