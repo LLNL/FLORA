@@ -1,0 +1,266 @@
+box uel
+graflib:gesO204ekcsO0204e2
+
+10:42:0508/06/8e2 ec
+
+box uel§s
+
+graflib:gcesO204ekcsOe04e
+
+10:42:0308/06/8e2 ec
+
+at: 3.12500Ae-11
+xs G
+yx 39
+total time steps - 2480
+no. of iterations > 4
+bias» 0.01088
+ratrod: 1. 0@8828e+82
+drift freq. (omegst) + 6.14023730e+08
+rotation freq. (omegr) - 6.14023738e+98
+e x b freq. (omegexb) - 1.22884746e+99
+fir- 1, 00880000e+00
+sf6- 1.008880000e+02
+sf8- 1.00000002e+00
+enbar: @.
+kplot: 349
+kzs- of
+valfk + 1,.608000@00e+2a0
+cpu time + 8.5367906@e+13
+i-o time + 1. 74072300e+12
+sys time + 9.5912820@e+12
+
+N
+@
+>
+a -
+a Oct" ™
+" BOT
+er 080
+890°
+Bho °
+“4 020°
+o os Ss © 8 ® 8 8 ®&
+Se )owe8 Mn 8 HY f& YH 8
+Nn —- =—-§ © 8 8S = = W
+I f {
+
+xP (Z-psipi vs z
+
+xe (2Z.p8ip) vs z
+
+xr (Z-p8ip) ve z
+
+85
+
+e & &
+Ss w 8&
+
+© i
+(G!G0°Z) sx!
+
+os Ss s&
+Ep) & up
+t.>) ~- —_
+i ' ‘
+
+(9160°Z) ux
+
+8
+
+S
+
+N
+‘
+
+8
+
+in
+
+—
+'
+
+-.250
+
+
+xf (2.psip)
+
+[
+Qe 8&2 © &
+on £— NN
+eS ® ® ®
+
+-. 180
+
+xr (Z-psip) vs z
+
+- 248
+
+xe (2p.p8i) 8 pei
+- 780 - 680
+
+xf (2p-p81) vs psi
+
+- 508 4006.
+
+xe (2p.psi)
+xr (zp.psi)
+
+-~.68
+Qo rr & i) =) =) A) eo 7 © =) Ss =) =) i)
+i) i i) i) & =) i) i) i=) if =) =] =) i) i) i)
+_ N Coe] > wn wo oy WN ‘n * Tp) Te)
+psi psi
+xr (zp.psi) v8 psi xr (29.99) ) vs ps)
+
+“48 622
+. 302 , od
+- 206 r ,
+~ hea ~  .30
+a -. 10@ a ae
+8 -.204 8 _ anc
+< --30G ~ a
+% -_ 4BE x -. 106
+-. 500" Oe
+-. 60003 -
+-.780E “3
+~. 6085 =) =) =} = = =} ; + Se =) i) © S °
+Se + @& & & ® ® ® + &® & & & GS ®&
+a CS ” +_ in ‘ cw rN) m > un wo
+
+xr (2p.p3si)
+
+®
+&
+
+s
+=
+
+2.88
+
+Cv 3.00
+
+xr (2p.p81) vs psi
+
+4.08
+
+xe (zp.psi)
+
+xe (29.981) vs psi
+
+®&
+®
+N
+
+© 3-22
+
+4.00
+
+5.08
+
+6.08
+
+xe (zp.v)
+
+xr (zp.v)
+
+xe (zp.v) vs v
+
+i)
+e
+mM.
+
+6.88
+7.00
+
+6.08
+7.08
+
+xf (zp.v)
+
+xe (zp.v)
+
+0.08
+6.88
+7.08
+
+is)
+®&
+
+®
+™”
+
+4.88
+5.88
+6.88
+7.08
+
+xe (zp.v)
+
+1
+
+E+4) =]
+2.38
+
+xf (zp.v) vs v
+
+S S =
+
+=) iS) =)
+
+° ®
+
+m =a un
+v
+
+6.88
+
+7.88
+
+xr (zp.v)
+
+xe (zpev) ve v
+
+> oe) & & & i] i)
+-_ i) v > un w
+
+xr {kplot) vs t¢
+
+|
+
+- 988 fF
+
+- 768
+- 588
+
+- 308
+- 168
+-. 188
+
+(40)0) sx
+
+-. 308
+~.588
+-. 708
+
+22°9
+
+80°S
+
+BB"h
+
+GB°E
+
+82°9
+
+G8°h
+
+BB"E
+
+box uel§
+
+graflib:gcsO204ekcsOed4e
+11 frames
+
+10:42:0308/06/8e2 ¢c
+

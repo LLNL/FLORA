@@ -1,0 +1,595 @@
+kinetic energy
+
+ener gy
+
+total
+
+kinetic energy vs time
+
+£+43
+
+£437
+on
+
+£431 °
+
+£+25 °
+
+E+19 :
+e
+
+£+13 pa
+So
+a.
+
+E+7
+
+E+]
+
+a?7 VM eH wo KE oF &
+“ a a a a
+time
+total energy vs time
+
+€+43
+
++377
+
+E+31 a
+@
+
+£425 2
+
+£+19
+oe
+
+£413 3
+
+potential energy vs time
+
+-2,8
+
+-2.§
+E+46
+-3.8
+
+wo ™N Lae] ka] un wo ~ to =] nn @&
+@ | e « e e e r ry . e
+ve) ~
+time
+total relative energy vs time
+E+8
+§
+E-1
+5
+we ~ mn kal uf Oo ~ [> =] ~r t. ~]
+a ry ry ° e . ry e « e
+ae ”
+
+time
+
+oname
+an
+bias
+\max
+nmax
+nd:ag
+nen
+fil
+fizx
+fyl
+
+f yen
+ex®
+ex
+fps:
+fu
+
+fv
+
+fz
+kplote
+kzs
+yfour
+nfourp
+
+. - - = e - -
+
+- = 2 2
+
+a 7 . . 2
+
+nfourmax «
+
+$f6
+sf6
+svg!
+$ug2
+svg3
+swo4
+¢
+
+—m—m ee DON — — & S&S D&S &S DS — 1 — — oe
+e
+
+r@ 3.916212416664-1143 @. @. @,
+|
+1.e-82
+
+Oo fh -—
+@ @&
+L.-J
+
+aan cn —_
+
+an
+{- -
+~~]
+
+echarg
+rw
+
+rul
+psihrel
+dpsihrel
+psi@rel
+nsloshin
+cole
+z3rel
+dip
+psisip
+ncenter
+betsish
+betcent
+rpl
+bceng
+xpot
+ypot
+vpot
+betcene
+betsise
+betring
+psilrel
+psi2rel
+p2vide
+psi 3rel
+pele
+p2evide
+psiBerel
+p2fioor
+pzfiag
+pif loor
+fring
+long
+betpas!
+ppas2
+dpasi
+ditrap
+ppes3
+betrap
+)
+
+e . a e *
+
+9
+
+bax]
+bax2
+bax3
+ban
+ban2
+ncorl
+zic
+z2c
+zac
+zlain
+z2ain
+as
+
+als
+dphi
+phicen
+phiplg
+kin
+bceng
+epsp
+ztrans
+\ trans
+z7max
+
+theta®
+pfudge
+¢
+
+2
+
+68.
+
+95.
+
+97,
+
+Q.
+
+Q.
+
+18, 18. 18.
+
+1.e-85 1.e-85 1.e-85
+
+* = = = ° - 2 2
+
+this problem run by xfilm6
+
+problem identification : tanh prole
+
+dt: 5. 808008e-08 Ke 68 yee 40
+
+totel time steps : 208 no. of iterations © | bias: 8.81888
+fir: 1.000808808e+08 sf6- @. sfé-. 8.
+
+kplot: 1844 kzs° ]
+
+cou time «© 1.718042258e+13
+1-O time + 3.28727988e+12
+sys time + 1.20357688e+12
+u exponent (xu) : 1. 08808800e+00
+ve exponent (xv)+ 3.321928809e+88
+bani» 2.98922623e+84 bel+ 3.85468754e+84 bv3: 3.187671) 7e+84
+total energy rel. error: 6.8061724Be-62
+potential energy: -3.89782129e+46
+kinetic energy: 2.91718545e+46
+
+r(1S5.¥)
+
+ZvS Ue (Z°consteurexul
+
+@ ee ea ee @ @& @®
+-—-— NN MO FlLlULWHlULUUCOUCUlUlC lM]
+
+U
+r(1S.v) vs v
+
+100.87
+98.8
+68.8
+76.8
+68.8
+58.8
+48.8
+36.8
+28.8
+18.8
+
+psi
+
+188
+
+— — =e ae oe AS AD AD
+oe e,lUmUmUC—COmUCUM
+
+om
+pee
+
+= se s.,.,—0UClCUO .
+“MW ££ MOSH FMW Sn c
+
+“hs
+
+psi VS Ve (pSi-consteverxy)
+
+Nps © Oo SN SS © CO SN
+e@ e e e e ° e s e * e e
+
+ps)
+
+VS.
+
+flute2
+
+WM - W © SN + © © @ w
+[ en)
+
+psi
+
+VS.
+
+2 =
+e
+e
+.
+.
+°
+mn * WOW © Sn fF ©) © @S Ww
+e .
+
+flutel
+
+* e ° . . ° ° . o .
+
+4
+—_ tamed ore: _ cm oe
+
+CON] J
+
+Taint
+
+.
+we
+
+e e e e ®
+
+psi
+
+psi
+
+psi
+
+VS.
+
+garaukb
+
+psi
+
+VS.
+
+fiute3
+
+. . « . ° . ° * . . ° oe «
+
+qynwei
+
+ow zr nun @ ODO OO =
+oe Lo s e es es
+
+EIN §
+
+" i)N Ff OW @wOoener weoeenw ®
+@ @ @ @ 8 @ @ @ a
+
+Re s
+
+AN SF OW @©O &S WN 77> © © &S ww
+® . e e e e e
+
+e e °
+_—_- — os NS OY
+
+od
+
+psi
+
+psi
+
+eech 20th tine
+
+wo cad ™N = wo wo > Nee «
+. e . . ° e r ~w @
+oon: — -~ —_ >
+
+tad
+
+ue lz.poel 200) ve z
+
+(6966°2) ax
+
+eech 20th trae
+
+ne (zopectl 200) ve z
+
+3.5
+3.8
+
+&
+° ° e
+—~
+
+2.5
+
+(@sedoz) ax
+
+uf (z.psep)
+
+af lz.psip)
+
+nf lz.psel 203) ve z eech 20th tine
+
+
+xe (zp.pse)
+
+ue lz 30).p90) ve pes
+
+eech 20th tine
+
+ae (zp.pse)
+
+aa]
+-
+
+xe(z( 30).p80) vs ps:
+
+wr.
+e
+
+eech 206th
+
+t.ae
+
+
+ue (zp.pse)
+
+ne (zt 18).ps0) ve pa» eech 20th tree arias 15).ps.) vs pss eech 20th trae
+
+ges
+
+a) 1.6
+3.8 1.4
+2.5 = 1.2
+2.0 = 1.8
+a
+~ e
+1.5 Pa 6
+ed 6
+1.8 4
+.5 2
+£+7 £+28 .
+8. e ben > we = N 2 Wwe "eo ww
+
+ue (zpor)
+
+ne lz( 30).¢) ver.
+
+J
+@
+J
+nm
+
+4.88
+
+eech 20th tine
+
+5.8
+
+6.88
+
+ur (zp.e)
+
+uelz( 30).¢) ve ¢.
+
+° « .
+NS  — fo)
+
+er.
+
+° ° o s
+°° @ro —-— mo [+ +) t. ~]
+
+eech 26th tine
+
+ue (zp.r)
+
+ue fz 16).¢) ver.
+
+each 26th 1 16e
+
+ue lzpr)
+
+ur f(z 18).¢) ver. eech 26th trae
+1.8 —
+
+nm
+>
+
+C - ,  e |
+- On ££ 7 Oo B® KH S&S MH
+
+8
+2.8
+3.2
+4.88
+5.8
+6.88
+7.88
+
+xr (xplot)
+
+xr (kptot} vs f¢
+rT seen ™ T T ¥
+
+a — =
+° ° ° . e eo .
+— Oo 4 [> 2) fe +] t- -] caw] C4 a
+
+7
+
+es
+& re
+- &
+
+1.
+
++15 5
+€+17
+£415
+£13
+Eel
+£+9
+€+7
+€+5
+E+3
+Eel
+€-1
+€-3
+
+
+line bending energy
+
+E-6
+E-22
+£-36
+£-54
+£-78
+£-86
+_ E-182
+E118
+
+£-134
+
+ener gy
+
+£-158 ~
+
+line bending energy vs time
+
+ON ia] _ wo wo ~ f> =] no t- -]
+@ e e e ° ° e ry e
+
+-_
+
+time
+fir energy vs time
+ee cee ae ae
+
+Namen!
+NI o~ ba uf wo ~ [+] i= 2) [~~]
+° e ° ° ry * e e °
+
+_
+
+time
+
+curvature energy
+
+curvature energy vs fime
+
+E+46
+E+48
+€+34
+E+28
+£+22
+€+16
+E+18
+
+Ey
+
+E-2
+
+wwe N mo al [Ye] wo L to =] mn @
+° e e ° e . e e . r)
+
+-_
+
+time
+
+box u2
+nmfecc output
+graflib: XXX XK XXX
+
+18 frames plotted
+
+f3plot00 (family 1)
+15:45:0809/21/84c
+dropfile name = +xflmba
+fr80 driver 3.1
+
+

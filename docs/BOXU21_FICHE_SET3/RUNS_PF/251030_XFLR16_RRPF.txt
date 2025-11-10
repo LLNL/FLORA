@@ -1,0 +1,454 @@
+box uel
+
+graflib:gcsO20¥ehcsO0e04e
+
+C2:27:5410/e2/8e c
+
+box uel
+
+graflib:gesOe°O04¥ekcsOe0te
+
+ee;e/7:5410/ee/B8e c
+
+this problem run by xflriS
+
+dt: 6.250000e-11
+
+1X 30
+
+ye 38
+
+total time steps - 2480
+
+no. of iterations + 4
+
+bias: @.01000
+
+ratrod: 6.080000e-01
+
+drift freq. (omegst) + 7.46838632e+08
+rotation freq. (omegr) - 4.47623299e+08
+e x b freq. lomegexb) + 1.19366213e+09
+fir> 1. 00@00088e+02
+
+sf6- 1.80000000e+00
+
+sf8- 1.08000000e+00
+
+enbar: @.
+kplot: 349
+kzs° l
+
+valfk + 2,.50080@00e-01 _
+cpu time + 68.47758880e+13
+i-o time + 1.83431788e+12
+sys time + 9.20743808e+12
+u exponent (xu) * 1. @8000008e+00
+v exponent (xv): 3.32192889e+08
+en@: 1.80080880e+14
+bO- 1.00008080e+O4
+m= @.00800000e+00
+
+r( 7ev)
+
+Z VS Ue (Z*cONSt*Us*xU) psi vS ve (psisconsteverxv)
+
+op 2.20
+
+vie 2.08
+
+' ea 1.80
+
+98 1.60
+
+88 1.40
+
+78 5 1.28
+
+68 * 1.00
+
+58 .80
+
+.62
+
+2 48
+
+18 at
+Q © 8086068 8008 @ @ © & 8 ase
+[AM TRER SASK AN Nh
+
++
+4
+.68
+88
+1.098
+~ 1.20
+1.48
+1.69
+1.80
+2.00
+2.28
+
+r( 7.v) vs v
+
+3.58
+3.88
+2.58
+2.88
+1.58
+1.08
+
+90
+
+oe os
+eo A
+“nN A
+
+xe (2.9819)
+
+xf (zpsip)
+
+xe (z.peil 16)) ve z
+
+each
+
+xr (2.9319)
+
+xe (2.93ip)
+
+
+xr (Z.psip)
+
+xr (2.p8ip)
+
+xe (2.
+10@F '
+
+ps. ( 15)) ve z
+
+eo ©@ 8 @& &
+Nm mr MM OO
+
+- 78
+
+eech
+
+6Oth tine
+
+xe (Z.p3sip)
+
+xe (2.p3ip)
+
+eS ®
+_ CQ
+
+e e
+wre om
+
+e ®&
+gS «
+
+® e
+-_— one
+
+®Q
+N
+
+e
+—
+
+
+xe (2p.psi)
+
+xt (2p.ps8it
+
+xe (zt 16).p9.) ve ps: eech 6Oth tine xe (z( 16).p991) vs ps: eech 66th tine
+
+xe (z2p.p3i)
+
+ere 8 8 ®& e 2 28 8 ®& ere ec 82 282 8 8 8 2 @ ®&
+Q+n * © © Bn rr © HD ®& Oo+n > © © 8 WN > oOo © ®&
+eus @ e ° e e e e e . e eu ° . . e e e .
+
+psi
+
+Goth time we (z( 16).pe0) v8 ps! eech 68th tine
+
+xe (2p.psi)
+
+@ ees oses8 8&8 & 8
+oo ea n es © © 8
+_ “- = = A
+
+
+xe (zp.p9i)
+
+xe (zp.p9i)
+
+xe (z( 18).ps80) vs per
+
+eech Goth tine
+
+xr (2p.psi)
+
+xr (zp.psi)
+
+we (z( 15).p99) vs ps: eech 68th time
+
+©® © & ©® 8
+xn * © © 8
+— se mm ON
+
+xr (z( 15).p90) vs psi eech Géth tine
+
+eo ®& ®&
+Oo © ®&
+
+e e .
+-_ _ N
+
+xr (2p.psi)
+
+xe (zp.pei)
+
+wr (2(
+
+7).per) vs pe
+
+eech 68th tine
+ion een
+
+xf (z2p.981)
+
+erS © © @® © 8 8® 8&8 & ®
+ea+n + Oo WO Nn F- © © 8
+* us rr a a a ar \
+psi
+xe (zt 7).ps0) vs ps: eech Géth tine
+Y.BR\Y> | —_, —_
+2.0
+Q. .:
+-2.0 =
+~4,.@ &
+-6.0 &
+7
+-8.8
+-18.8
+-12.0
+ero © © 8® 8 @® 8 8 8 8
+en5 78 Seu zea 8
+— et wot ot = 6A
+
+xe (z() 7).p81) vs psi eech 66th tine
+
+QazrO 8 8 8 82 2 8 8 8& @&
+Qn = 0O© © BB NN r Oo © ®&
+euuy « e e e ry e e oy °
+ome -_ -_ -_ -_ A
+ps!
+ur (z( 7).ps1) vs ps:  eech
+
+6Eth time
+
+xe(zt) 7).pe80) v8 ps
+
+eech 68th tine we (z( 7).p91) ve ps: eech 66th time
+
+188
+4)
+on ,
+- ‘ -
+8 -1004: a
+eo ‘ e
+a 6 8
+~ -208 ~
+x x
+- 300} %4
+-408
+Qen > © © @®& N > 6H o ® Ben x fe) Lo] QS N = of oOo 8
+wun & e e s s . . e e e eus ¢ e e e e ° e e e *
+— ~ -_ -_ -_ WN -_ oe ~ -_ NA
+psi psi
+
+ue (zt 7).p9.) vs ps: eech 68th t:ae
+
+xe (2p.p3si)
+
+
+xe (zper)
+
+ue (z( 16).°) ver. each 66th tine we(2{ 18).0) vere eech 68th tine
+
+xe (zper)
+
+-58
+
+i-*]
+e
+
+e
+ont
+
+1.58
+* 2.00
+2.58
+3.00
+3.50
+
+ert! 15).r) vate | eech GOth tine xr (z( 15).¢) var. eech 68th tine
+
+2.8 10.0
+OP Ho gayg TE a.
+-2.8 © 10.8
+-4.8 & -20.0
+-6.8 K -38.8
+-8.9 -48.8
+-10.8 “50.8
+ss -68.8
+
+1.50
+2.08
+2.58
+3.88
+3.58
+1.88
+38
+2.88
+2.58
+3.80
+3.508
+
+xf (zpor)
+
+xe (zpor)
+
+ne (zt 18).°) vs re
+
+58
+1.58
+
+2.80
+
+eech 686th tine
+
+xe (zpor)
+
+oe i.~) =]
+uw tm] w
+
+e e e
+N om ap]
+
+we (zt 18).°) ver.
+
+‘e
+wn
+
+eech 66th tine
+
+2.58
+3.08
+3.58
+
+eech 68th tine
+
+xe (zpor)
+
+xe(z( 7).¢) vere eech 68th tine mpiz( 7dr) vs re eech 687th tine
+
+xe (zper)
+
+eo 8 8 8 82 & Q =~) i) & 8 =~) &
+e e e e e e e . e e ° s °
+_-_— mom NS NOOMOOUmM o— _ N N ~ ~
+
+=)
+=
+
+eech 66th tise wr (z( 7rd) ve re eech 66th tine
+
+xe (zper)
+
+eg S & e& & & &
+uw & w e& uw GS uw
+~ — AN WN ioe) mo
+
+
+xe (zpor)
+
+ue (zper)
+
+xe(z() 7).e) vere esch 68th tine ee (zC) 7).f) vere eech 68th tine
+—1 7 —t Fe, :
+
+7
+
+180 See
+8 P. Q
+: c
+-180 _ e -588
+. 8
+-208 R & - 1080
+. - 1580
+~300
+a0 -2002
+~488 y
+e eo 8688 °° eS =) =) ~ 2588 eo oe 8 =) ry e eC)
+uw r=) w =) Ws =) wn wn e in ro) un =) wn
+. = _ N wy m” ~— ° ~ - CY QC) - (ve)
+r r
+eech 66th tine ur (zt To) vO Fs eech 66th tine
+
+xe (zper *
+‘
+Py
+®&
+
+1.86
+1.56
+2.88
+2.58
+3.08
+2.58
+98
+1.68
+1.58
+2.82
+2.58
+3.80
+3.58
+
+xr (kplot)
+
+yr (kplot) vs ft
+
+2.00
+1,08
+
+-1,.08
+~2,.08
+-3. 80
+-4.00
+-5.08
+
+E+4
+~6. 80
+
+-68
+-88
+Ti
+
+i) i) ®&
+~~] N a
+
+e °
+ow _ L oxald
+
+
+box uel$
+
+graflib:gesOceO¥ekcsOeOte
+16 frames
+
+Ce:27:5410/ee/8e c
+

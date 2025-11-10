@@ -1,0 +1,2460 @@
+subroutine adummy
+
+Crires Gliche storage set up here
+
+arr ar)
+
+¢c
+S
+¢
+
+¢
+
+c
+
+Cc
+
+*
+
+Cc
+Cc
+¢
+¢
+
+ananaannanann
+
+nana
+
+cliche param
+parameter ()2«260, jJru2d0, fzx2etzx-2 |
+parameter ( Ithwe2eizx-1
+pacameter (Kkepa(izx-2)8(jru-2), thwatzxe-1 |)
+parameter (np lt=3000, nps2z100 |.
+parameter (ixpfeda(izx-2) nfourxf#150)
+parameter (ixpge2tizn2)
+
+parameter (neng=500)
+parameter (ksim=51)
+endeliche
+cliche fstor
+use param
+common/fun/fllizx,jrnl factax frei F3(tzn, jrul fFalizn, fre)
+FBC tam, Jredl FT Cb aw, jel,
+
+gli(tzx,jJrnl g2lten, fern) gdlizx,jrul, gh4lizxn, jee
+,swgl,swg2,swg3,swgA
+
+common/equil/blizx,jrx),rholtzx,jrx) qublizx,jexl eltzx,grn
+PHI Clax, Jem) yyy (tan, Jed, wae tax, jee) qvudtzx, jew)
+common/pertur/xiool(kKxp), xlol(kxp) , xniollkxp]
+»xronlikxp), xrolkxpl, xrollkxp!
+endcliche
+
+cliche matrix
+
+use param
+
+common/covff/ai(kxp, 9} ,a2ikxp,9) ,aclkxp, 9) ,bt(kxp,3)
+rhet(kxe), rha2ikxe!
+
+unnamed common for dynamic memeory expansion
+
+common wwil)l, wwtfll
+
+endcliche
+
+cliche const
+
+use param
+
+common/title/aname(&|
+
+common/con/gam! ,gam2, tx, Jx,mm,tzxp Kun, nmax, lmax, sw, thow
+,fact, face, bias, du,dv,dt, ndiag, x0, bO rhoO ext, fil ,fizn, fj
+ifjen. kplot, new, fpsi, fz, fu, fv. dam, apsin, u0, v0, amass ,nengx
+,fourp!,omegst,omegr, omegexb, fir, sf6,sf8,kKplotm,kKzs, zedge
+‘epuo,cio,syso, valfk, xu, xv,n. pl, ve psiw,dvin,dvout, ltt,nen, lee
+
+common/conta/
+
+ps'Orel psitre! psi2dre!l, zirel,zerel,z3re!,zOrel nslosh, bag
+ncenter, pslosh pcenter rp, ztrans, trans, ba, ltran,ztran, rpt
+been, pring, epsp,phicen, phiplg, kin, xpot, ypot, weot pfudge,rpx
+phice.phipl, betsish, betcent,20,21,22, 23, z4, psit, psi2, psid
+_betcene, betsise, psloshe pcentee, bax, alsi, bat, psist, cold
+‘p2wide,psi3rel, pst3,pimax,bv0, bvi bva, beeng, psloshin, psloshen
+insloshin, expel. pxp2, p3a, p 3b, p3c, e3d,psinm,pel0,ael, bel .cel,detl
+.pslOerel, psiOe,psime plewide, wp2e p2floor, plfloor, p2flag
+fring, tong, no3d,notd,dphi, dip, psistr, psisip, psihrel, psth
+\dpsthrel, dpsth.er, rewall, exrho
+
+common/pcons/atO,bt0,ctO, cp0
+
+apl,dp2,4p3,atl,at2,at3, bp! dp2,bp3, bt! bt2,bt3,cpl,cp2,cp3
+sett, ct2,ct3, bmxt, bmx2,omx3, ban! ban2, ppas!, ppas2, ppas3 pitrap
+,2le,z2c,23¢, 21min, z2min,as(3) ,als(3), 2813) ,b8(3) ,dpas!,ditrap
+,betrap,bete sl ,bvx2,bvx3,ncoil,z2ct
+
+common/mesh/psi(jrxw),zlizx),ulizx), vijew) dpsiljrxwl dz(tzx)
+
+c ,vpsi(jex), uuzlizx), vpsthijrx) uuzhlizx)
+common/graf/ xrtimeinplt),xespz(tzx,nps), xrsppsi (jrx, 2¥nps )
+c ,time(nplt),xflute(t{zx,nps),enpot(neng!, tenergy(neng}
+x venkin(neng), timengy(neng!, tenrel (neng! ,enbendineng!
+c ,encurvel(neng) ,enfirineng!
+common/curveo/er, lb rw, beta0,delrho, stable, en0,cee 0,
+c echarg,omeg! ,omeg2 en! ,besarg,z0! ,dtrel ,p0, omegO
+c ,omanal,omanad,groana, thetad
+common/tmcon/hi2(tzx) bzteOlizx) h3dlizx) abplizx) bbplizx)
+,ebp!izx) ,abflizx) ,obf(tzn) cbfltzx) hp3ljrx) hpleljirx}
+Atransliex), abglizx), bbaltzx!, ebqlizx) ,ebplizx)
+Lfbplizx), gbp(izx), betring, heOljex), hem(irx) hpmeljen) bf lr (pro)
+hzpOltzx), hepllizx), hzp2l(izx), hep3lizx), hatilizxl, hzt2lizx)
+shztedtiz2x)
+common/tmfield/bvac(tzx) ,dbvdzlizx! ,d2bvdz2(izx),dptdpst (jrx)
+
+Aranaann
+
+¢ ,pllirx) pikiksim, jew) bpklaiksim) hpkOlksim) deliliksim)
+
+¢ ,deli2tksio) delid(ksim) delidiksim) czziizx,jrx!) dbdpsilizx,jrx)
+c ,phitlize) phi2tizx! pperplizx, jen) pparclizx,jex)l dflutedlizx)
+
+e ,qubv(tzx, jen) p2ljrx) dpedpsil(jre) dflutet(izx) dflute2lizx)
+
+ec ,flutel(jex)l flute2(jeu), flute3l(jrn)l pekiksim, jrwl, deliS(ksim)
+
+c ,pperps(izx,jJrxlv,errprplizxe,jerxl,errpril(izk2,jrx-1)
+
+c¢ ,pperpel(izx,jrxl epstlizx,jrxl, omegtwkbljrx), omeg2wkbljcx)
+
+c ,gamwkb(jrx«), dflutedlizx!, rhoaveljrxl, xxxaveljrxl, yyyavel(jrx)
+
+ec ,pet(jrx), dp2dpstijrx), p3ljrx), dp3dpsi(jr«), hpkm(ksim)
+
+c ‘Apkme(ksim) ,droaveljrx),drotermlizx) ,eringlizx,jrx!
+
+common/forzed/nfour ,nfourx,nfourmax,nfourp, jfour,ixp, tocy
+
+real lb, !ttrans, tran, nstosh,ncenter ,nsloshin
+endcliche
+
+return
+
+end
+Crreay the main routine
+PES SSCUCCCCLCCS COSC CSCS TO CC SECC S CCC OSS STS CeS Cesc ets i esr taese eset eetees es |
+c *
+c FLORA is an initial value stability code develsped by R. Freis and
+c B. Cohen, based on Newcomb's long thin axisymmetric formalism, including
+c finite larmor radius effects. FLORA calculates the linear response to
+
+low frequency perturbations of the equilibrium magnetic field
+
+0
+
+PESCTCCLCSCSCTOCSCCCCOCSL ISSCC TCCSCCSCCTICCCCTCCCCCSSTCCSCOSCSECTOCOCC CSCC SC CC OSS.
+
+Cress. notice of 4/8/82, this version runs correctly for isw=1, and
+C.eees TUNS Correctly for isw=-!
+
+c....,5/12/82. flora runs testcase 1 , 0 beta, 0 pressure, homogeneous
+C..... plasma, correctly.
+
+c..... floral transforms variables z,psi to u,v which are always equally
+Cr+, Spaced, transformation: zzautut&xu, and psizapsitvitxv, where
+Coeeee EMAKZUMAK, PSTmaxsvmax, and Fzezmax=futumax, Ffositpsimax=futvmax
+Cosas fz, fu, fpsi, fv, input, xuzln fz / In fu, xveln fposi / In fv
+Covey GUFUMAKKE(-KxeT) | Aapsizvmaxtel(-yyet) ,
+
+c.,... flora2 solves test case 2 , rotating rigid rotor stability. ref:
+C..... fretdberg and pearlstein, phys fluids 2117) july 1978 1207
+
+c.....florad includes background constant density, enbar ( as does flora? },
+
+CO
+
+oan
+
+oOG
+
+oan
+
+OA Gaaonanana
+
+ano no 0
+
+o a0
+
+an
+
+on Ann
+
+on
+
+naanna
+
+NMAnann
+
+a a a ey
+
+-— - « -  «*
+
+-— © w@ © « -_ 2
+
+-_ « - -*- -
+
+. > = « - « -
+
+- -_ - 2 ©
+
+- o -
+
+oa 7 -— = © 2 « “ ry i. -_ - -
+
+» and kzs switch which when set to zero, generates initial perturbations
+
+. Independent of z tn random spatial generator (ex0=!,)
+
+is vectorized version of florad, (calls rightvec instaad of
+right ), also has timing routine from b, langdon (requires
+
+bzohar loaded as a binary |},
+» Insert cliche storage here
+
+- -_ *-* «
+
+. flora7 ts mod, floras, with pst stretching function
+. exactly centered tn amat, (florad used linea interpolation
+
+. to get vpsi(j*t/2)). Also revised diagnostic plots tncluded.
+Floral2 ts florall (rigid rotor with corrected equil, and
+
+. corrected curvature terms (floralO!) with fourier mode analyses
+. added ( using cpeft and rpft) and data for zed post processing.
+Additional tnput data: jfour (v index at which xr is analyzed in
+
+.z }, nfourp ( analyzo xr every nfour'th time step | nfourmax
+. (number of times the buffer is read to the history file), note
+. xr ts extended a factor of 4 to look like a@ periodic full wave
+
+. for ceoft, If jfour ts tnput 0, code sets it to jx/4 .
+
+»floral3 ts floral2 with curvature driven flute mode equilibrium
+
+.. lequtilrot replaced by equilcur, rigidcon replaced by curvecon )
+
+-_ « ~ -
+
+~  « -_ - -
+
+- » - - °
+
+my
+
+* -
+
+ifloratm, tandem mirror equilibrium
+
+sflertml, tandem mirror equiltbrium, with 3-d plet of equilib.
+quantities added. ( uses tv80 and graflib )
+
+wi flortex, tandem mirror equilb. with corrections to flortm!, In-
+., put switches swgl, swa2, swg3, swg4 added,
+
+eflortm2, Like flortex with revised electron ring, a la D'ippolita
+.le-ring pperp in b field only, and additional term in curvature
+
+, drive |,
+
+.flortm3, like flortm2 with corrections to pressusre normalization,
+
+. and additional diagnostics. ( 3-d plots of curvature drive-e ring
+», term, and perp. pressure balance check ) . also 3-d plots of
+
+pparéllel pressure check, and e-psi (=-dphit/dpsi } . Phi2 modified
+
+. to « s,-(psi/pst3iktypot ,
+
+-
+
+flortmd, modified plasma pperp with addition of p3lj) to give
+
+., @ positive slope near the center,
+
+..flortm5, modified pl in flortm4 to be two functions, pel and
+
+ee
+
+.. b dependence of ering pperp to took longer (by changing abf, bbf,
+
+» pe2, joined at psime with equal slope and value.pel=ael+belt(
+
+. flortm6, modified flortm5 as follows: for p2lpsille. to peflag
+. Input valuel, p2 set to p2floor (an tnput value! and pl set to
+
+(
+
+psi/psimel¢cel®ipsi/psime)##2, and pe2=.5#(1-tanh(l(psi-pside!/p2ewide) |
+
+an
+
+pifioor (an input valuel, Long-thin ering option added. This modifies
+
+cbf)
+
+if long ( an input value } = 1, otherwise leaves pperp of ring un-
+changed, Plot output options, nold=1. prevents graflib plots, no3d=1_
+
+prevents tvB0lItb 3d plots,
+
+flortmB (18 for larger psi grid) modified flortm6 as follows;
+
+ar ar
+Criea, the amalytic calculation of gamwkb corrected to include drho/dpsi
+Crseee term (tmportant In the limit of large exb rotation), also phil
+Crris, Changed to be constants in core and plug ( phicen in core, and
+Cryiys PHicent+dph! itn plug, dphi @ new input variable |}, Also b calculated
+Crosaee With expansion in low beta regions,
+Crrvee FlortnB, like flortlB with first order energy check added ,
+Corre eflemt Like flortn8 with multi region equilibrium,
+Crsyr. Bvae ts generated from 3 solonoids ( 1 choke cot! and 2
+Crosees Mirror colls), Pressures are the sum of passing and trapped
+Corer, COMpPONONtS, See the glossary of input parameters in subroutine
+Crrvey Inputtm for the revised list ,
+Corveeeflem2, elther 2 of 3 regions, depending on the nunber of scolonotds
+Creve, Specified (ncotl#2, or 3.) Im the tnput. For ncotl#2, no passing
+Crere, Pressures are allowed, and the situation is similar to sarlier
+Ciyees Vorslons, except that the vaccum flelds are generated by solonscids
+Crorray trnstead of circular filaments,
+Corea Flem3, Like Flerm2 with corrections to energy subroutine, Also
+Crevee OPtion to remove hollowness from pperp psi profile (dip20,), and
+Crosses Oring pst profile changed from quadratic to cubic tn inner region,
+Cyyrvaflem4, cold plasma halo modeled by changing zmax boundary conditions
+Crsees for pst > path (psthrel an input parameter |
+Crrees Flrm6, Like fFirm4 and firmS, (mixed boundary condition at zmax,
+Crssyy Higher order b, c,) with special yyy to force "rigid mode” in psi,
+Criir, Flrrot, modified firmG to study rotational stability with pos-
+Crosree Tttve density gradients, Set phi2iesti=er (a constant), add
+Crive, Phoe = a + b¥pst to rho ,
+use param
+use fstor
+use matrix
+use const
+data tim/1,e6/
+integer tallyb(2000b)
+common / QgBlocs/tocf (0:15)
+common/picl00/npete
+data itally/1/
+Cervye, stall Link call here
+call link('untteS9sterminal ,unit2sl(inf lm4,open! unit3=(output,
+c create) //')
+if(ttally,gt.O) then
+do 200 1i1#1,15
+200 3 ifliocfllil,eq.Olgo to 210
++120
+210 jioctally=ti
+toctally=t4
+ifltoctally,eq,Qlgo to 299
+call timer(toctally, 'ztally00', tallyb,2000b, floratia,1)
+299 ttally=-1
+
+Pz]
+
+# ee te
+
+agen
+
+eeeae
+
+10
+
+20
+90
+
+iswel
+
+1F(lex gti jrxliswe-t .
+
+jtbwe Sa (Veiswlkitbw+ Salt-isele(2ejrx-1)
+thow= S8(1+iswiltibas A(t tswleljrn-1)
+nnxjtbowkkxp
+
+nnl=zjtbwtkxp
+
+call memorylwwinn-t!
+
+call memorylwwi (nn), ant)
+namelist/noplot/nold,nod3d
+
+call ddi(noplot,2,0, 11
+
+iflmotd.me,ticall ostart(dev,4drptot,1,'box u2t$',1)
+npete=!
+
+ifimold,ne,licall pi100
+
+call tnput
+
+cail tnputtm
+
+,temporary Input to test three region model
+call tnptemp
+
+call rigidcon
+
+call curvecon
+call constant
+call tmeone
+
+call equiltm
+call equilrot
+
+call equilcur
+call fltoll
+call amat
+
+call comatiww,jtbw!
+
+call tnitial
+
+special version for testing fourter analysts and zed file
+maker ,
+
+call fourplay
+
+call fourter
+
+call mymovel(xrol (1), xrol(1),kxux)
+call mymovel(xtiol(1), xtol(1) ,Kxx)
+coll mymove(xrool(t),xrolt)  kKxex)
+call mymovelxiool) xloll), Keel
+call banfac(kxp, thow,ww,1,-(kxp-1))
+call energy
+
+t=0,
+
+do 100 n=1,nmax
+
+t=t+dt
+
+time(n)=t
+
+facl=-1,/dt
+
+fac2=1,/dt
+
+do 90 |=0, \max
+
+call rightvec
+
+call zmoveerdiwwillnan) rhst.kxx)
+
+call bansollkxp, thbw,ww,t.-(kxp-t),wwtinn) |
+do 10 j#2,jx-1
+
+kKp=leizxpe(j-2)
+
+call zmoveerd(xrol,wawtinn),kxx)
+continue
+call zmoveerd(wwil(an),rhs2,kxx)
+
+call bansol(kxp, thbw,ww,1,-(kKxp-1),wetinn) |}
+do 20 jz2,jx-}
+
+kp=lekxpe(j-2)
+
+call zmoveerd(xiol ,wwllnan) ,kKxux)
+
+continue
+
+faci=-,5/dt
+
+fac2= ,5/dt
+
+Guy
+
+ane
+
+100
+
+a]
+
+300
+
+Cay
+Gao
+Cae
+
+eee
+
+a ee
+
+qo
+
+call zmovewrd(xtoo,xlo,Kex)
+
+call zmovewrd(xto,xtol ,Kxx]
+call zmovewrd(xroo, xro,kKxx!
+call zmovewrd(xro,xrol Kel
+
+time array
+xrtimel(n)axrol(kplot)
+if (mod(n, ndlag!.eq,Olcal!l diagno
+if lmodin,nfourp) eq, Qleall fourier
+ifilimodin, nen!) ,eq.O},or (Il tt,ne,O) ,and,(lee.le.nengl call energy
+continue
+call ecladsk(tocv,0)
+c4ll timeused(itcp, io, isy)
+cpuozicpstim
+clozloktion
+sysoz{isyktio
+if inold,ne,1)
+call plesher
+call close(100)
+if(no3d,eq,ligo to 300
+call keep80(1,3)
+call frB0id
+call threed
+call plote
+
+continue
+call ttmend
+call exit(1)
+end
+
+subroutine amat
+
+calculates the matrix coefficients for al, a2, a3, bi, b2
+in the equation alex (nel) za2ex(n) sadan(n-Tlebityln)+baayl(n-1)
+uses fl to f11 from subroutine fltoll and equilibrium quantities,
+
+cliche storage here
+
+use param
+use fstor
+use matrix
+use const
+
+dimension bcljrx)l delcolljrx)!, delco2ljrx)
+data unit/1,/
+
+gam3=-gam2
+
+du2z=durxk2
+
+dt2zdt#t2
+
+dv2z=dvere
+
+dvtz2,%dv
+
+mezmmee?
+
+Jxejrx
+
+teelzx
+
+do 10 t=2,1x-1
+
+do 10 je2,jx.-]
+K1et-Te(p-2)e(ix-2)
+kK2=j-1e(pxw-2)8(i-2)
+
+k= Se(eiswitkt¢ S#(1-isw) tk2
+réer(t,j)eee
+
+vp=vpsi(j)
+
+uz=uuz(i)
+bijmh=(bli,plebli,p-1))8.5
+
+60
+
+c &rli-t
+
+¢ ¥ypsith(j-tler(s
+c Mvpsth(s-Tleels, J
+
+c Bvpsith(y-V)arci
+
+c avpsth(j)#bijphituzbartr (i-1, Jlemmeaoeb (i,
+c geimhjtg3li-t, J ledv2/vpsi(j))
+
+c Kvpsthi])#bijph)*uzbartr(i-1,
+c geimhjtg3li-1, J) dv2/vesilj))
+
+¢ Svpsthij)*bijph)*uzbar ke (i-1, | )+mmee2eb (4,
+c gdimhjeg3li-1,j)*dv2/vpsil(j))
+
+c ~bijphes2n(ghimhiphtgdiphiph) tvpsihtj)lardi,
+
+c mmeaxoeb( i,
+
+c -bijph¥s28lgdimhjphtgdiphjph) tvpsibtj } ac
+co mme82tbh( i,j )tuzbar tl g2imhjeg2iphj )*g3li,
+
+bijph=(bli,plebli, jet) )*,5
+
+bipljphz(bliel, joetlebliet jplde.5
+
+biptjmh=z(blie¢l j-lileblietd,pdda.s
+bimijphz(bli-l,jellbeblt-1,jp))8,5
+bimijmha(blt-1,jetlhebli-t,j))a 5
+g4iphjiph=elgdli¢t Jetlegali fleg4liel Jlegalt, pel) de, 25euuzh(1)
+g4iphjmh=al(gdliet J-Tlegdl i plegdlist glegalt, pel) de. 258uuzh( 1)
+gAimhjph=(g4(t-T Jellegali  plegali-t jleg4lt poll) se. 25euuzhii)
+gdimhjmhelgdli- Vi jrlleg4l i plegalt- Vi plegalt  Joll)®.25euuzh(7)
+geiphjzelg2litt jleg2li,j) de. Stuuzh(s)
+
+g2imbje(g2li-t jlegett plies, Stuuzh(i-1)
+
+gsiphjr(g3liel, jleg3li. jd) e Stuuzh(i}
+
+gSimhjzl(g3li-t pleg3li,jplde Smuuzhli-t)
+fFlijphelFl Ci, pbef l(t, pel) de Stvpsih(j |
+Fligmhel(f#l (i ple ds, jr-V) 8 Sevpsth(j-1)
+
+fStpph=(F5(1, pdeFSli, Jordi a Sevesth(; |
+FSismh=( F504, pe f501, p-1)d* Savpsth(j-1)
+
+iflj,gt.2lgo to 60
+
+flijmh=0,
+
+fi jmh=0,
+
+continue
+uzbarz-uuzl ilar (i,j) (duetdva)
+al(k Vhe-gamitbimijmhegdimhjmhebijmhtuzbartvpsihi(j-1)
+
+c Merl ti-1,p-1)
+
+a2(k, 1)=-gam2tbimijmhtgdimhjmhebijmhtuzbartvpsih(j-1)
+J71)
+A3(K, T)e-gamatbimntimhtgd4imhimhtbt jmbtuzbartvpsthij-1)
+
+c er (t-1,J-3)
+
+alik 2)=-FTijmh/( (dt edv | ee2) egamie( FSi jmb/dv2ebi jmhet2kuzbar
+/JrVIelgdimhjahsegdiiphjmh))
+a2(k 2)2-F1ijmh/ (dt tdy) e82)¢gam2e(f5i jmh/dv2ebi jmhes2tuzbar
+~1)elgdimhjmbtegdiphjmh) )
+a3t(k 2)e-Flipmh/ ((dtetdy) ek2legaman( FSi jmh/dv2+bi jmher2tuzbar
+p71) 8 (gdimhjmhtgdiphj mh! )
+
+alik, 3)=-gamitbipltjmhtgdiphimhtbi jmhtuzbartvpsih(j-Tlaer(iet,j-d)
+a2(k 3)e-gam2tbiptjmhtgdiphimhtbijmhtuzbartvpsih(j-Vler(tet,j-1)
+a3(k, 3) z-gam3tbiptjimhtgd4iphimhtbijamhtuzbartvpsihij-Tler(iel,j-1)
+alitk, Adzgamts((bimljmhtgdimhjmhtvpsih(j-1)bijmh+biml jphtgdimhjph
+j)*uzbars
+
+azik, A) egam2e((bimijmhtgdimhjmbtvpsthij-1)tbijmh+biml jphtgdimhjph
+Jbemmes2eb( i, J )tuzbarst
+
+a3(k, Al=gam3t((bimtjmhtgdimhjmhtvpsih(j- TI tbijmhebimijphtgdimhjph
+j )*uzbars
+
+al(k SI=A((fTijpheftijmh) /dv2-f2(i,j))/dt2egamie(-(f5ijph+fSijmh
+V/dv2efF7(iJlegtli,plel-bijmhee2nl(gdinhjmhegd4iphjmh) tvpsih(j-1)
+
+j )*uzbar-
+
+jJl¥uzbart(g2imh[ +g2iphj }#g3lt,jltdv2/vpsilj))
+
+a2zi(k, Bs((flijpheflijmh)/dv2- f2(i, j) 1 /dt2¢gam24(-(f5ijphefSijmh
+\/dv2ef7ti, Jlegt(t,plet- bi jmhse2e(gdimhjmhegdiphjmh) tvpsth(j- -1)
+(i,j )*uzbar-
+
+p)*dv2/vpsi(j))
+
+ask SIz((FLTipphoflijmh)/dv2-f211, J) )/dt2egam3al-(F5ijphef5ijmh
+c /dv2ef7li, plegt(i, j)el-bijmhea2e(gdimhjmhegdiphimbltvpsthij-1)
+c ~bijphes2n ( gdimbiphtgdiphjphl*vpsihijlierit, j )*uzbar-
+
+c mme#oeb (1, j)¥uzbars(g2imh] *g2iphj #31, j18dv2/vpsi (5)
+
+al(k Glzgamial((biplimhtgdiphjmhebijmhtvpsihij-tiebiptjphtgd4iphj ph
+c tbijphtvesth(j) )turbarte (tel, jl emmeeseb (i,j) *®uzbart
+c g2iphjtg3lte!, J) 8dv2/vpai(s))
+
+a2ik, G)agam2elibipljmhtgdiphjmhsbi jmhtvpsih(j-l)ebipljphtgdiphiph
+c thi jphavpsihi(j | )tuzbarer (set, j)emmee2eb( tj )tuzbars
+
+¢ g2iphjeg3liet, })tdv2/vpsi (jt)
+
+aa(k, Glegam3el (bipljmhegdiphjmhtbi jmhtvpsth(j-Tisbipliphtgdiphiph
+c tbijphtvosth(j))tuzbarar (ist, Jlommetotb (i,j )8uzbars
+
+c g2iphjg3titl, j )tdv2/vpsi(j))
+
+alik, 7) sgamisl-bimijphtgdimhjphtbijphtvpsih(j )tuzbartr (3-1, pel)!
+a2(k, 7hegam2h(-bimljphtgdimhjphtbijphtvpsihij | turbartr(i-1, jell)
+a3(k, 7) egam3el(-bimljphtg4imhjphtbi jphtvpsih(j )tuzbarar(i-1, jel) )
+alik BIE-FITJph/ldt2edv2legamis(fStjph/dv2e(bijsphsst2tl gdimhjph
+c +gdiphjph)tvpsth(jlar(i, jel) *uzbar))
+a2(k , B)e- ~F 11 Jph/(dt2edv2) egam2e(f51 jph/dv2+(bijphex2e(gdimhiph
+¢ +gdiphiphi*vpsith(j lari, J¢l)®uzbar))
+a3(k, B)e-F1ijph/(dt2%dv2)egam38(f51jph/dv2+(bijphee2s(gdimhjph
+c egdiphiph)*vpsih(j leet, jel) suzbarl)
+al(k Dl=gamtel-bipljphtgdiphjphtbijphtvpsih(j )turbartr(iel, jell)
+a2(k DI egam2tl(-bipljphtgdiphjphebi jphtvesihi(j beuzbartr (t+), jot) )
+a3(k , I) sgam3e(-biptjphtg4iphiphtbisphtvpsih(j )suzbarer (tet, jot)
+c¢..,.,601 array for rhs
+FI3ijmh=el(F 301 PdeFSCT, G-1)d® Savpsth(j-1)
+FZijph=(F3(T, JdeH3CT, Fedde Sevpsth(s |
+denom=1,/(dv2)
+bi(kK T)l=f3tjmhedenom
+bIi(k,3)=F3i jphtdenom
+bik 2)=-(F3tjmhef3ijoh-F4li, jl adv2e/vp) tdenom
+10 continue
+C....,correct coefficients on buundaries
+sfilzsign(unit, fil)
+sfjlzesigniunit,fj1)
+sfjJrxestgnlunit . fjrx)
+sfizxzesigniunit,fizx)
+G.see. B@t corners to 0
+kK1lisin-2
+Kijpetelixn-3)elyx-2)
+kK1= Sal leiswltkh lie Sel l-iswitk1j
+faci=-1,
+if(sfjlt.eq.liand.sfizwr.eq.t)facterlix-1,2)ablix-1,21/7
+ec (r lim, 2) 8b(tx,2))
+al(kt Sieat(kt, Slefact#at(kt,3)
+a2(k1 Slza2ikt Slefact#a2ikt, 3)
+asik! S)za3(k?, Slefact#asikt 3)
+ai(k?,3)=0.
+a2ikt,3)=0.
+a3(k1,3)20,
+kK2tele(ix-2)a(jpx-3)
+kK2}ejx-2
+K2= Se(ieiswltk2i¢ 5811+ isa) th 2]
+fac3=-dvout/dvin
+if(sfirx.eq.l.and.sfil.eq,Pifac3er (2, jx-tlabl2,jxu-Vl/
+c (rl td, pu-t)eb(1,jx-1))
+al(k2,5)=al(k2,5)¢fac3vatike, 7)
+
+a
+
+woul nl
+
+w—
+
+a2(ke, S)za2(h2 Siefac3ea2ike, 7)
+a3(k2 S)zad(k2 Siefac3eagl(k2, 7)
+ali(k2,7)=0,
+a2(k2,7120,
+a3(k2,7)20,
+fac2=-1, .
+IF(sfj leq, land sfilveq, Vifacd=n(2,2)#b(2,217(r (4
+al(1,5)2at(1, S5)¢facouat(1,1)
+a2(1,5)=a2(1,5)4¢fac2ea2(1,1)
+a3(1,5)2a3(1 Slefacavag(1,1)
+a1(1,1)20,
+a2(1,1)*0,
+a3(1,11=0,
+
+fach=-dvout/dvin
+
+(fFisfirwieq. land. sfizx,eq. li facder(ix-1, purl) tblix-t,
+
+(r (Cie, jurVieol( tw, pw-1))
+all(kxp Sleatikxp S)efacd#al(kxp, 9)
+a2ikxp Slsa2ikxp Slefacdta2ikxp,9)
+adikxp Slzad(kxp S)efacdtazikxp,9)
+atikxp,9)=0,
+a2(kxp ,91=0,
+azikxp,9)=0,
+iz2
+do 11 j#2,jx-]
+if(sfil.eq. Vi isfiter (2,j)ebl2, pile (i plabliy. gd)
+kteti-lel(p-2)8lix-2)
+2zp-Te(pu-2)ali-2)
+K= Se (1etawlak te Se(l-iswl tk2
+do 11 m=2,8,3
+al(k mizalik milesfiteatik,m-1)
+acl mil=za2tkh miesfitea2ik .m-1)
+as(k mizad(k mlesfileagdik,m-1)
+continua
+cantinue
+
+Job abl il
+
+=tx-4
+do 12 jz2,Jx-]
+be(j ) 20,
+ifl(psiljp). lt. lpsth-dpsih)dbctj)=
+tfipsilj). oe -(psth-dpsih! .and, psiljl, .(psthedpsih))
+belj)=, sridsanttopertilepsihledeaiaben)
+rbter(tx-t, pleblix-1,j5)
+rotter(ix,jiebdix 5)
+
+down2=8, tholjltuuzhlix-1)/due3.8(1.-be (jt)
+up2=1,-bel(j!
+
+gm2=upe/downe
+
+up l=-up2%rbtel*, 75¢belj lerbt®tuuzh(ix-1)/du
+downt=(belj )®uuzh(ixn-1)/dueup2%3./8.)arbtel
+gmt=upl/down!
+
+delcol(j)l=gml
+
+delco2(j l=gme
+
+,2))
+
+jJx-t)/
+
+up=(bel(jp)tel(ix-1,p)ebdixnet, jl tuuzhlix-1)/dutrbt®lbc(j)-1. 1)
+
+down=(beljpler(ixn, Jleblix,})®uuzhlix-Tl/duerbt\sl-bceljlet.)
+
+sfizx=up/down
+
+kTsi-Te(jp-2) ei x-2)
+k2sj-le(px-2)e(i-2)
+
+k= Se(1eiswltkt+ Sal t-iswltk2
+
+do 12 m=2,8,3
+
+al(k,ml=zat(k ,mlegmitalik met)
+allk m-Th=al(k .m-T)egmoealt(k mel)
+aZ2(k mi=a2lk mitgmizagi(k, mel)
+
+12
+
+21
+
+22
+
+30
+
+31
+32
+
+34
+
+35
+40
+
+a2(k m-T)za2(k m-1) +gm2ta2ih, met)
+
+a3(k,ml=ad(k mitgmixasik, met)
+
+aZ(k m-Thzas(k m-T)egmetag ik, mel)
+
+continue
+
+continue
+
+t=2
+
+do 21 jJe2,jx-1
+kKTst-14ljp-2)e(ix-2)
+K2ej-Ve(jx-2)8( 4-2)
+
+k= S8(1+iswltkhi¢ Sel t-iswltk2
+do 21) m#i,7,3
+
+ai(k,m)=0,
+
+a2ik ,m)=0,
+
+a3ik ,m)=0,
+
+continue
+
+tetn-
+
+do 22 jr2,jx-l
+Ktet-Teljp-2)eCix-2)
+kK2zj-lelpx-2)e(i-2)
+
+k= 5Se(1eiswlakl¢ Sel t-itsw)tk2
+do 22 m=3,9,3
+
+alik,m)=0
+
+a2i(k,m)=0,
+
+a3(k,m)=0,
+
+continue
+jee
+
+do 31 is
+kKlet-14{
+k2=j-14()
+k= 5u(1e¢
+do 30 m= =4,6
+
+al(kK mi=zatik mlesfpleal(k im-3)
+a2t(k miza2ik mie¢sfjytea2(k m-3)
+asik .mizad(kh miesfjpleagibk ,m-3)
+continue
+
+bitk 2)=b1(k 2)esfjlebiik, 1)
+continue
+
+continue
+
+jejx-d
+
+facS=sfjrx
+
+x=]
+¥(tx-2)
+jul t-2)
+ek1+ Sel l-iswlhtk2
+
+~~
+
+TfIisfJrw.ieq.-l)facS=facStdvout/dvin
+
+do 25 t22,tx«-1
+KPst-Te(je2)elix-2)
+K2=jp-Te(jx-2beti-2)
+
+k= Se(1etswltk t+ Sel t-isw) #k2
+do 34 m=4,6
+
+at(k miltalik mlefacS#eal(k ,m4+3)
+aZg(k mizaZik miefacSta2l(k .m+3)
+asl(k miza3d(k mlefacS#az(k me)
+continue
+
+bik, 2)=b1(k,2)e¢facSablik,3)
+continue
+
+continue
+
+jee
+
+do 45 i=2,tx-1
+k1=t-1e(j-2)8ix-2)
+kK2=sj-lel(jx-2)eli-2)
+
+k= 5a (leiswiltkt¢ Sa(t-isw)tkh2
+do 44 m=4,6
+
+al(k,m-3)=0,
+
+GEM Mm wee mu,
+
+a2(k,m-3)=0,
+)=Q,
+
+a3(k,m-3
+44 continue
+
+bi(k,1)=20,
+45 continue
+
+jrjx-
+
+do 48 iz#2,ix~-1
+Klet-Te(j-2)elix-2)
+kK2ep- Tel jx-2)e(t-2)
+k= Sa(tetswlth le Sel 1-iswltk2
+do 47 m=4,6
+al(k,me3)=0,
+a3t(k ,m¢3)=0,
+a2(k,m+3)=0,
+
+47 continue
+brik, 3)=0,
+
+48 continue
+return
+end
+
+PE SSSOCSESLSSAICOSCCCCOSCSCSCSCCSSOCCSCCCETOSSOC SC CSCC ECCS SCCCeCS SSS cre es S|
+subroutine bvcallbs.zs,as,als,z,n.zec, bee, znorm, bv, bvp,bvpp,
+1 b4,65,24,25,nc)
+dimension bell) ,zslt) ,as(Vi ,ats(I),201) ,bv( tl) bypill .bvppll)
+call beecal(bs,z8,as,als.z,n,bv,bvp,bvpp ,64,65,24,25,nc)}
+do 15 te1t,n
+beorr=bee
+beorrp=0.,
+beorrpp=0,
+tanhypztanh((z(t)-zcee)/znorm)
+beorrpt-bec® ,5e(1,- tanhypee2)/znorm
+beorrpp=tbcc&tanhypa(1.-tanhypt#2) /znormen2
+beorr=bec* ,58(1,-tanhyp!)
+18 bv(ilbzbv(ilebcorr
+byplil=bvp(itlebcorrp
+bvypplt)=bvpe(ilebcorrpp
+tFizlill,eq.z4)bd=bdtbecorr
+tflze(i leq, 25) b5=b5¢bcorr
+15 continue
+return
+end
+ESSE SSSESESSESESSSE SSE SESE S ESSE SS SSC CS SS ESE SES ESS ESSE SESS CRESS ECE S SSSR SEES S|
+subroutine beccal(bs,z5,as,als,z,n,bv,bvp,bvpp,b4,65,24,25,n¢c)
+dimension zini, buyin! ,bvp(n) .bvppin)
+dimension bs(3},25(3),as(3),ats(3) ,atpha(3,3),ak(3),1s(3)
+
+15
+c....,compute matrix elements
+do 10 jel,ne
+do 10 i=t,nc
+alphali,jl=bfun(zsli),zs(j)l,als(j).as(j),0)
+10 continue
+
+c....determinant
+if(nc.eq.2laiphal(3,3)=1.
+
+det=alphal(1,1i«latphal2,2)#alphal3,3)-alpha(3,2)*alphal2,3))
+1 -alpha(1,2)#(alphal2, 1) *alphal3,3)-alphal3,1)*alphal2,3))
+2 +alphall,3)¥lalphal2,1)*alphal3,2)-alphal3,1)talphal(2,2))
+
+c a
+
+C e 8
+
+50
+
+60
+63
+70
+
+ssoltution
+
+ak(Tl=elbs(T)elalphal2,2)*atphal3,3)-alphal3,2)8alphal2,3))
+1 -bsl2)elalphal1,2)*alphal(3,3)-alpha(3,2)#alphal1,3))
+2 +bs(3)e(alphal1,2)salphal(2,3)-alphal2,2)salphai(1,3!))
+3 /det
+ak(2)si-bs(1)#(alpha(2,1)#alpha(3,3)-alpha(3,1)*atphal2,3))
+1 +bs(2)elatphall, 1) talphal(3,3)l-alphal(3,1)*alpha(1,3)!
+2 -bs(3)8lalphal1,1)*alphal2,3)-alphal2,1)#altphal?,31))
+3 /det
+
+aki Slel(bs(Tielalphal(l,2)*alphal2,3)-alphall,3)#alpha(2,2))
+1 -bsl(2)}elaiphall, Visalebalé, 3)-alpha(?,3)#alpha(2,11)
+2 bs l3)elalphall,1)}8alphal2,2)-alpha(1,2)*alphal(2,11))
+3 /det
+
+Lflelds and derivatives
+
+do 50 te1,n
+
+byl t)=O,
+
+bve(i)=0.
+
+bvpplil=0,
+
+do 50 jzil,ne
+
+by(ilebvlileak(j)ebfun(zlil, zs(jld,als(jl,astj),0}
+byplilebvp(ileak(jlabfuniz(i), zs(jlals(j}.as(jl.1)
+bvpelt)l=bvpplt)¢ak(j lxbfuniz(il, s(j),als(j)l,as(j),2)
+
+continue
+
+sminima and their positions
+
+do 70 jFi,ne
+
+do 60 if2.n
+tflzs(jpllle.z(tll go to 63
+continue
+
+is(jp}ei-1
+
+continue
+
+b4zaminafl(byv,is(1),is(2).1,14,amin)
+z4=2(14)
+if(ncotl.eq.2)ireturn
+bSz=aminaflbv,isl(2),ts(3),1,tS,amin)
+252=2z(15)
+return
+end
+PSSST SS SESLSOSTCCSCSSOSCSS OSES CSL COSSUCSSCCSSCSSSS SSCS SC CCOCOCCLOSSOCSCOSeC CCE S|
+functton bfunlz,zx, al, a,ind})
+indt=ind¢!
+
+20
+
+30
+40
+
+up=zx¢,5%al
+um=zx- ,5€al
+
+go to (10,20,30), Indl
+tl=gfun(z,up.a)
+t2=gfun(z,um,a)
+go to 40
+tlegfunl(z,up,a)
+t2=gfunt(z,um,a)
+go to 40
+tlegfun2(z,up,a)
+t2=gfun2(z,um,a)
+bfun=(tl-t2)}/ata2
+return
+
+ceeenn
+
+cUeRER
+
+Cueshe
+
+19
+
+end
+
+ECC CCE SCC SSCS CEE CEL SC CCCCES SES CCCSSOSEOSECSCSCOSSOSCOSOCCSSCOSSSS COLE SS CY
+function gfunl(z,u,a)
+
+xltu-z
+
+K2esqrt (xl Baseaae?)
+
+afunzxl/x2
+
+return
+
+end
+
+PSS SSE SES POSSESS SSCS SSESECOS ESSE SSECE RCE E CCE COCSCESOSOSSOSCSESCLOSSECESS ER SS |
+function gfunt(z,u,a)
+
+wltu-z
+
+x2=(xlee2eane2) an] 5
+
+gfunt=-ate2/x2
+
+return
+
+end
+CREKKERKESEKAREKSSKARAEKRAKERAKARETERARERA AERA ESERESAEKERRETOR RSE RTARE RAE
+function gfun2(z,u,a}
+
+xltunz
+
+woz (xl ek2eanke?) aa? 5
+
+gfun2=-3, 8x1 8aek2/x2
+
+return
+
+end
+
+subroutine comat(abar ,nd!
+
+.transforms the elements of the alik,m) array into tnto the
+elements of the compressed column inatrix abar which will be
+operated upon by banfac dnd bansol.,
+
+Insert storage cliches here
+use param
+use fstor
+use matrix
+use const
+
+dimension abar(kxp,1)
+
+Kx x ek xp
+
+lenznd¥kxp
+
+call beast (labar(1,1),0., len)
+
+do 10 ke1,kxex
+
+do 10 m=1,9 "
+Iptzme((m-1)/3)8(ithbe-4)
+Ip2=tewmod(m-1,2)8(thbe-Thel(m-1)/3
+ip= Stiletswitlot¢ S8(l-iswittp2
+abari(k, Ipl=atik .m)
+
+continue
+
+return
+
+end
+
+subroutine constant
+
+insert storage cliche here
+use param
+use fstor
+use matrix
+use const
+
+gam)=,258(3tbiase!)
+
+gam2= .258(1-bias)
+jez. S5a(jr-2)
+kpizip-le(jp-2)e(in-2)
+Kp2tje-leljx-2)elip-2)
+kKplot= Sel letswitkpt¢ Sel 1-iswiltkp2
+if(kplotm.ne Olkpiotzkplotm
+return
+end
+
+subroutine curvecon
+
+c..., calculates constants necessary for curvature driven
+c..., Flute mode case,
+Cis... Insert storage cliches here
+
+use param
+use const
+real kibsaq
+
+GCoseee Enput for curvature driven flute case
+
+data echarg/4.Be-10/, en0/1.000¢12/, b0/1.0e4/, amass/3.34e-24/
+c , ¢c@e/3.e10/, stable/,4/, fourpi/)2.56637/, pi/3.1415926/
+ec , delrho/.05/ dtret/,02/,«m/3.8317/, theta0/1.570796/
+namelist/curve/o0,beta0, delrho, stable ,enO,echarg,ib,rw,xm
+c ,zol,dtrel,thetad
+
+call ddifcurve,2,3,1)
+
+ifinold.ne.1) call ddofeurve,100,0,1)
+
+zmaxzzol&ib
+
+pO=betadshOen2s 5
+
+psimax=rata2ebOe 5
+
+omegOsqzbO¥t2/lenDtamasst | be)
+
+omegO=ssart (omeg0sq)
+
+4gi=1.-2.tdelrho/xmet2
+
+k lbsqz0,
+
+if(kzs.ne.Olk lbsqzlpi/l2.ezol)) #82
+
+delomeg=0.
+
+ifisfB.ne.O)
+
+1 delomeg=stablek((betad/xmea2-k lbsq/mmtt2)/(agltsfBle1.-sfb8agt/
+2 sfB)*omeg0sq
+
+omegl=omegO0+saqrti(delomeg)
+
+omeg2=omeg!i-2*sart(delomeg)
+
+dt=dtrel/omeg!
+
+ent=2.*enOtdelrho/rut*2
+
+ulix)l=zmax
+
+vi jxl=psimax
+
+duztultx)/(ix-1.5)
+
+dvevijul/(jx-1.5)
+
+besarg=(xm/rw)
+
+c..... Calculate analytic growth rate
+
+tsf6=tanitnetad0*® S)esf6
+radical=(lagi*um*tsf6)**24(omegl+omeg2)**2-4.%((2meaql *tomeg2tagl
+c *sfB+omegOsqtbetal/xmee2) mmte2-k lbsqtomegQsq) !
+iflradical.lt.O)lgo to 5
+
+rootesaqrtlradical)
+
+omanal=agixtsfb*mm* (omegi+omeg2)*.5troot*.5
+omanaZ=omanal-root
+
+groana=0,
+
+return
+
+PAGE 1
+
+5 continue —
+omanalzagi*XtafGemm*t(omegl +omegel«,5
+groanazsaqrt(-radical)*,5
+omanaz=(,
+return
+end
+
+subroutine energy
+
+Cys energy calculates the total first order energy (tenergy) as
+Cia, an integral (using trapazoidal quadrature!) over the volume,
+Cres every nmen'th time step, using two consecutive time steps to
+Cua, determine the value at n¢+,5 ,
+
+use param
+use fstor
+use matrix
+use const
+
+dimension ecxil(jext rar( jew) draur(izx,Jrx),drextltzx,jex), quad(t2)
+¢ ,quad!(4),psumaljrx, 12) psumbljrx,4),dumi (tz), dum2(izx)
+e ,xmglizxl ,xtigltzx) xrgol(tzx), xigolizx) ,drxrolizx, jrx)
+¢ ,drxtolfzx jrx) dxerz2lizxl,dxtz2lizx)
+
+betaletel
+F( (ltt eq,2),or, (nen eq, 1lithen
+Imove=jx¥*ix
+call zmovewrd(drxro,drur, lmovel
+call zmovewrd(drxito,drxt, tmovel
+tquadoo=tquado
+tquado=tquad
+tquad2ooztquad2o
+tquad2ottquad2
+tquad3cortquad3o
+tquad3oztquad3
+tquaddooztquaddo
+tquad4o=tquad4
+end if
+do 9 12, ix-1
+do 5 jz2,Jx-]
+Kieimle(pr2ia(ix-2)
+k2zj-le(ju-r2)ali-2)
+k= Se((Veiswltkte(t-tiswl ek2)
+rxe(jler (i,j bexrolk)
+exilplee(t,pdexto(k)
+5 continue
+call ddpsi(rxr,drxr,t)
+call ddpsi(rxt, drei, i)
+9 continue
+
+¢ loop 100 evaludtes z quadrature
+
+do 100 j#2,jx-1
+do 10 +=#2,1x-1
+Ktet-te(j-2)e(tx-2)
+k2aj-te(ju-2)e(i-2)
+k=, 5e((1¢iswl tk te(1-tsw)tk2)
+if((itt.eq,2)l,or.(nen.,eq.1))then
+xrgolt)=xroolk |)
+xigoltl=xtoolk)
+end if
+
+PAGE
+
+14
+
+15
+
+16
+
+20
+
+21
+
+23
+
+24
+
+30
+
+31
+
+4
+2
+(
+z
+do 212 i#2
+dum2(i) =r (
+
+z
+
+2
+
+1, p)exrgli)
+xr2z2)
+
+bextglt)
+call dd 2)
+do 11 1s
+
+c Nema eE
+as
+
+7 Z(t) Hqubli ji ederz2¢i belle (tp bebe, gp) dae)
+psumal(j,1)spsum(dumt, ix) /vpsi(j!
+
+do 12 (#2, tx-1
+
+dumi(ilb=(1,/uuzlt))#qublt, jledxiz2(t) (le (i, plebli, jp) )ee2)
+psuma(j ,2)2psum(duml , ix)/vpsi(j)
+
+do 13 iz2,ix-1
+
+dum ii bse dd i ladext tt, J)
+
+call ddz(dum!,dum2)
+
+do 14 ped, tent
+
+dumi(ibe( 1. /uuzli lb &qubli,j)ar (i,j) eeeedum2( i)
+psumalj,3)zpsum(dumt, tx) /vpsilj) /mmee2
+
+do 16 reed
+
+dumt(ileb lt, plaedrure(t,y)
+
+call ddz(dumi,dum2)
+
+do 16 i#2,1tx-1
+
+dumi(tl=(1,/uuz(i))equbl i, jlardt, jl ee2edum2i(i)
+
+psumal(j ,4)zpsum(duml, ix} /vpst (jp) /mmee2
+
+do 17 t2=2,1x-1
+
+dumi(tlbe(t /uuzl(ilbexrgl i lee2er ii, jlelqubvlt  pler2zelt, 45)
+er (iyf Feringtt J)/bli,gdi
+
+psumalj ,5) =psumidumt, ix /vpstig)
+
+do 18 2,ix-
+
+dumi(i =(1, /uuzl(t)bextgltbem2er(t plelqubvlt  plerzz(t ij)
+er(t, pilteringli,js) fbi, g))
+
+psuma(j, 6) =psumidum), ix)/vpsi(j!
+
+do 19 b=2,x-1
+
+dumi(tl=(1,/uuzliliexrgl i )eeaeyyyli, gp l/bli,
+
+psumalj, 7) zmmte2tpsum(dumt, ixi/vpsilj)
+
+do 20 i#2,ix-1
+
+dumt(t)e( 1. fuuzlillexight bae2ntyyyl i pi/bli,j)
+
+psumalj  B)=emmte2tpsum(dumt,ix)/vesil(j)
+
+do 21 iz2,ix-1
+dumt(ile(t./uuzlilleyyy li plexcglilerdt, piederxrls jf)
+psuma(j ,9)=-2.8psum(duml, ix) /vpsi(j)
+
+do 22 i=2,ix-1
+dumt(ilb=(V./uuzltdbeyyy li, flee di, pi eeeeb li, pd ederxr (i,j )a82
+psuma(j,10)=psum(dum!,ixi/vpsi lj)
+
+do 23 t=2,ix-1
+dumt(ilb=e-(t./uuzlilleyyy li, plbexightlerdi,pledeni lt, jf)
+psumalj, PT )s2kpsum(dumt, txl/vpsi tj!
+
+do 24 122, tx-]
+
+dumt(ils(V./uuz (ti ltyyyl i, plecdi, pbew2eblt pladrxi (i, plew2
+psumalj ,l2)zpsum(dumt, ix) /vpsilj)
+ifl(lltt.eq.2).or.(nen.eq.tlithen
+
+do 30 i=2,ix-1
+
+)
+j
+i
+}
+
+dumi(ile(?./uuzlillarholt,plaClerglil-xrgolil)/dt)ex2/bli,j)
+
+psumbl(j,1)=psum(duml,ix)/vpsilj)
+do 31 i=2,itx-1
+
+dumt (ile? ./uuzlillerholi,ple((xiglil-xigolill/dtlae2/bli,j)
+
+psumb(j ,2)=psum(dum!,ix)/vpsili)
+do 32 i=2,ix-1
+
+PAGE
+
+32
+
+33
+
+100
+120
+
+121
+
+122
+
+130
+
+10
+
+dumi(ile(V /uuzl(i bie le (i, pbeldrxer (it, pledexroli,pli/dt)ee2eb i,j)
+trholt,j)
+psumb(j ,3)=psum(dum),ix)/vpsi lj) /mmse2
+do 33 t#2,ix-1
+dumt(tl=(t./uuzlidbede (ti prelddrni ls, pledextolt,jll/dtlea2eb( i,j)
+krholt,j)
+psumb(j,4)=psum(dum), ix) /vpst (jl /mmaee
+end if
+continue
+do 120 |=1,12
+quéd(|)zpsum(psumal(1,!), jx!
+tquadzssum(12,quad, 1) tdvtdu
+tquad2:0,
+do 121 |2#1,4
+tquad2=tquad2+quad (|)
+tquad3zquad(5)¢quadi6)
+tquad4:=0,
+
+do 122 |27,12
+kquad4zquad(|)+tquad4
+TFC (Ntt.eq.2).or. (nen.eq. 1) i then
+tquad1=0,
+lee=leer!
+do 130 |l#1,4
+quadt(l)zpsum(psumb(1, i), jx)
+tquadl=ztquad!+¢quadi (1)
+enpot(leel=(3,%tquade6, §tquado-tquadoo!/8,
+enkin(leel=tquad! &tdvtdu
+tenergylleel=abslenpot(leelsenkinilee!!)
+timengy(leel=timel(n)
+enbend(leel=(3.%tquad2+6, &tquad2o0-tquad200)1/8, tdutdv
+encurve(lee)=abs(3, *tquad3+6, *tquad3o-tquad300!/8, tdutdy
+tenrel(leelz=abs(tenergy(leell/lenkin(leel+abslenpot(lee)))*2
+enfir (lee) =abs(3. *tquadd+6, ttquaddo-tquad4oo0)/8,*dutdy
+itt=0
+end if
+return
+end
+
+function psuml(f,k)
+dimension f(1)
+
+nqzk-4 .
+psum=ssum(ng,f (3) ,1)¢ Selfl2befik-1))
+return
+
+end
+
+subroutine ddz(ft,f2)
+
+use const
+dimension fl(1),f2(1)
+
+do 10 i=4,tx-1 .
+F2CI-TIECCFTCE IAF TCT -2)10702, 8dultuuz(i-1))e8e2
+
+F2(Q]VEC( (VT -FITI EFI (2) euuzhi Tie ( 61 (3)-F#1( 2) tuuzh(2) i /(dus2) bese
+F2Cix-P=((-(V.-fizx deed lix-Tieuuzhlix-The(f#llin-T)-ftlix-2))
+
+¢ BMuuzhlix-2))/(dut2) )ae2
+
+return
+end
+
+PAGE 4
+
+subroutine ddpsi(fl,f2,i)
+
+use const
+dimension fli1},falizn, 1)
+
+do 10 j#4,jx-1
+10 F20h p-V dE EL
+f2(', 2)2(2,40F1
+F2(i Jur D)el-(
+c FI jx-2)) evpsth (|
+return
+end
+subroutine equi |
+
+)¥vpst(j-1)
+\-#112) lavpsth(2))/(dve2)
+vpsth(jx-tlelfl(jx-t)-
+
+ne a<
+
+Crorsys Bpectal case equilibrium, O beta, O pressure, rhozconst,
+Cir... test case 1
+C...,,8et up 1/4/82 by r, frets
+
+Cyses, insert cliche storage here
+use param
+use matrin
+use const
+use fstor
+
+data rho0/1.e12/,b0/1,04/ ,azm/1./,apsin/1,/
+
+do 10 jel, jx
+do 10 t=1,tx
+uzzuuz(t)
+rholt,})zrhod
+b(i,j)=bO
+cli, jlesart(2,*abs(psi(j))7b0)
+xxx(t,jbz0
+yyy(t,j lO,
+qub(t,j}2b0
+10 continue
+return
+end
+subroutine equilcur
+
+c.,,.,equiltbrium for curvature driven flute mode case.
+
+c.,..insert storage cliches here,
+use param
+use const
+use fstor
+
+do 10 t=1,ix
+do 10 j=1,jx
+c..... special b(i,j) to test b,c. on flute test case
+
+b(t,j)=b0
+rli,jlesartl2epsil(j)/bli, jd}
+rholi,jlelenO-enttr(i,j)*82e 5) tamass
+xxx(t, plerholi,j)elomegt+omeg2) tsf6
+yyyit,Jlerholt,j)*(-omeg!#omeg2)4sf8
+qub(t,jl=ebli,j)
+avii,jl=pO/psiljx) |
+
+10 continue
+return
+end
+
+PAGE 5
+
+subroutine equi lrot
+
+Corre, SOtS UP equilibrium for rigid rotor, test case 2 ,
+Crosses eflorad adds cold plasma halo to equilbruim density
+Crsree Insert cliche storage here
+
+use param
+use const
+use fstor
+
+ps!02b0%rOsqt .5/saqrt(fourni )
+omegr=ratrodtomegst&*(1.-enbar/en0)
+foursqzsart(fourp!) )
+
+do 5 {21,1
+uzeuuzii)
+do 5 jal ,jx
+
+facrexpipsi(j!/psidl/sart (beta)
+
+bli, j)ebOssaqrt(fact#2-1.)/(factfoursa!
+rholt,jlsenOsamass/(betadtfac®s2) ¢enbar tamass
+betaz!/fac##2
+
+argizfactesart(face#2-1, |
+acoshtaloglarg!!
+
+cli, jberO*sart(-cereacosh!)
+qub(t,jlsblt,j)
+omegstrzomegst#(1.-enbartamass/rholi,jli
+entestzenbar tamass
+iflentest.ge.rholi,j)lomegstr=0.
+omegexbz(1.¢ratrod) tomegstr
+omeggbztbetatomegstr® .5/(1.-beta)
+
+xxx li, plechol(t,J)8l2. tomegexbtomeggb-omegst!
+yyyli,Jle-rhol(t,j)#lomegexdtomeggb)* (omegexb-omegst !
+wee (tp lbaxanl, pda fe
+yyyli,jleyyy (tj )efie
+
+5 continue
+
+do 30 t#l,ix
+
+do 30 je#2,jx-1
+
+qav(li,jl=.5e(qubli, joetbeblt  jell-qubli,j-lbebli,j-1))
+30 continue
+
+return
+
+end
+
+subroutine equiltm
+
+c..,..@equilibrium for tandem mirror electron ring plug
+
+c....insert storage cliches here
+use param
+use const
+use fstor
+
+data epsb/1.e-2/, p30/.01/
+
+c..... loop 10, calculate p2 pt and b and dp2/dpsi and dpi/dpsi
+we2=pewidet® .58psid
+pstbar=-bel*.5/cel
+psistr=-cel/(3. del)
+psibar=psistresartl(psistres2-bel/(3.%del))
+plimax=aelebeltpsibareceltpsibartt2edeltpsibarts3
+
+do 10 j=l, jx
+psir=psi(j)/psim
+psirezpsilj)/psime
+
+PAGE 6
+
+peltz(aelebeltpsiretceltpsirett2+deltpsireks3) thpme(j!}
+pe2= 58(1,.-tanhi(psi(j)-pside!l/wp2e) )#(1,-hpme(j)))
+pllj)=(pelspe2!/plmax
+dpidpsit(jl=el(del*3,.tpsiress2+
+c bel+2.tcoeltpsire!/(ipsimetoimax) thpme(j)-.58(1.-( tanh
+¢ (l(psilj)- psi0e)/we2e)) 882) /(wp2etptmax)#( 1, -hpme(j)!
+peti jp)=(1.-tanh( (psi lj )-psi0)/wp2))*#.5
+dp2dpst(j)=-, Bell.-(tanh (pst lj )-psi0)/wp2) )e#2)/wp2
+p3(j)2(p3acp3btpsir+p3ctpsirte2ep3dtpsir #83) thp0(; |
+dp3dpsi(j)=(p3be2, *p3ctpsire3 tp3dtpsir et2) thpOl(j l/psim
+p2lj)=p2t(j)ep3lj)edip
+dp2dpsi(j)zdp2dpst(j )edp3dpsiljiadip
+hf Ie (pet.
+
+Crsees BOt P2 And pP3 constant at large psi
+tf (p2lj).le.p2flagi then
+pelj)=p2floor
+eplljplzpelfloor
+dp2dpsi(j)#0.
+deldpsi(j)+«0,
+hf te (yp )=0,
+end if
+do 11 tel, tx
+
+¢ iflabplt).eq.0)then
+c b(t, jlebvac(t)
+¢ go to 11
+c end if
+ulzp2(j)*abplilept(jieabfé(i)
+u2z=p2(jltbbplii+ Septlj)ebbfls)
+uszp2l js )ecebplil-bvac(i)es2e Septljleebrl(i)
+Cys, At, Bt, ct coefficients for low density expansion
+atzul
+btzu2- 5
+ctzus+bvac(i | ea2s 5
+bvebvac(i)
+ordera2=4 ket tbted e(bttbv) e828, tattctebyvat2412 wattbttbyard
+c *¢Beatek2tby eae
+bsq3zbvae2-2 al(ctebtsbvaererattbvaerdl sordera2
+tf (lordera2/bsq3).le.epsp!) then
+bil, j)=sartlbsq3)
+else
+ttz-u2" .5/ul
+radic2=(tie82-u3/ul)
+roundzabs(radic2)/(tl#t2eabs(u3/ul))
+if (round.te.,l.e-6)radic2=0.
+radictsart(radic2)
+bsqiztt+¢radic
+bsq2zti-radic
+bsqtbsq!l
+if(tl.gt.radiclbsq=bsq2
+bli,j)=zsart(bsq)
+end if
+11 continue
+10 continue
+c....,.4oop 15, calculate phi, the electric potential
+do 15 t=1,ix
+argl=((zltl-zt)/(z21-20! }ee2el-xpot)#(1.-hztoli))
+
+arg2=woot#((z(i)-20)/(20-22) )ee2
+
+PAGE
+
+- 2 8 6
+
+see
+
+phill(ilsphicetexplargl)+phipl/coshlarg2)
+
+. special phil for high mm rotation mode test
+
+do 17 tz1,i
+Phit(ilbephice®(1,-dphie(1.-hztOli})}
+
+continue
+
+do 16 j#2,jx
+
+PhHI[lpl=(1.-(psi lj) thp3lj)/psisieeypot) thp3(; )
+
+., spectal phi2 for constant omegexb
+
+phi2(j)zertpsi (js)
+
+continue
+
+-loop 20, calculate pperp, ppar and db/dpci
+
+first calculate d coef. for ppar
+dplzlapltbmaxts204./3.42, 8bpt) tbhmax
+
+dp2z(ap2-apl ) thmni**3/3,¢(bp2-bel) tbani+dpi+¢(cpl-cp2)
+c /banl
+
+dp32l(ap3-ap2) tbvx2883/3.+¢(bp3-bp2) thvx2e¢dp2¢(cp2-cp3)
+c /bvx2
+
+dt0=-B.4ctO/(bmaxk3, |
+
+dtle-B tctl/(bvx2s3, |
+
+dt22-8.%ct2/(3.%bvx3)
+
+dt3#-8.%ct3/(3.%bml)
+
+pet#t./(1.-1./rpiae2)an2
+dtert=(-8./3-4.8(bvx3/ban2)*483/3,4¢4.%(bvx3/bmn2))/bmn2
+dter2z=-alsitppttdterttpsis1
+
+do 20 t#1,tx
+
+do 20 j21,jx
+
+if idter2.eq.0, ldter2=0.
+
+b2abl(i,j)es2
+
+bdzb2et2
+
+dterzdpithzpl (i l+dp2thzp2ltiedp3athzp3l(ilb+dtishztt(i)
+c +dt2thzt2(il-dt3thzt3(tbedtOshzt0l i)
+ppart=(-abp(i)/3,"b4-bbpl(iltb2ecbpliledtersbl(i,j))
+ppertzl(abp lt lsbdebbp (| )tb2ecbp(i))
+ppertezlabql i )tbdebbaqli )*b2-ecbaqlil)
+pperpli,j)=p2ljltppert
+
+ppar(i,j)zp2lj)tppart
+
+qubl(i,j)= (b2¢ppar(i,jl-pperpli,j)i/bli,j)
+
+rholt, jl samasst(p2(j)tlebplistbdstbp(i)*b2egbpli) i+
+¢c ncentertcolds(t. +(rewall-1.)8pstly)/psilyxddi
+
+... special rho for exb rotation case
+
+rholt,j )zamasstncentertexplexrhotpsil(jl/psiljxu))
+facebli jie l. 42. apl(j)e(2.sabf(ilsb2ebbf(i)))
+factedpidpsi())elabflilebasbbf (i lsb2ecbe ii
+
+t
+
+i (
+i)
+y)
+fac2=dp2dpsil(j)slabp(i)ebdebbp li beb2ecbpli))
+
+fac3ep2(j)al2, tabpli)tb2+bbpl i) lept ij lei2, tab bfitisb2ebbFlil)
+
+dbdpsil(t jle-(faclefac2l/(bli,plell.*fac3e2,))
+dp2db=b(i,j)#labp(i)ab2a2,¢bbp li) ) #2,
+dp2dbezbli,ji*labqli ltb2e2.e¢bbaiitli*2.
+
+dp 3db=dp2db-4.tabp(i)eb(i,j)88#3/3.-2. ebbplilebli,j)
+c ¢dter
+
+qubvli,jl=(-dp2dpsi(lj)*(pperteppart)-p2lj)l#dp3dbtdbdpsili,
+
+pharg=psi(j )#hp3(j)
+dphidpsizphi ll i )typot#(pharg/psi3iet(ypot-1.1/
+¢ (-psi3)thp3(j)
+
+.. special dphidpsi for constant omegexb
+
+dphidpsizphit(i)ter/cee
+
+epsilt,j)=-dphidps!
+
+dpdpsizppertetdp2dpsi(j jep2lj)*dp2dbetdbdpsili,J)
+omegcizechargtb(i,j)/lamasstcee)
+unit=1./(sart(4.%pi))
+
+Jh)
+
+PAGE 8
+
+20
+
+omegstrz-unittb( i,j) 8dpdpsi/(omegceitrhol(i,j))
+omeggbzunit&ppertetp2(j)tdbdpsil i,j )/lomegci*trholt,j))
+
+omegexb=-ceatdphidps'!
+
+mee (t plehfle (py )erholi, J) * lomeggb-omegstr+2, tomegexb| *sf6
+yyylt,Jle-hfle(jlerholt, J )*lomegexbsomeggb) tl(omegexb-omegstriasf8
+
+ppertr=labf (i ltbdebbf (i leb2ecbf(i))
+peerps(t,jiipperpli,jleptlj ltppertr
+
+prerpel(! jlepllj )*epertr
+continue
+
+c......check for negative pressure, and terminate prob, if necessary
+
+101
+
+25
+
+do 25 jel,jx
+do 25 itt tx
+
+iflpperpli,j).lt.O,or pperpeli, jl. lt .O.} then
+
+wrtte(59,101)
+
+format('problem terminated due to negative pressure’ |
+
+call exit(1)
+end if
+
+continue
+
+c,,.,caleulate diagnostic on perpendicular pressure balance
+
+80
+
+c,...,calculate diagnostic on para! tel
+
+do 80 ft=1, tx
+do 80 j#1,j~
+
+errprpolt, jlz(blt,j)8e2-bvac(})e#2+2, tpperpsli,j))/bvac(i)s#2
+
+continue
+
+do 81 jz2,jx
+do 81 [#2,ix-1
+
+‘delbsbliel, ji-bli-1,j5)
+
+81
+
+iflabsidelb!. lt ,epsbi then
+abar=-abp(i)*5./3.
+boar 2-3, %bbp (i)
+
+pressure balance
+
+dterdsdplthzpl (i ledp2thzp2liledp3sthzp3(tbedttthzt1(i)
+c ¢dt2ehzt2lil-dt3thzt3(i)
+
+dbarzdter4dt2,
+
+factor=-(abartbl(i,j)eed+bbartbl i, J) 882ecbpli)edbareb( i,j)
+
+factor=(pparlie1, jleb(tet, jl-ppar(i-t,jplebli-1,j))
+c /delb
+
+end if
+
+error l (ict, jr-lbetpperpli,jl-2.8ppar (i, jlefactor) /bvac(i)#sen2
+
+cal, r and rzztr
+do 40 t#t,tx
+sumt=Q.
+sum2=0
+sum3=0,
+sum4Az0.
+sum5=z0,
+do 40 j=2,
+dps=dpsi(j
+)
+
+x
+
+(
+psibtpsi (j
+if(j.eq.2
+dps=psil2)
+epstb=0,
+end if
+ifli.gt.2lgo to 31
+call beast (hpk0(1!1,0, ,ktr)
+call beast(hpk12(1),0. kin)
+
+J
+)
+1)
+
+then
+
+PAGE 9
+
+call beast (hpkm(1),0. kin)
+call beast (hpkme(1),0. kin)
+do 29 k2z1,kin
+psikzepsibedpst(k-1)/(kin-1)
+ifl(psik tt. psiOlhpkOlk)=1,
+ifl(pstk It. psimihpkm(k)=1,
+TF (pstk. lt. patmelhpkme(k)=1,
+Tf (pstk It. .psi2.,and.psik.gt psitlhpkl2a(k)=1.
+29 continue
+Crosses CALL Pl (plk) at trntermediate points in dpsi interval
+do 30 k#1,kin
+psikzpsibedpsa(k-TI/(kin-1)
+psikrzpsik/psioa
+pstkrezpsik/psime
+plek=(aeltbeltpsikretceltpsikrett2edeltpsikrets3) thpkme(k |
+peek= .58(1,.-tanh((psik-pside)/upze) )#(1,.-hpkme(k) }
+pik(k, jlzel(plek+p2ek | /pimax
+psk=(p3atp3btpsikerep3ctpsikret2ep3dtpsikr #23) thpkO(k)
+p2kik jlel(t.-tanhl(psik-psi0)/wp2))1%.5 *+p3kadip
+30 continue
+31 continue
+do 32 k=1,kin
+ifip2kik J). le.peflagithen
+p2kik,j)ap2foor
+pIk(k, J )eptfloor
+end if
+ulzp2k(k,ji*abpl(ileptkih, j )eabfit)
+ue=p2k(k,j)tbbplileptk(k, jl ebbfiid¢.5
+uszpek(kK J) eebpltleptkik, jlbecbf lt l-bvac(t}axon 5
+
+Creees at,bt,ct coefficients for low density expansion
+atzul
+btzu2- 5
+ctzu3ebvac(t) saxon 5
+bvebvac(it)
+
+ordera2d=4 tcttbted a (bttbv ) e828, Batectebvet2e12 wattbtsbvard
+c +Bkates2tbyst6
+bsq3ebvet2-2 Bletebttbhbves2eatebveed) cordera2
+if ((ordera2/bsq3!.le.epsp) then
+bk=sart(bsq3)
+else
+tiz-u2".5/ul
+radic2=(tl*82-u3/ul)
+roundz=abs(radic2)/(t1s82¢abs (u3/ul))
+iflround.le.l.e-6)radic2=0,
+radiczsaqrt(radic2)
+bsqtz=tleradic
+bsq2=tl-radic
+bsq=bsq!
+if(tl.gt.radiclbsq=bsq2
+bk=saqrtibsq!
+end if
+capfz=t .+¢2.eptk(k jlel2.sabflilsbkes2Qebbf (i lie2.epokik,j)%
+c (2, 8abp( i) 8bkse2¢bbpli))
+delil(kh=1./bk
+deli2tkl=1,./(bkea3tcapf |)
+delid(kl=edeli2tki/(capftbka42)
+delid(kh=eptkik, jl/lcapfebk ) #3
+deliStkl=p2k(k,j)/leapfabk }e93
+32 continue
+call simps(delil dcapil, kin, dps!)
+
+PAGE 10
+
+call simps(deli2.,dcapi2,kin,dps)
+call simps(deli3,dcapi3,kin, dps)
+
+c call simps(delitA4,dcapid,kin,dps)
+call simps(deli5,dcapi5,kin,dps!)
+capit=sdcapil+¢sum!
+capi2edcapi2+sum2
+capt3edcapt 3¢sum3
+capltdsdcaptid+sumad
+capiSedcap i5¢sumS
+
+(i, Jlesaqrt(2.8capil)
+
+vizlbvaclti#dbvdz(i)})s«2
+vv2zbvac( i )8&d2bvdz2l(iledbvdz(i)*«2
+ezz(i,plecvvikcagpiQee2a/r li jp ilaese3 evvitcapia/r (i,j)
+c ~vvescapi2/rli,jleB. tbvac( si )ee2el(abf li lecapidsabpl( its
+ec captSi/rilt,j)
+
+sumize¢capi)
+
+sumezcani2
+
+sum3zcapi3
+
+sumAzcapia
+
+sum5zcapi5
+
+40 continue
+
+Cee eae: set rli, tier (t,2)
+
+do 41 iT, ix
+41 et, Vber(t,2)
+
+c calculate diagnositc quantities flutel, flute2 and flute3
+do 60 jz2,jx-1
+ist2
+
+tf lmod(txn-2,2).eq.0)is23
+
+do 61 ttts,ix-t
+
+tazi-ise]
+
+etermedpedpsi(jielabplilebli jpieedebbp li lebli, jp let2echp(i))
+¢ +p2(j)k(A8abp li )8b (1, j )8ede2ebbp (i) abi j))adbdpsi(t,j)
+rtera:0,
+
+if (dp2dpsi(j).ne.0.)
+
+c c rtermzdp2dpsiljiiebplilxbii, jleadefbplilebl i,j )ae2egbpl(i))
+
+c e /(2,8p2(j)a8.5)
+
+c c ep2lj lee Saldtebplilebli,j lbeese2nfbpl(ilebl ipl) adbdpsil i,j)
+c rtermzexrho/psi(jxiteholi, js
+
+droterm(ial=erterm/bl(t,j)*#2/uuz(i)
+ringszdpldpsi(j)s(abf(ilebls, pleadebbfit)eblt,plee2ecbf lid)
+
+c epllj)elasabfl (i) se (i, pl eade2ebbF (1 )8b1 i,j) 1 tdbdpsi (i,j)
+dflutelt(talbeerzz(t, j)equbv(i jp) Zte (tp) ebth, jp) ea2)Zuuz ls)
+
+¢c cotermtringj/bli,j)#83/uuz (i)
+dflute2iialtyyylt pl7(le (ds, pleblr, gj)
+
+c )ee2eb(i yd) /uuzli)
+dflute3lialerholt  jil7(leli,j
+dfluteAl(tabexxanx(i pi7(leli,j
+
+61 continue
+
+call simosidflutel,anst!,ia,du)
+call siaps(dflute2,ans2,ia,du)
+call simpsidftutesS,ans3,ia,du)
+call simps(dfluted,ans4, ia,dul
+call simpsidroterm,ans5,ia,du!)
+flutel(j)zanstelia-1)
+flute2(j)=lans2t(mmte2-1)eanst)8lia-1)
+flute3(j)=-ansl/ans3
+
+rhoavelj )=zans3elia-1)
+xxxave(jlzans4@(ia-1)
+yyyave(j)=ans28(ia-1)
+droavel(jlzans5é*lia-1)
+
+—
+
+bli, plblee2ebli, pll/uuztt
+bli, jlieseebli, pl )/uuztlt
+
+—
+
+PAGE
+
+im
+
+60 continue
+
+grow=0,
+growmax=0,
+do 62 j22,jx-1
+if(flute3(j).gt Olgrowzgroweflute3ij}
+growmaxzamaxt(growmax, flute3(j |)
+62 continue
+wri te(59, 102) grow, growmax
+102. format ('grow=' ,e14.6,3x, ‘growmax=',e14,6)
+weeee local growth rate for high mm, (wkb approx, |
+do 70 j#e,jx-1
+omegukbemms Stuxxavelj)/rhoave(j |
+trads , 25emmeeoe(uxxave(j)et2e4 trhoavels |tyyyavel(j))
+¢ ~rhoavelj)#e2efluted(: l-droavelj )*tyyyave(j |
+ifltrad,le.O,lthen
+gamukb(j)lzsqrt(-trad) /rhoavel j)
+omegliwkb(j lzomegwkb
+omegewkb(j)=0,
+else
+omegtukb(j )=omegukbh +sartitrad)/rhoavelj }
+omegewkb(j |} =omeguwkb-sart(trad)/rhoave(j)
+end if
+70 continue
+return
+end
+subroutine fitoll
+.2ee-COleculates the fl to F111 functions needed to generate the a and
+eee b matrices . uses the equiibrium quantities r, rho, b, ete,
+sseee Tnsert cliche storage here
+
+use param
+use fstor
+use matrix
+use canst
+
+me=mnea?
+
+du2z=duk¥2
+
+do 10 it=1,ix
+
+do 10 j#2,jx
+
+rezrl(i,j)e«2
+
+uz=uuz(t)
+
+bb=b(i,j)
+
+vpzvpsi(j)
+
+rdzroste
+
+FITC jlerholi,})®bbtra
+F2t2(1.-m2)trholi,j)/ober2tvpsl(rholi,jetil-rholt,j-1))/(2.8dv)
+F211, plefet/vp
+
+F301 J demmtaxwnl tp ler aebb
+
+FAlb Fle 1 -m2) tmmexuntd tj) /bb
+
+F501, J le-m2tyyy lt, jf) er dkbb
+
+F705 Flelt -m2)el-m2ityyyli,j)/(lobtvp)
+
+g4(i, jlequbli,jlarli,j)ee2
+
+g3li,jler(i,plebti,j)
+
+g2li,jlequbli plier li plebli,j) jane
+dppdpsizdp2dpsi(j)tlabplileb(i,j)eedebbplidabli,jlet2ecbp(i))
+c ep2lj)elAtabplidtb( i, pdee3e2ebbplilebli, jl ledbdpsili,j)
+dpedpsizdpidpsil(j)sl(abflilsb(t,j)eedebbflilebli,jles2ecbf (id)
+c epl( ple (Atabfl (i) tbl i, pleeSe2abbF (i lbebli, jl iledbdpsi (i,j)
+eringli,J)=dppdpsitdpedps!
+
+PAGE le
+
+gi(i pbtelmmeuuz (tl )ee2er (i  pladeez jl
+c&quby (iJ }tdepdpaidpedps tert j1/b jail
+gili,jlegi(t,j)eswgl
+g2li.jleg2ti J )%sage
+g3li,jleg3lt jp) ¥sag3
+QAli jlegdli.j)tswgd
+C...., spectal gli to test b.c, on flute test case
+c QI(t, Jde-Cmmtuuz (id bee ee (i ple i ji bee2
+
+c eXqvli, jd
+
+10 continue
+Crsyes FILL tr edge values
+
+do 20 121, tx
+f1CE, T)e-fF90E, 2)
+f2li,1)2f2(1,2)
+(311, 1) 2-301, 2)
+FAT, Tefal i, 2)
+*5(4,1)8-f505,2)
+#70b, Vb=F70E, 2)
+g4(},Vle-g4lt,2)
+
+20 eontinue
+return
+end
+
+subroutine grid
+
+c..... relates physical grid z,psi to computational grid u,v (equally
+c..... spaced |, uses Input fosi, fv, fz, fu and azm, apsim
+
+¢,....tnsert cliche storage here
+use param
+use const
+
+xvzaloglfpstl/aloglfv)
+xutaloglfz)/alog(ful
+zzp«0.,
+
+pstp=0,
+
+do 5 i=1,
+
+5 ott eudeduelt-1.5)
+u(tbs-ult)
+azmzulix)ee(1.-xul
+do 10 i=1,tx
+vuzlileuli)ee(1.-xul/(xukaze)
+zlidsazmBult )*#xu
+
+uuzhlilel(ulile S¢dul ¥a(l.-xul/ixutaze)
+dz(tl=zlil-zzp
+zzp=zi(i)
+10 continue
+
+zedge=azm* Stlulix!eexutulix-1) 88xul
+do 15 j=1,j«
+viplevOely-1,5)4dv
+
+15 continue
+ville-v 1)
+apsimevijx)ee(l.-xv)
+do 20 j=1,jx
+vpsiljlevip) eet -xv)l/lapsioatxy)
+vpsih(jlel(vijle Stdviea(1.-xv)/lapsimtxy)
+
+PAGE 13
+
+psilj)=apsimty(j )eaxy
+dpst(jlepsi(j)-psie
+psipzpsit(j)
+20 continue
+c..... Calculates v at plasma edge
+ve=(psiw/apsim)aea(1./xv)
+dvinel(ve-viju-T))/dv
+dvoutelv(jxl-val/dv
+return
+end
+subroutine initial
+
+C.....8@t up Initial displacement vectors, xro and xto
+Coeeas test case 1, cos(kz) in z, fiat in psi
+
+C..... set up 1/4/82 by r. frets
+
+C.,.,,insert cliche storage here
+
+use param
+use fstor
+use matrix
+use const
+
+data p1t/3,1415926/
+
+rbf=1,
+do 10 j#2,jx-1
+rizranf lb)
+r2zranfl(bi)
+r3zranf (bi)
+rdzranf (bt)
+do 10 t#2,ix-1
+if (psth gt.psilj)ithen
+rbf=l./(r(i,plebtt, gd)
+kzsp7=0
+else
+rl=zranflb1)
+r2sranf (bl)
+r3eranf (bl)
+rdzranf(b1)
+kzsp=!
+endif
+
+&§ continue
+KTet-le(p-2)8(ix-2)
+k2ej-le(jx-2) 811-2)
+k=. Se(leiswltkt¢  5a(1-tswltk2
+cosxzcos( Stpielz(ibekzsp)/zedge)
+
+xrolkbeexnOtcosxtrbfel(rter2-1.leexttcos( Stpislz(i))/zedge!
+wtolk )sexO8cosxtrbftlr ser 4-1. beexttcos(  Stpisz(i)/zedge!)
+
+c xtolk i scos(thetad) txro(k)
+
+10 continue :
+do 20 jr2,jx-!
+rizranf(b1)
+r2zranfibl)
+r3=ranf (bl)
+rd=zranfib1)
+do 20 i2,ix-l
+ifl(psth.gt.psiljlithen
+rof=t.7(r (i, jlebli,gal
+kzsp=0
+else
+
+PAGE
+
+14
+
+15
+
+[a a)
+
+Lr a ae
+
+Cc
+Cc
+¢
+
+Cree as
+
+c
+
+rleranf (bl)
+r2zranf (bi)
+r3zranf (bt)
+rA=ranf(b1)
+kKzsp=1
+endif
+continue
+kVst-le(p-2lalix-2)
+kKeep-leljx-2) 84-2)
+k= Sa(letewitkts Sell-iswl tke
+cosxecorl Stpre(z(ilskzsp) zedge)
+xrool(k)zexOkcosxtrbfeir ler 2-1, leexttcos| Stpiel(z(iti)/zedge!
+xtioolk)zexOtcosntrbft(r3ecrA-1,loexltcosl Stpitz(il/zedge)
+xioolkizcos(thetad) txroo(k)
+cont tinue
+return
+end
+
+subroutine input
+
+insert storage cliches here
+use param
+
+use const
+
+use fstor
+
+boundary conditions are set as follows:
+at z=z0 (i=l), fFilz-1. tmplies «=O,
+filzet. tmplies slope.
+at zzzmax (fetal, flzexs-1, taplies «=0
+fizw=1. taplies slope=0.
+at psizpsiO (prt), fFyle-t. taplies «20,
+fpylel. tmplies siope=0.
+at pst=max (jejul, firxwz-1, tmplies «=0,
+fjrx=1. teplies stoupe=0,
+data mm/4/, bias/.5/ \Imax/2/, nmax/5/,dv/1./, du/1l./
+ndiag/100/  FII/T LS Fiza /I oS FRIIS PF prs FIP /I 7
+,sf6/1./7, sfB8/1.7, Kplotm/O0/, kzs/1/, swg1/1./, swg2/1./
+, $w93/1.7, swa4/1./, nen/t/
+
+forced data loaded for testing fourier analyses and zed file
+maker
+data jfour/1/ ,nfourp/1/ .nfourmax/5/
+namelist/nowl/aname,mm, bias, Imax, nmax,ndiag,nen
+ft fizx,f)1 fjrx,exO,exl, fosi,fu,fv,fz
+,Kplotm,kzs,jfour ,nfourp,nfourmax,sf6,sf8,swgl,swg2,swg3,sug4
+
+call ddilnow!,2,3,1)
+
+if lnold.ne.ticaltl ddolnow1,100,0,1)
+jx=jrx
+
+Kxx=kxp
+
+im=tzx
+
+return
+
+end
+
+subroutine inptemp
+
+.temporary input to test three region equilib.
+
+use param
+
+use const
+
+real kibsaq
+
+namelist/btemp/bmx1,bmx2,bmx3,bmn1,bmn2,betpasi ,ppas2
+.ppas3,betrap,zle,z2c,z3c,zImin,zemin,as,als
+

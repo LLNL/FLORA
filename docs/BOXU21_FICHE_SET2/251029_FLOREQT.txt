@@ -1,0 +1,255 @@
+box uel§$
+
+grafllb:gesO204ekcsO0204e
+
+15:50:4008/05/8e2 c
+
+box uel§
+grafitb:gcesOe204¥ekcsO0en4e
+
+15:50:4008/05/8e2 e¢
+
+dt: 3.125000e-11
+xs 30
+yx 30
+total time steps > 2400
+no. of iterations > 4
+bias: 0.81808
+Patrod: -2,000000e+00
+drift freq. (omegst) + 6.14023730e+08
+rotation freq. (omegr) + -1.22804746e+09
+e x b freq. (omegexb) + -6.14023730e+a8
+fir= 1,80880000e+20
+sf6- 1.80000000e+200
+sf8- 1.00800000e+00
+enbar: @.
+kplot: 349
+kzs- l
+valfk +« 9, @@88@000e-21
+cpu time + 8.54245960e+13
+i-o time + 1.21177700e+12
+Sys time = 9.601718@0e+12
+
+xe (Z.p8ip) ve z
+
+Q ®
+Q os
+>» mM
+
+xe (2.p81p) va z
+
+Qo 8
+Ss ®&
+~ w
+
+Se SQ & Se
+& Ss S iJ Qe
+wo — ~~ w
+e . . e
+|
+
+-. 708
+
+i] '
+
+(01:60°2) ux
+
+xe (Z-p9ip) vs z
+
+xr (z.p8ip) vs z
+
+&
+
+L~) 1}
+~~
+
+s
+
+'
+
+(d':60°2) ux
+
+
+xe (2.p8ip) vs z
+
+er (2.psip) ve z
+
+oe o®
+eo ww
+SS 8s
+
+- 188
+. 158
+- 288
+
+t 3 §
+(0160°Z) ux
+
+xt (2p-081) vs psi
+
+xr (2p.p31)
+4
+=
+
+er 8 =~) ® ®& i")
+ao + & >) Q Q ®&
+© tis e e e «
+_ N az) x w
+
+psi
+
+xe (zp.psi) vs psi
+
+eo > & @
+eo + & 1]
+° til e °
+_ N
+
+wc 3-00
+4.88
+5.00
+
+6.88
+
+6.00
+
+xr (2p.psi)
+
+xr (Zp.psi)
+
+-. 108 un ‘
+~. 20@RP
+-. 3007
+-. 4002
+-.58
+
+-.68
+
+-. 788
+
+M1)
+E+4
+1.88
+
+xe (2p.p8i) vs psi
+
+= S 3 =
+
+8 & 3 S
+
+~ ” =H in
+psi
+
+xe (2p.p8i) vs psi
+
+Sn
+
+is) ® ® i)
+®& Q & &
+N csp) x Fe)
+
+6.88
+
+6.08
+
+xr (Zp.p3i)
+
+xf (29.981) ve psi
+
+=) = =
+) =) S
+a ® e
+” a un
+ps)
+
+6.88
+
+xr (zp.psi)
+
+xt (zp.p9i)
+
+=)
+
+)
+
+se)
+p
+
+Si
+
+v8 psi
+
+4.08
+9.88
+
+6.08
+
+BO°L
+
+xe (zpev) vs v
+xe (zp.v) vs v
+
+(A *OZ) 3x
+
+xr (zp.v) ve v
+
+(A°GZ) ux
+
+xe (zp.v) vs v
+
+xe (zp.v) ve v
+a)
+\ ‘
+NX
+v
+°
+
+8 Q J Qe 8
+8 Ss i) i] 8
+wo x N i.) N
+
+i) '
+
+(A°GZ) ox
+
+82°39
+
+xr (kplot) vs t
+
+a ll
+
+(4010) sx
+
+BB°L
+
+82°39
+
+@8°S
+
+82°C
+
+8B°2
+
+8-3
+
+8O"T
+
+88°S
+
+9B°E
+
+GB°2
+
+8-3
+
+8a°1
+
+E-6
+
+box uels
+
+graflib:gesO204ekcsOe04e
+11 frames
+
+15:50:4008/05/8e2 ¢
+

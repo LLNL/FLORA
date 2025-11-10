@@ -1,0 +1,498 @@
+box uel
+
+graflib:gesO¥eeskhcsO4¥183
+
+16:41:2109/07/83c
+
+dropfile name = +xfloscc
+
+driver e.0
+
+
+box uel$
+
+graflib:gcsO4¥eeskcsO4¥183
+
+16:41:e8109/07/83c
+
+dropfile name = +xflosce
+
+driver ce .0
+
+
+mm - 2
+bias : @.
+
+| max a |
+nmax * 108
+ndiag © ¥
+fil - <1.
+f 1 Zzx - -1,
+f jl > i.
+f jrx a 3
+exd ae
+ex! « Q,
+fos * 0.5
+fu - @5
+fv * 8.5
+4 - 0.5
+kplotm °- @
+kzs - @
+jfour a |
+nfourp <: 1588
+nfourmax = 5S
+sf6 l.
+sf8 =|,
+r)
+
+dt - 8.5
+dv e |.
+zmax ° 4,
+b@ i.
+bil » 1.2
+ra) - 2,
+rhoe ae
+
+8
+
+this problem run by xflosc
+
+dt: 5, 000000e-01 ixe 34 jx 4Q
+total time steps : 108 no. of iterations -
+
+firs 1.08080808e+20 sf6* 1.00000800e+00 sf8-
+
+kplot: 559 kzs° "
+cpu time * 2.78187280e+12
+i-o time = 1.57977980e+12
+sys time = 3.05421000e+11
+
+u exponent (xu) > 1. @0000008e+88
+v exponent (xv)> 1.88000000e+08
+end: 2. enl: @. b@:
+
+1 bias:
+1. @@00@008e+80
+
+1. @8800008e+00
+
+r( 86.v)
+
+4.80
+3.58
+3.88
+2.58
+2.80
+1.58
+1.88
+
+2.18
+2.88
+1.98
+1.80
+1.78
+1.68
+1.58
+1.48
+1.38
+1.20
+1.10
+1.08
+
+Z2 VS Us
+
+-58
+1.88
+
+(z*const*us*xu)
+S88 & &
+- N nN Mm Om
+u
+r( 6.v) vs v
+oc 2 8
+eR 8
+Vv
+
+38.8
+
+4.88
+
+35.8
+
+35.8
+38.8
+25.8
+n 28.8
+a.
+15.8
+10.8
+5.8
+
+psi VS Vv.
+
+5.8
+18.8
+
+(psi-constsvesxv)
+
+15.8
+< 28.8
+25.8
+30.8
+35.8
+
+flutel
+
+flutel
+
+vs.
+
+psi
+
+f lute2
+
+1.08
+-98
+88
+- 78
+68
+98
+
+5.8
+
+18.8
+
+flute2
+
+15.8
+
+VS.
+
+~ 28.8
+
+psi
+
+25.8
+
+38.8
+
+35.8
+
+ur (2-p8ip)
+
+ur (z.psip)
+
+xe (z-pe:( 20)) ve 2
+
+eee ow
+
+e
+
+e
+
+N
+2
+
+-58
+68
+1.58
+
+eech
+
+“Th time
+
+3.58
+
+“Th time
+
+ur (z.psip)
+
+xe (z.p8ip)
+
+xe (z.p90( 20)) ve 2 uth time
+
+eech
+
+408
+
+-. 408
+
+a
+Ve)
+
+-98
+1.88
+
+e
+@
+
+“ 2.00
+
+“uTh time
+
+eech
+
+ur (2.9819)
+
+ue (zepe:( 20)) ve z
+
+8 8
+wo & uw
+e e
+
+~_
+
+eech
+
+uth time
+
+3.58
+
+xe (z( 17).pe0) ve per eech “th tine xe (zt 17).p990) ve pe: eech Sth tine
+
+78 808
+30 608
+30
+4 - 8 200
+g g
+% 7:38 7 o
+& &
+-.50 -.290
+-.70 -.400
+-,90 -.602
+) rs) o =) =) rs) =o ©
+» se Hb & » 8& Ww Yn» os ww > bw 8S ww
+rn) N N m” (0) _ ~ N “ wm
+‘
+xe (2( 17).p81) vs pei
+.88 |
+.68
+48
+= = .20
+g &
+& & -.20
+& %
+
+-.4@
+-.60
+-.8@
+-1. 00
+
+
+xr (zp.p9t)
+
+
+xe(z¢ 6).p81) ves ps: eech kth tine
+
+xe (zp.p9i)
+xe (zp.p8i)
+
+eo Ss oes =)
+wn r=) w os Ww os w
+~_ -~ WN N wo ive]
+ps)
+oth (a! 6).psi) ve ps: eech “th tise
+500 a
+- 408
+. 300
+_ +208 -
+~ . 100 e
+a &
+& -.100 &
+& -.200 %
+-. 300
+-. 400
+
+&
+uw
+
+18.
+15.
+- 28.8
+25.8
+38.
+35.8
+
+xe (zp.p981)
+
+xe (zl
+
+&
+wn
+
+6).pe1) ve pe
+
+n-2!
+
+each ith tine
+
+uth tine
+
+. 48S"!
+@f f
+
+e Gh
+>
+
+=~ | Sam
+&
+
+~ @2°!
+=
+
+~ @r't
+~~ er
+i>] ea i-*) i.) ° & i~"] ta] 88 I
+x & >] [~~] [.~] t~] S & &
+
+t t i]
+( 5°G2) sx
+
+2 giz
+oo
+
+ct g0°Z
+oe
+
+#4
+
+eech
+
+Q---oonnoneens
+
+. @s"I
+we e
+e cee Ce
+> c
+ry a GE °T
+'
+= ! @2°I
+= + daret
+~ ' .
+~ OM -_ ~ nm wm ~ oOo
+1 i] i] i] t
+
+mp (zd i7).e) vere
+
+“th Time
+
+i-~)
+N
+.
+[
+
+eech
+
+—n +29-—
+-——--n+18- - - — — -n-18- -
+
+mp (zt i7).¢) v8 fe
+
+- 88
+6
+
+( 3°OZ) JX
+
+“uth tine
+
+eech
+
+eech th tise
+
+ep (zC 17).¢) vO to
+
+- 888
+- 688
+
+~ 489;
+- 280
+Q.
+
+(3°62) ox
+
+-.288
+-. 406
+
+
+xe (2
+. 588
+
+wit,
+
+- 580
+480
+
+@).r)
+
+eee ee ee)
+
+vs Fe
+
+geree) V8 fe
+
+SaAn sh Oe
+
+eech
+
+Oe |
+
+eech “4th tine
+
+oo ao
+
+uth time
+
+@
+~ aw a a as a NA
+
+r
+
+ur(z¢ Oe) vers
+
+xe (2
+
+6).r) var.
+668 ;
+
+i) i
+“ m WwW wo = © o & “
+
+s e
+aa a anes aN “
+
+r
+
+1.18
+
+xe (z
+- 608
+
+6).r) ve Fe
+n+2)
+
+—_—— oe ue
+
+a ~~ ee ~~ I > |
+
+* e hd Ld
+~~~ > >  -—|
+a . 9 9 = 3 ©)
+
+~~ a « ~ ~~
+
+e e e e
+rr ~~ ~~
+_ N ”) Pa w
+
+box uel$
+
+graflib:gcesO¥ee3kcsO4¥18S
+18 frames plotted
+16:41:2109/07/83c
+dropfile name = +xflosce
+140370 commandsissued
+299 records in job
+family number l
+
+fr8o0 driver 2.0
+

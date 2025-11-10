@@ -1,0 +1,383 @@
+box uel$
+
+grafllb:gesledBekcslillee
+
+156:59:3302/09/83c
+
+dropfille name = +xfleqte
+
+driver 1.8
+
+
+bias ae
+|max 4
+
+nmax * 258
+
+dv ae
+
+dt * 3.125e-1)
+du 1.
+ndiag - 20
+
+fil l.
+
+f i zx ° |.
+
+fil ae
+fjrx e -1,
+rhod : Q@.
+
+b@ - 10000.
+ex > |,
+
+exi >
+
+u@ :- @,
+
+vO - @.
+fosi @.5
+
+fu @.5
+
+fv @.5
+
+fz * O.5
+azm - 8,
+apsim - @
+
+fir l.
+
+sf6 1.
+
+sf8 an
+kplotm <= Q
+
+kzs - Q
+jfour |
+nfourp <: 580
+nfourmax = 5
+
+$
+
+b@ 180080
+betaa 23.
+delrho + §.e-82
+stable @.5
+eng 1.e+14
+echarg 4.8e-108
+Ib 18.
+
+rw 4.
+
+xm > 3.8317
+zol — (0.
+dtrel Q.1
+theta®d -: 1.570796
+
+this problem run by xfleqt
+
+dt: 9,669800e-10 ixe 34 jx 4@
+total time steps : 258 no. of iterations : 4 bias 1.028008
+omegal: 1.83414758e+88 omega2 - 6.02037261e+06 omega@ - 5§.47175655e+07
+
+stable + 5.00800000e-01 firs 1. @8008808e+00 sf6- 1, 00000000e+00 sf8-
+
+kplot: 559 kzs° "
+cpu time «= 1.57234478e+13
+i-o time © 1.52731200e+12
+sys time = 1.756585@0e+12
+u exponent (xu) ° 1. 0@080WUGe +00
+Vv exponent (xv): 1.80000800e+80
+end: 1,.00080000e+14 enl: 6.25080080e+11 b@- 1.88080000e+04
+analytic freq (omanal): 5.43448612e+07 analytic freq (omanaz): 2.
+analytic growth (groana): 4.85310888e+87
+
+1. GBB00000e+BI
+
+r({ 8.v)
+
+100
+
+4.80
+3.58
+3.080
+2.50
+2.88
+1.58
+1.88
+
+50
+
+Z VS Us
+
+18888
+
+28888
+
+(z-consteUe*xu)
+rs ee
+
+r( 8.v) vs v
+
+=)
+=)
+5)
+&
+m
+
+<49008
+58888
+68088
+
+78808
+
+88880
+
+B000e
+70008
+60008
+50008
+HB800
+
+30000
+
+20000
+
+10888
+
+psi VS V»
+
+19908
+20888
+
+(psi sconst«ve*xv)
+
+38888
+<480008
+58800
+68880
+78888
+
+88200
+
+ur (z.p3sip)
+
+xr (Z-psip)
+
+-)
+e
+
+@
+~
+
+26.8
+
+30.8
+
+68.8
+
+each 28th time
+
+xe (2.991 (
+30808
+
+20)) va z eech 26th tine
++r to
+
+20880
+
+18088
+
+ee ee ee
+
+®
+
+®
+~~] ~~) ®& ®
+if) ~ © io)
+
+xe (zpsip)
+
+- 108280
+
+- 20808
+
+ur (zp.psi)
+
+xe (zp.psi)
+
+xe (z( 17).pe1) ve psi eech 26th tine ure (z(.17).p81) ve psi eech 26th tine
+20 . ——— |
+
+ae
+
+1800
+
+1600
+
+1480
+
+1200 2
+
+1000 a
+
+820 g
+
+600 .
+
+4a@
+
+ceo
+
+) eee "TTS “
+
+-280
+& [x] [>] & [so] fs] ®& & ® iss] i~}) [.>] i.) fs]
+® is] & [>] [>] @ [Xs] [-~] @ @ [n=] [us] &
+i->) & [->] i>) i] & @Q 8 & 6) ®& 8 fs]
+se 8 = 8 & & sk 8 = 8 8 &
+
+’ psi " psi :
+
+xe (zC 17).psid vs psi each 28th time
+
+~~] e i)
+=) ~~] ®&
+i) ~~) &
+& ~~) &
+- N ”
+
+xr (zp.psi)
+
+xr (Zp.psi)
+
+nae Mowe ee
+
+xe (2 (
+
+8).ps1) ve psi
+
+—_ oe a Oe
+
+~~ oe
+
+8).psi) vs psi
+
+188868
+
+286888
+
+eech 26th tine xe (zt @6).ps1) ve pe: eech 26th tine
+
+1.0
+8
+6
+= 4
+: 4
+ra Q. teens
+}
+-.2
+-.4
+E+5
+= -.6 a“
+o eo 8 = oc oc oe e ®& oS
+os ee 8s 2 os os ese ese es a
+a oe @® e® ses se 8s 8s a2 9
+oe ese ® e® ose se 8 8 es ®8
+p» oO Cf =~ N © og n o
+
+each 28th time
+
+
+xp (zpet)
+
+xe (zper)
+
+ee(z( 17).7) ve re
+2000
+
+eech
+
+26th tine
+
+xe (zpor)
+
+xe(z( 17).f) ve re
+
+eech
+
+20th tine
+
+
+ur (zper)
+
+xr (zper)
+
+oot a! 6).r) ver. eech 26th tine xe(z( 6)or) vere eech 26th tine
+
+xe (zper)
+
+& Q .~) a
+uw i>] w >)
+e e e e
+~ -_ AN
+
+2.58
+
+i] ~*]
+®& uw *p)
+
+e e
+nm
+
+xe (zt O)er) vs re each 28th time
+
+L~] i) & is~] e >) i]
+uw & w i>) w & uw
+° e e e
+_ N N m” ”
+
+xr (kplot) vs t¢
+
+i~]
+od
+
+e ~~)
+se e
+om N
+
+(40| dy) Ix
+
+1.0
+E+5
+
+88°?
+
+4{O02°1 +
+
+80°!
+
+e8°
+
+89°
+
+us
+
+us
+
+
+graflib:gcesledBekcslllee
+le frames plotted
+
+15:59:330e2/09/8sc
+
+dropfile name = +xfleqtc
+
+87760 commandsissued
+187 records in job
+
+Family number |
+
+fr 80 driver
+

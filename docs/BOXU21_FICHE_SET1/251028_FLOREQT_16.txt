@@ -1,0 +1,511 @@
+box uel
+
+graflib:gcecsled8ekcsillee
+
+17:38:e°60e2/03/83c
+
+dropfile name = +xfleqta
+
+driver
+
+FO eee ere
+
+box uel$
+
+graflib:gesledSekcsllice
+
+17: 38:2602/03/83c
+
+dropfile name = +xfleqta
+
+fr8o driver 1.8
+
+mm
+
+1
+
+bias * |.
+|max » ¥
+
+nmax * 250
+
+dv ei.
+
+dt - 3.125e-11
+du ae
+ndiag - 20
+
+fil “1,
+fizx =i.
+
+fil ae
+
+f yrx » -i,
+rhod - 0.
+
+b@ - 10000
+exd > 1.
+
+ex] :* @.
+
+u® * 0.
+
+ve - @.
+Fpsi - 6.5
+
+fu > @.5
+
+fv * 8.5
+
+fz * @.5
+azm > Q.
+ansim :- @.
+
+fir - |.
+
+sf§ ae a
+
+sf8 =|.
+kplotm «+ @
+
+kzs :* Q
+jfour - |
+nfourp + 580
+nfourmax = 5
+
+$
+
+£0 - 10008.
+betaa * 108.
+de!irho - @.
+stable > 8.95
+eng > 1e+14
+echarg - 4, Be-18
+Ib - 10.
+
+rw ° 4,
+
+xm - 3.8317
+zol - 18.
+dtrel * 8.1
+thetad - 1.570796
+
+this problem run by xfleqt
+
+dt: 5.157198e-18 ixe 34 jx: 49
+
+total time steps - 250 no. of iterations = 4 bias: 1.06002
+
+omegal: 1.93984051e+88 omega2 - -8.44689204e+07 omega® = 5.47175655e+07
+
+stable - 9.5000000@e-01 fir: 1.088@00000e+00 sf6- 1.00000000e+00 sfB- {1.00008800Re+O!
+kplote 959 kzs° g
+
+cpu time = 1.56928218e+13
+
+i-o time - 1.65983608e+12
+
+sys time - 1.749153@0e+12
+
+u exponent (xu) > 1. @880B008e+0B
+v exponent (xv):  1.@8800800e+00
+en@: 1. 009000000e+14 enl- @. b@- 1. 000200000e+04
+
+analytic freq (omanal): 5.47175476e+87 analytic freq (omana2)- @.
+analytic growth (groana)+ 3.19316085e+07
+
+x GUGOL
+2 g2289
++
+c
+S gages
+[@}
+= eeeah>
+”
+a
+~ gouge
+>
+a gaaaz
+>|
+_ gage!
+‘)
+a
+
+Ss Ss i<s} Ss Ss S tx] S
+
+Ss Ss Ss [=] Se Ss t=] Ss
+
+Ss Ss i~~] S&S Sa t<>] Ss S
+
+SBS SS [~~] eS i ~~) t~} Ss SE
+
+@w ~ w wn ' ed wo WN _
+
+|
+* >
+s
+5 ol!
+. >
+- Fel
+e >
+oO e
+Or > «@
+.
+N _
+—_— ce
+e
+3
+#0
+>
+NI
+@® © ® 8® @ @® 8 &8® @2 ®& 8 i) 8 & i] 8 8 ®&
+Se oworeiwe wor on — ~~] un Ss us SS wm i] wm
+— e e e e e e s e
+> ow) Ap) NS N _ _
+
+xr (2.9819)
+
+xr (Z.psip)
+
+xe (z.pei( 20)) ve z
+
+2.0
+a.
+-2.0
+“4.2
+-6.2
+-8.2
+~10.8
+~12.2
+
+18.8
+28.8
+38.
+48.
+
+xr (z-psi( 28)) vs z
+
+“s2.9
+
+each
+
+68.8
+78.
+
+each
+
+-~smamanannane a
+
+* e e e
+~*) & ®& ~~) i)
+—_ N m p> al w
+
+P 4
+
+60.3
+78.8
+
+88.
+98.8
+
+26th time
+
+sawn
+
+82.8
+98.8
+
+ur (z.psip)
+
+&
+
+a
+i)
+ro)
+
+28.8
+
+38.2
+
+40. Bt
+“so.0
+
+
+xe (zp-.psi)
+
+xe (2 ( 17) per) v8 psi
+
+Mt
+
+gate
+
+=~)
+>]
+&
+@
+N
+
+J
+&
+&
+®&
+N
+
+Hf
+
+aa
+
+Bs
+wo tlw
+
+eech
+
+&
+~~]
+i)
+i)
+w
+
+68280
+
+26th tine
+
+78800
+
+each 286th time
+
+xr izp.psi)
+
+ott, (2! 17).p91) ve psi eech 26th tine
+
+2087
+
+168
+
+128
+
+88
+
+48
+
+g a le
+
+oe oc ose 82 8 8 8
+2 se ese es 8s 8s 8
+©® ese ese 8 es 8 8
+e se s 8 sas 8 8
+~ NN og Oo
+
+xe(z( 6).ps1) ve ps: eech 26th tine ote fal 6).p81) ve ps: eech 26th tine
+
+288
+160
+& 120}
+8
+. 88
+4
+48
+4) nino oa wine oe ee
+oe FeFc e® ea 2 2 #=®& e 28f a 28 8 8 8
+e 8s a e& 8 & #@®& eo 8 a 8&8 8&8 82 Aa
+e 5s ae 8&8 8& 8& @& Se se 28s 2c & a2 &
+ss 8 Ss 8 8 & 2s 8 o§ & 8 8
+psi esi
+xe (z( 6).psi) vs psi each 26th time
+
+xr (zp.psi)
+
+i) ~~) e J ®& ~~] Qe
+~] e e Q ®& ~~) Q
+i) Q Q & =) & i)
+>) ~~] ®& ®& & & =~)
+-_ N ” w ts) ~
+
+ur (zper)
+
+xe (zp.r)
+
+xe (z( 17).¢) ve re
+k .
+
+-18.0
+-28.8
+-30.0
+-48.8
+
+-50.8
+
+-58
+1.80
+1.58
+2.88
+
+xe (zC 17).°) vs re
+
+2.58
+
+eech 26th tine
+
+3.88
+3.58
+
+each 28th time
+
+i>) & i]
+®& w &
+
+s e e
+~ _ A
+
+2.58
+
+ue (zpor)
+
+xe (z€ 17).°) ve re
+248
+
+208
+
+168
+
+128
+
+40
+
+~
+mea =
+
+eech
+
+26th tine
+
+xe (zpor)
+
+xr (zper)
+
+xe (2 (
+
+~10.@
+-28.8
+-30.8
+-40.2
+
+-50.8
+
+xr (2
+
+6)or) vere
+
+B).r) vs re
+
+2.58
+
+eech 26th tine
+
+3.80
+3.58
+
+each 28th time
+ae
+
+xe (zpez)
+
+xe (2 (
+248
+
+280
+
+168
+
+128
+
+40
+
+~
+~ me
+
+6).r) vere
+
+ore
+
+cain io oe
+
+rs)
+2.88
+
+eech
+
+26th tine
+
+xr (kp lot)
+
+89.2
+78.8
+68.0
+58.8
+40.8
+38.6
+26.08
+10.8
+
+i ee
+
+18
+E-7
+
+10
+€-7
+
+-28
+
+28
+
+- 38
+
+. 38
+
+40
+
+48
+
+xr (kplot) vs t
+
+a] i) &
+w wo ~
++
+rn ee
+eS ®& i]
+w wo ™~
+
+. 68
+
+.88r
+
+- 98
+
+-98
+
+1.08
+1
+
+1.88
+18
+
+1.28
+
+.20
+
+—t |
+
+box uel
+
+grafilib:gesleOBekcsilllec
+12 frames plotted
+17:38:2602C/03/8S4c
+dropfile name = +xfleqta
+89070 commandsissued
+189 records in Job
+family number l
+
+fr8O0 driver 1.8
+

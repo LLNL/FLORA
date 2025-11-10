@@ -1,0 +1,523 @@
+kinetic energy
+
+energy
+
+total
+
+kinetic energy vs time
+on pean cee eee eee emenenen ema
+
+nN MM
+
+i a] wo w ~ @ on @
+[~~] t e e e . e e e e ry ry
+
+—|
+
+time
+energy
+
+total vs time
+
+5
+E44,
+5
+£ +2
+5
+E +B
+m= WN TM FF WD Ow ~—- © DD @&
+@ ji e e % « ry . ° e s
+Lad -
+
+time
+
+potential energy
+
+energy
+
+total
+
+£
+
+103,
+
+potential energy vs time
+
+@.
+-,1
+~.2
+-.3
+-.4F
+-.5
+-.6
+-.7
+8
+-9
+1.8
+i's
+i pos w~ FO fr Ww ~~ Oo DD ew
+@ i e a * e ry e e ° ° e
+vw) —
+time
+total relative energy vs time
++8:
+5
+E-|
+5
+E-2
+
+in ine) bal Ww ies) C~ aD mn @
+e e e . e e . ° e
+
+_
+
+time
+
+aname ‘ 78 1,6880258364741-987 8. @. 8,
+an |
+
+bias * 1.e-82
+
+| max |
+
+nmax * 188
+
+ndiag + 28
+
+nen |
+
+fil '
+fizx '
+fyl '
+f yex '
+exd ‘
+ex ‘
+fpsi ‘
+fu '
+fy '
+fz '
+kplotm +
+kzs
+yfour
+nfourp
+nfourmax °
+sf6 '
+$f8
+sug '
+svg2 '
+sv¥g3
+sug4
+¢
+
+echarg * 4,B8e-18
+rw * 58.
+rwl * 49,99
+psifrel «+ 1.6
+dpsihrel
+psi Brel
+nsloshin
+cold
+z3rel
+dip : 8.
+psisip
+ncenter
+betsish
+betcent
+rpl
+rcwall : 6.
+er - - 108009,
+exrho 3.
+bceng * 1008.
+xpot !
+ypot l
+wpot 4
+betcene 5
+betsise 5
+betring e
+psilrel l
+psi2rel 3
+p2uide 8
+psi3rel ]
+pela Q
+pZewine +¢ B
+]
+8
+8
+]
+Q
+l
+8
+0
+2
+
+e = 7. . he
+
+° .
+
+psiBere: «
+p2f locr
+p2flag
+
+pif loor
+fring
+
+long
+
+betpas!
+ppas2
+
+dcas!
+
+ditrag - 8.
+ppas3 : 8.
+betrap «+ 1.e-86
+$
+
+an
+
+=--
+e
+eo
+
+baxl
+bax2
+bax3
+banl
+ban2
+ncoil
+zIc
+z2c
+z73c
+zZimin
+zemin
+as
+
+als
+dphi
+phicen
+phiplg
+kin
+bceng
+epsp
+ztrans
+Itrans
+7MaX
+dt
+thetad
+pfudge
+)
+
+s
+
+e
+
+38088.
+30088.
+
+- 30008.
+: 8.
+
+: 6.
+
+2
+
+: 588,
+
+* 988.
+
+- 968.
+
+: 0.
+
+108. 188. 188.
+
+* J.e-85 1.e-85 1.e-85
+i é.
+
+2 =
+
+this problem run by xflrot
+
+problem identification : rotate 35
+
+dt: 1.0808008e-85 Me 68 yee 48
+
+total time steps - 188 no. of iterations ° 4 bias: 08.01008
+firs 1,00000008e+88 sf6: 1,.08080800e+80 sf8- 1. 000808080e+08
+
+kplot: 1044 kzs° 1
+
+cpu time + 1.680178728e+13
+1-O time * 3,.6681680Be+12
+sys time + 1,.161498600e+12
+uexponent (xu) ° 1, 800200800e+ 08
+v exponent (xvi: 1.800080008¢+08
+bani: 3.77673731e+83 bal> 3.79562188e+83 bv3* 1.12837918e+84
+total energy rel. error: 2.14496548e-82
+potential energy: -1,.22852777e+415
+kinetic energy: 1.20249569e15
+
+r(15.¥)
+
+1880
+988
+808
+788
+680
+588
+488
+388
+202
+108
+
+98.
+88.
+78.
+68.
+58.
+4@.
+38.
+28.
+
+188
+
+Z VS Us
+
+ee
+eS.
+oO
+
+&
+J
+a]
+
+a i)
+= e
+~~ w
+
+<= 500
+
+r(iS.v) vs v
+
+{(zZ:consteueexul
+
+a oe &
+=a ee &
+~ wo mn
+
+1888
+
+TN TO TIP Oe OM eSAainm as
+e@ © 8 8&8 © 86 8 BB BO Bh Re
+
+os
+
+Vv
+
+~~ tt OTe om ome
+
+ps:
+
+DSi VS Ve (pSisconsteveexv)
+
+2. ae oe ee ae
+= 2 o o
+
+. o - .
+
+° .* « a «
+We IA WO wop— PO w &
+
+7m
+a
+ee at
+
+HTN mM FNP Om OM Bee Amr mem
+ep e e e ® es e . eo e e e oe e
+heded — ony, — =~ |e
+
+V
+
+flute3
+
+flutel vs. psi flute2 vs. ps)
+
+-2. -2
+a 2 -3,
+3
+“4, “fy
+-5, -5.
+€-11 E-11
+-6, : -6.
+We e ° e e e ° e e _ _ ~ _ oe ® e e ° e . . e _ - = _
+psi psi
+flute} vs. psi Qanwkb vs. pst
+
+80008
+78888
+60888
+= 50008
+=
+
+«
+
+wo 48008
+nH
+38808
+28888
+18088
+*e@ © @e@ @©  @ &® @ @ @ @  @  @  @ @ @ oe @ #@®  @e@  e# «6 en
+
+se °
+bod _ _— = tid _— — = one
+
+psi ps:
+
+xr (z.psup)
+
+nelz.peel 20)) ve z
+3588
+
+3088
+2588
+2888
+1588
+1888
+
+eech 26th trae
+
+
+nf (z-psrp)
+
+nflz.poeel 20)) vs z
+— Ts ,
+
+eech 20th tine
+
+xe (zp.pse)
+
+aga te! 30).ps0) vs ps» eech 20th tine
+
+“HNO FN WMH DOM Se AN OM
+Cm © © #+#© #+j@  @  @  @ @ @ @® ee  @
+
+xe lzt 18).ps0) vs ps: eech 20th trae
+
+EN TN FP OK Om B&B =— WM
+ep s e e e e eo e oe e s e e
+
+tad
+
+ne (zp.¢)
+
+ne (zt 30).¢) ver.
+9808
+
+8808
+7808
+6880
+9888
+4008
+3088,
+2888
+1888
+
+18.8
+15.8
+28.87
+25.8
+
+each 26th tine
+
+
+on
+&
+
+ue (zp.
+
+xe(zt 36).¢) ver. eech 26th tine
+16088
+14808
+12888
+19008
+6808
+6088
+4088
+2008
+0
+
+28.8
+33.8
+48.8
+= 58.8
+68.3
+78.8
+68.8
+98.8
+
+xr (kplot)
+
+xe (kplot! vs t
+
+
+bine bending energy
+
+fir energy
+
+£+12
+£+18
+£+8
+E+6
+e+4
+E42
+€+8
+
+E-2F
+
+E-4
+
+line bending energy vs time
+
+NN TF TF 1 wo © D> @
+| ee |
+
+ome
+
+time
+fir energy vs time
+
+® e ° e ° e ° e rs
+
+eon!
+
+time
+
+curvature energy
+
+curvature energy vs time
+E415 ay
+
+E+t3
+E+11
+£+9
+E+7
+E45
+£43
+E+
+E-1
+E-3p
+ara yer eeneseeae
+ive)
+
+time
+
+box u2l
+nmfece output
+graflib: XXX XXX XX
+18 frames plotted
+f3yrot00 (family 1)
+15:36:1210/11/84c
+dropfile name = +xflrota
+
+fr80 driver 3.1
+

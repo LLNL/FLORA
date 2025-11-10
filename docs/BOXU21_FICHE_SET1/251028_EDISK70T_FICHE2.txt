@@ -1,0 +1,415 @@
+BOX U21 XFLTMU
+
+TV8OLIB.MFE.CRAY - VERSION 3.0
+
+FR80 OUTPUT... 16:28:04 01/16/84C
+
+0014 FRAMES PLOTTED
+
+EDISK70T LOW BETA
+
+SSS
+
+NA
+\&
+
+de ne
+ee oo
+
+Ss .
+SOR oe
+SSS
+OSS SOS OY bi:
+
+02 EQUILIBRUIM B(Z,PSI)
+
+EDISK70T LOW BETA
+
+SLSSSS OP,
+
+VSO itn
+Jf <
+WME
+
+02 EQUILIBRIUM RHO(Z,PSI)
+
+EDISK70T LOW BETA
+
+Q
+XX
+NS ff
+
+PRM OK Soft
+
+YONA
+MMR
+MM! lien
+
+Yu hype
+Waly
+
+HN
+
+)
+ae! ith in
+4, | “i
+OK)
+Hy My My hi, Wu,
+ye Mylar
+My Ln My neey
+LLL f gy yf if
+
+MMI.
+Yi 4 CMLL
+UN, if M, WMD
+MT KG
+Wh My M 4
+My TTT THO
+| |
+
+Vy, |
+OSE Hy i
+Wey ,
+Ui ly
+i Mypylag
+LMM
+My My Uy YH i Ly /
+Wife Mi l
+A ALLISTL Ay y ys Wy es al Y
+_
+
+€02 EQUILIBRIUM R(Z,PS1)
+
+
+EDISK70T LOW BETA
+
+LAKX
+
+tf
+“xt M 4
+SIA SSIS Sf 07:
+a LASS 7?
+}$
+
+VE My
+LI Lp Uf \
+
+(\
+y “Nt
+|| |
+
+-,00 aa
+feo2 EQUILIBRIUM RZZ(Z,PS1)
+
+‘
+ny
+°
+~
+—-
+
+- 2 | 3
+oe * *
+,
+
+EDISK7OT LOW BETA
+
+TM
+"
+
+€+01
+2.29
+
+VSISPISSSDSTTSSSAASSS by
+
+1.75
+4 SISISISSIITLISTT 111
+4 WILISILISTTTTTTTS hy
+180 LLLLULELLLLLLEE LULL GS VIST11101111171 iy
+; OLE OLOCCCCCCELOOK y ,
+YIVILILI 1, Ul eA , E004
+Vjy 1717117770, | ‘ 2.35
+Uy "10111111 Th
+
+HY Mapes So,
+° Mi
+/] YL
+
+Wy fae
+
+/)
+WS LLL) +60
+SOOSS EY ff,
+OMIM
+50 HEE__-_E EI IY
+| LSSTITTTIITAS TASS TTTTTTILSLEEL EEE hy, yt, YY IS//, WM SLL 4
+
+S1111S Sf, (X7)
+SSSOPTPLTLEPPSTTSS EL TL ELS TEE SS SSSI 00
+VALLLLIILSSLSTIIIIIIITIILELSLLL ELL hh yyy SLGs hse
+25 MY LCCLCLL kLLK XS OSI Cts
+SILLILLPLLISATLSTLISAILELTELL EL ETS A pg Fg OF" eee eee ve LYWIA
+(Lh hh On ae hh
+VIOEOISSISESATTSOITSST0TSITSSSSSSL SVS ff py SLSSIOMMOMS} OO WitAhhhhh
+
+0,
+- e ° ry o °
+° - ~ ts] @ 4)
+
+.50
+
+° o e ©
+wd ~ e e
+: -
+
+02 EQUILIBRIUM QUBV(Z,PSI)
+
+EDISK70T LOW BETA
+
+H
+AL
+tae OY (
+A VShitAikitiétitititithihithl |
+SM Adittiit{ddhttitithth £204
+CALAtbbihhitthitithl, 2.35
+3,50 LLL) ,
+44 SIS SSS TASS SDM,
+fp “CUMS te
+3,00 ceKe Ce 2.00
+Wr
+iii“
+2.50 iy We
+77 1.50
+2.00 VILISITITT11111p 4,
+LLL
+YIINIIITTIIT1 1 fp yy,
+1.50 VIVSSISTSST SA,
+SELLE
+VISISITSTSLS SS,
+1.00 LEAL
+MLhLitbshtst tp
+
+oe
+~
+
+70
+00
+90
+
+feo? EQUILIBRIUM PPERP(Z,PSI1)
+
+EDISK70T LOW BETA
+
+£04
+2.98
+
+2.75
+
+1
+
+1
+
+-50
+
+25
+
+75
+
+VAAL his iittiitiifl!
+GITOTSSS SD SISSSSISNA SSDS hy €+04
+GSSSSSSSD OSS SSSSS SS SSO bg 2.35
+(fy *
+
+20
+30
+0
+
+eo? EQUILIBRIUM PPAR(Z,PSI)
+
+EDISK70T LOW BETA
+
+€004
+2.35
+
+
+EDISK70T LOW BETA
+
+LLL /
+LLL
+
+/
+
+e eo
+- ~ “a ¢ wn br ~ D4 4
+
+(02 EQUILIBRIUM EPSI(Z,PSI)
+
+EDISK70T LOW BETA
+
+TTT nnnzzxcaxzcnnnrmnnncccccLLa
+SA OA
+
+TODO EEE S72
+ULL E--
+
+iimpsliiIon»>
+pppoe PKLOK
+COOL ALL Ntyll4,
+
+YILILLLLULILSLLESLLL EIST LSTLEILLEITI TS Sf) py yt by
+MAL LLL LLL a, "by COHTUELLLLE
+MLL LLL) Gy LIM Viitite
+SOTA, S7/
+
++01
+
+‘ff
+"lbh fy,
+24 4 411,
+
+Z
+SLOLOOSESAESL SSN OOO STOOD DODO POD MMF 100 OO UT gg FOE88 TMS,
+
+SLPS 1 (Littitiitittithe
+MMA LAMA Ai tittititthttiibitls
+MULL ALAN ne i iiiiitititthhhhhtihittttt
+MULL tit itt ittiihthhhhhthhittitiiithhththtthtthh)
+t - ] e
+
+- @
+
+= o ° e ° 2 e
+° " 4 7 “ w} =~
+
+. e e . . . e ° .
+
+fo2 6 CURATURE DRIVE-E RING, G1
+
+‘
+~
+wn
+
++04
+2.35
+
+-,?
+
+ct
+
+-1.00
+
+“1.25
+
+-1.56
+
+EDISK70T LOW BETA
+
+MT TITLE nuzzcznzsnznnnLcccllLL
+SIOLOEDSSNSDDLODNSG SDA ATA DA ESI DGDODSS AS SSD AS AAD SONS SSNSS AAS DOSS by
+CLL LILLIA hhh)
+OPSIESSAID ASST AAAODD AAAS OSSD DS OOOSNA OSA SDSS DD 8 f O09 SSDS DAD SOO 66 by
+—
+
+Ah VALLI AAAMaAN NNN th!
+ON RSSSSSSSDSOOTIOLSSAADSSOOOONS TOT OD ADA O A POD O08 SSA OSS OOO SA
+vA OUWSOELS SDA OSSD ESAS SS ODS POSS DDO ONDA SOS POOP 8 OO ODP SOS PD
+SPOLSOEDSSSSSSDD OASIS SDS PATO ED OSS OD OD Os
+|\ SEE I0SSSOlS SATII? SO bg
+CLOLIPMSS ADS TESAAAATD OOS 0S SFP OS A PO OD 0100 OS,
+MEE
+
+AN i | VIP LLL
+Y CLELELELELELLELLLL
+‘oP WMH IIIEAEEOEO EJIL!
+YR WLLL MAA Lttlhey!
+) MMA hha S005TTISSS STS ED Ob
+aK | SG LLIIIMIIWMSTITIIIIIISTTIVITTITTT SOTIOOSS SS SS OOS O bg
+1 A lan . AMAA Aisstthititbtlhs
+/
+
+€-10
+2.64
+
+io SEE
+Ay jl LLOOOOEEDOND OS ODS SSO ATP MOTTO SOTTO OOS OD O48 TD OOS dP Spe
+| LUZ CELCLELEELLLRLLLL
+WHIM Titttttitiiitt
+\@ CLL LLL LMM hhittithes
+DM HYD0naé HA»r;z»v»v—” —C—-M-_ =P™»HE-C
+WHEL)
+VILLA hitittiththhhhthhhhththny)
+ULL LLL)
+Li kitititii¢ititiiitpttitittittititittithttitittti-iiittitiihntittl id
+
+-t,06
+-2.00
+-3.00
+~4.00
+-5.00
+-6.00
+-7.25
+
+"ee PERP. PRESSURE ” BALANCE. ERRPRP
+
+2.00
+
+£04
+2.35
+
+2.00
+
+1.00
+
+EDISK70T LOW BETA
+
+Kh hi ikiikittiiiif§klil LE
+
+Mbt thitthh tl
+CCCCEAAEEESEEEE:
+OLA th ittbi-t Abb hl ttl like
+SEE.
+ML tttititthtititithttitt ts
+OSES. bi ttitttititithittth
+
+hls Wie hy wl
+
+€-03
+ee
+
+278
+
+hy ny < Sia|
+
+SITS ff, Sf, Sl
+VIZ), Sa hf, ht
+
+“he
+
+MtLttttititd ‘thf,
+7, MLL ttttd by
+4b WA: GLLLEE T1177! Sh hyy
+WUE a bE
+0:
+
+30
+
+25
+
+-.0¢ £404
+
+2.35
+
+LEB
+
+2.00
+
+-1.00
+-1,25
+
+-1,50
+
+-1,.85
+
+04
+
+"cae PARALLEL PRESSURE BALANCE, ERRPRL
+

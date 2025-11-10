@@ -1,0 +1,247 @@
+box uel
+graflib:gesO204ekcsO0204e2
+
+10:42:0508/06/8e2 ec
+
+box uel§s
+
+graflib:gcesO204ekcsOe04e
+
+10:42:0308/06/8e2 ec
+
+at: 3.12508He-11
+xe 36
+yx 39
+
+total time steps - 2480
+
+no. of iterations > 4
+
+bias» 0.01000
+
+ratrod: 1. 0@8828e+82
+
+drift freq. (omegst) + 6.14023730e+08
+rotation freq. (omegr) - 6.14023738e+98
+e x b freq. (omegexb) - 1.22804746e+09
+fir- 1, 00880000e+00
+
+sf6- 1.008880000e+02
+
+sf8- 1,00000000e+08
+
+enbar: @.
+
+kplot: s49
+
+valfk + 1,.60000@00e+02
+cpu time + 8.5367906@e+13
+i-o time + 1. 74072300e+12
+sys time + 9.5912820@e+12
+
+xe (Z-p8ip) vs z
+
+xP (Z-psipi vs z
+
+xe (2Z.p8ip) vs z
+
+xr (Z-p8ip) ve z
+
+& e 8 & [a]
+w 8S w 8 i
+[=] [a] —_— —_—
+
+(G!G0°Z) sx! '
+
+oe s 8S 8 8®& 8 ®
+non 28S Mo 8 ww» 8 Wp
+en ~~ ee .< ne
+
+(9160°Z) ux
+
+xf (2.psip)
+
+]
+
+f
+
+© @ 82 8 ® ®&
+OooocE ND @ NH
+© ® 2 8 8 ®
+
+-. 180
+
+xr (Z-psip) vs z
+
+- 248
+
+xe (2p.psi)
+
+xe (2p.p8i) 8 pei
+
+xf (2p-p81) vs psi
+
+- 788 620
+- 588 - 400
+38 a“ - 20
+18 a -. 89 :
+18 & |
+. & -.200
+-.30 -. 40¢
+-. 508
+| -.60
+Q > & >) Q Q ® Ls] Qo = @& i) 8& i] i) 8
+Se + @& 8 8& 8 ®& i) Qa + & 8 <) 8 ®& Q
+°ua N a) > Ye) Te) wo N wn x Ln ve)
+psi psi
+
+xr (zp.p8i) vs ps: xe (Zp.p81) vs psi
+
+- 700F
+486 622
+. 308 : ’
+- 206 - ;
+- 00a% ® .20¢
+-.10@ a 10
+~ + 208 n ~. 086
+-. 30G u 7
+x ~.18G
+-. 482 _. 208
+-,. 502 "30d
+-.60 oe
+-. 788 | “3
+~. 8085 + 8 =) --) =) =) =) ° er 8 =) =) ) =] =)
+Ss + 8 r=) ro) ro) rs) ro) eo + 8 =) ) ) S =]
+° wo “ re) x wn wo . a “ re) > Yr) wo
+ps) psi
+
+xr (2p.p3si)
+
+®
+&
+
+s
+=
+
+xr (2p.p81) vs psi
+
+= = = =
+
+) >) ) )
+
+N m = un
+ps!
+
+xe (zp.psi)
+
+xe (29.981) vs psi
+
+®&
+®
+N
+
+© 3-22
+4.00
+
+5.08
+
+6.08
+
+xe (zp.v)
+
+xr (zp.v)
+
+ool
+
+4007
+. 508
+- 600
+
+- 180
+. 802
+
+afk
+‘soar L, 2
+
+xe (zp.v) vs v
+
+5.80
+
+®
+®& i]
+wo ~
+
+vl :
+
+e-g3!
+[As] 8&
+Q 8&
+Oo nr
+
+xf (zp.v)
+
+xe (zp.v)
+
+xe (zp.v) vs v
+
+ez 8 S =] eS eo S
+
+S if, =) =) rs) S rs) i)
+
+=“ ON ‘a > un to ~
+Vv
+
+r 8 is) i] & Q 8
+Qe + & & 8 i) 1] (=~ ]
+Lis Ld e e
+_ N ™” x wn © ~
+
+xe (zp.v)
+
+-. 508
+-. 608
+
+xf (zp.v) vs v
+
+3.88
+4.08
+0. 88
+
+6.88
+
+7.88
+
+xr (zp.v)
+
+xe (zpev) ve v
+
+& =) &
+i) i) ®&
+” = al un
+
+6.88
+
+7.00r
+
+00°i BB°L
+00°93 80°9
+82°S G8°S
++
+o
+> @8°h G8°h
+oS +
+a
+=
+=
+x
+GO°E BB"E
+
+(40)0) sx
+
+box uel§
+
+graflib:gcsO204ekcsOed4e
+11 frames
+
+10:42:0308/06/8e2 ¢c
+

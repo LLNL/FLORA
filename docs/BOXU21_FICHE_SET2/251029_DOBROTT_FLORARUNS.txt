@@ -1,0 +1,616 @@
+kinetic energy
+
+energy
+
+total
+
+E+.
+
+E+8
+
+E47
+
+kinetic energy vs time
+
+e
+=
+
+E-4
+
+total
+
+time
+energy
+
+vs time
+
+potential energy
+
+ener gy
+
+total
+
+potential energy vs time
+
+4.6
+3.5
+3.8
+2.8
+2.8
+
+| time
+total relative energy vs time
+
+E+]
+
+anane © 1.794976527277523+341 2,.016494366849543-1065 1.3216018804920112-2437 1. 32893679686665-2437
+ae
+bies
+\max
+neex
+ndieg
+nen
+fil
+fizx
+fyl
+
+f yrx
+exo
+ext : 6.
+fps,
+fu
+fy
+
+fz
+kplote
+kzs
+yfour
+nfourp
+nfourmex « §
+$f6 6
+sfé ° 8
+!
+!
+1
+1
+
+0.25
+4
+
+-_ 2. = © e© &© &© &© &© & @
+wn
+
+. * e =
+> ;
+mn
+
+2 se e 2
+-
+2
+La
+a
+
+svg! |
+sug? .
+svg3
+
+svg4
+
+¢
+
+4, pecesgseceeeze-10
+
+echarg °
+rv © 14.24
+rul - 6.
+psitrel « 1.6
+dpsihrel + 3.e-82
+psiOrel += 0.75
+nsloshin + 39000800000006.
+cold * 1,¢-02
+z3rel : @.71
+dip ‘|.
+psisip <° 1.e-02
+ncenter « 2,e¢14
+betsish - 0,
+betcent ° 6.1
+rol . 1.05
+bceng - 1006.
+xpot an i
+ypot |.
+vpot : 2,
+betcene - 6.1
+betsise -° 6.
+betring + 2.e-82
+pavide ° 6.2
+psi3rel - 1.05
+pel@ = =—s is: (0.2
+p2evide -° 0.3
+psiBerel + 6.8625
+p2floor -° @.
+p2fieg <« @.
+plfloor - @.
+fring : 6.7
+long |
+betpes! -° @.
+ppas2 - 0.98
+dpes! : 6. _
+ditreap - yoessoneneuns.
+ppes3 - 6.
+
+- §,.e-82
+
+betrap
+’
+
+daxi - 240008,
+
+bax2 - 60006.
+
+bax3 ¢ 80008.
+
+ban! : 6,
+
+ban2 : 6.
+
+nco, | ° 2
+
+z\c ¢ 3668.
+
+z2c « 4736,
+
+z3¢ « $138.
+
+Zimin ' 6.
+
+z2ain ae
+
+as ¢ 150. 158. 158.
+als . 206. 268. 268.
+dphy - @.
+
+phicen « @,
+
+phiplig -< 6.
+
+kin : §1
+
+bceng ¢ 33008.
+
+epsp ¢ 9,99999999999997e-87
+ztrens ° J.)
+
+iItrans ° 4,e-82
+Z7MOXx - 4666.
+§.5e-87
+theted - @,
+pfudge - 8.
+
+i]
+
+a
+—_
+®
+
+this problem run by xfldi3
+
+problem sdentificatron : Dobrott 2-region btr-.82 btc-.28
+
+dt: 0.550000e-06 Ke 158 gue 56
+
+total time steps : 1118 no. of iterations = | y bias: 8.25808
+firs 6.100800008e+6! sf6° 08.5000808600e+88 sf8- 8.2580888080e+88
+
+kplot: 3479 kzs° 1
+
+cpu time + 6.15640347e+16
+1-0 time + 8.36106498e+13
+sys tine + 6.51367888e+1!
+u exponent (xu) - 8.10000806e+0!
+v exponent (xv): 6.108600008e+81
+bani> 6.13186112e+085 bal- 6.138645417e+85 bv3> 8.31846557e+85
+total energy rel. error: 6.200800008e+80!
+potential energy: @.80076672e+87
+kiiatic energy: 8.607694S4e+87
+
+grows @8.1491642e+12 grownexs 8.337831e+11
+
+moximum xxxfreqedt> 8.132579e+88 (fir real frequency times dt)
+maximum rzzer > =. 123395e-8)
+
+relative wall pressure p2(yx) - 6.127182e-82
+
+r(37.¥)
+
+— VS Ue (Z*consteurexu) OSi VS ve ipsi-constevesrxy)
+
+4560
+4e00
+3566
+3000
+25600
+2668
+1300
+1000
+
+568
+
+5868
+1688
+15688
+2568
+3038
+3588
+4080
+4506
+
+]
+E+6
+2
+3
+4
+5
+6
+
+2086
+
+u . V
+r(37.v) vs V
+
+40.8
+35.6
+30.8
+25.8
+26.6
+18.6
+10.8
+
+5.8
+
+psi
+
+vs.
+
+flute2
+
+psi
+
+vs.
+
+fiutel
+
+Poynyys
+
+"9 "9
+; ——_ ss
+hos > h
+a
+
+2
+3 > "€
+
+a
+
+i]
+. a
+z "2
+9+3 9+]
+| |
+
+Om PO ee VN | SF LP oO ~weD ~N Ly t=] wo. > Nw es
+°- © © «© we mm «+ = © © © © ome ° e ° + @
+e ‘ ‘ ‘ ' ‘ ee — -_ — tas
+zainny
++a |
+L
+“90
+$s 68
+. e
+h 5”
+a.
+
+ce
+
+E
+°2 -
+9+3
+Hl
+
+
+ne lz.perl 263) ve 2z eech GOth trae
+
+ue (2.9809)
+ue (2.98.9)
+
+—_
+eae @ e@ a ea oe e@8 oe @ ea @® a neo oe @®@
+@e aeeees#s eee @ @®@ @ oe oe oe oe ea @ @®@
+we wo ew. @8 Ww @ wm wow ee wo 8 we wo @ ww
+
+ar (zepeul 25)) vs 2 eech 6th tine
+
+a
+@
+ad
+=
+
++ OW9F- =~ - ~ -,
+
+-.120
+-. 148
+
+%
+e
+—
+a
+Ld
+
+ue (z.p3ip)
+
+-
+wooo”
+
+ea ee a ee es e ea @
+oe @® oe o@8 8# oe 2 @ @
+wo ef wo @ ww @ wo es ww
+
+oe on >) en > en 2 2 2 oJ
+
+-.200F
+
+‘
+e
+*™
+La J
+2
+
+-.246
+
+nf (z.pscp)
+uf lz.pscp)
+
+e @®@ eae oe @ a
+@e @e@ ee ees ee oe oe ®
+woe wo e888 ww oe wm @8 ww
+
+xf(zepart 28)) vs z eech 66th tine
+
+ad
+o-
+oooerr”
+
+508
+1608
+1506:
+
+uclzt 76).pe0) ve pss
+
+ut (zp.p90)
+
+xe (z( 78).p80) vs ps: eech 66th tine
+
+20 --
+6.
+-.26
+-. 40
+-.68
+-, 80+
+-1.08
+-1.20
+-1.48
+-1.68
+
+xe (zp.p8:)
+
+nk
+~. WS
+
+-t}
+
+Pe
+
+eoch 86th tine
+
+In,
+
+‘Ny
+YY
+x,
+
+ue (zp.p980)
+
+ne lz 76).pe0!) ve pe.
+
+-. 26
+-. 46
+
+eech OOth tine
+
+ue (29.980)
+
+ue (zp.pss)}
+
+nezt S7).pocd vs gee
+
+1.00
+80
+60
+40
+20
+
+®.
+
+-.20
+
+-.40
+
+26
+
+6.
+-.26
+-. 48
+
+eech COth trae
+
+ue (z9.98e)
+
+ne (zt S7).peel ve per
+
+.
+
+eech B8Oth trae
+
+
+eech GOth trae
+
+eoch 8th tree
+
+ue lz( 76).¢) vee.
+
+1.48
+1.26
+1.08
+
+uetzt 76).¢) ver.
+
+48
+
+ae
+NN
+S
+
+(2°O2) ax
+
+@ °
+~w @
+oe
+
+esd
+~N
+‘
+
+-
+e
+
+(3°62) a2
+
+each 66th tine
+
+xe (z(t 78).¢) vs ee
+
+
+12
+uc(zt $7).¢) ver. eoch GOth tree ac(z( 37).¢) vee. eoch 66th tine
+
+w “sy
+
+ie 1.20
+1.06
+48
+- . 80
+& 26 <
+e e 68
+a 8. a
+= ~ 48
+—_ -.20 = ®
+& &
+a -.48 ae 4 |
+-.68 6.
+» 80 -.28)
+-1.00 -.48
+af @ Ld & L | { & 2
+»o 2« » 8&® » 8&8 » @
+~~ one ~ —N Coa] on tal
+¢
+
+COth trae
+
+xe (zpoe)
+
+49.3
+
+o e
+
+ae 2 @ -?> @& as
+e s e . o e e
+
+@ LY oJ a uw id >
+
+_ -_ ~ ~ o~ o~
+
+xe (kplot)
+
+= % é t
+
+160
+
+8.
+160
+266
+308
+
+508
+
+7.
+
+ew
+: _J
+@
+
+=
+‘
+a]
+
+e
+Oe
+
+xe (kplot) vs ft
+
+ne bending energy
+
+file energy
+
+E-24
+
+E-42 F
+
+c-68
+E-78
+E-96
+
+E-132
+€-158
+
+C+7
+
+line bending energy vs tine
+
+time
+fir energy vs time
+
+time
+
+J\ Al
+
+curvature energy
+
+curvature energy vs time
+
+E-4
+
+time
+
+«
+wd
+
+Raa
+
+box u2l
+nmfecc output
+graflib: XXXXK XXX
+18 frames’ plotted
+f3vlot00 (family 1)
+13:07:5107/12/86b
+dropfile name = +xfldi3d
+fr80 driver 3.1
+
