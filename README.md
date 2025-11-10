@@ -5,7 +5,7 @@
 FLORA solves, in a 2-D domain (radial and axial dimensions) with a specified azimuthal Fourier mode, for the linearized stability of a long, thin, axisymmetric plasma equilibrium in an applied magnetic field. Before the stability equation is solved, FLORA solves a set of simple equations for pressure balance that specify the equilibrium magnetic field and plasma pressure in the long-thin limit given a simplified description of the magnetic coils. It uses an initial-value method for the linear stability problem in which an equilibrium is given an initial perturbation to its magnetic field, and the temporal behavior of the perturbation is followed. The perturbation has been Fourier expanded in the azimuthal coordinate; each azimuthal mode must be examined separately. The complex partial differential equation of motion for the perturbed radial displacement of the field lines is solved as a coupled system of two real p.d.e.'s and the solution consists of two parts, the real part and the imaginary part. The system is solved by bringing the coupling terms in each equation to the right side and using an iterative technique. [Here](docs/Flora_archive_abstract.pdf) is the full abstract with references.
 
 ### FLORA cases from archival microfiche. Scanned and saved as pdf.  
-* [Microfiche Readme] (docs/README_microfiche.md)
+* [Microfiche Readme](docs/README_microfiche.md)
 * [Microfiche set 1](docs/BOXU21_FICHE_SET1)  
 * [Microfiche set 2](docs/BOXU21_FICHE_SET2)  
 * [Microfiche set 3](docs/BOXU21_FICHE_SET3)
