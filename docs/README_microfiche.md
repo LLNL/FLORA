@@ -14,7 +14,7 @@ Note that the images are not the output of the FLORA Python module contained in 
 
 <strong>Note that this option requires a ChatGPT account.</strong> 
 
-The file 251012_EDISK70T_FICHE1.pdf, from set 1, was displayed. [This screengrab](screengrab.png) was captured on a mac of some text. The png file from the mac was dragged/dropped onto the [ChatGPT page](https://chatgpt.com). The prompt "OCR this image" produced the following output. ChatGPT also offers other output formats.
+The file 251012_EDISK70T_FICHE1.pdf, from set 1, was displayed. [This screengrab](screengrab.png) of some text was captured on a mac. The png file from the mac was dragged/dropped onto the [ChatGPT page](https://chatgpt.com). The prompt "OCR this image" produced the following output. ChatGPT also offers other output formats.
 <pre>
 aname      .  r0 1.295432948026-2434 r7 0.0.
 m          .  2
