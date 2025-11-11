@@ -1,6 +1,6 @@
 # Microfiche Archive Files
 
-A cache of microfiche film was found containing FLORA simulations done in the early 80s. These were scanned and the images saved in pdf files. The pdf files were then processed on an Ubuntu Linux system to extract text from the images. Each image was processed with the Tesseract (pytesseract) Open Source OCR software and output into a .txt file. This was done as a batch process and the files are crudely formatted. 
+A cache of microfiche film was found containing FLORA simulations done in the early 80s. These were scanned and the images saved in pdf files. 
 
 Note that the images are not the output of the FLORA Python module contained in this repository but were output either directly by Fortran77 code or by the Basis code version of FLORA. Basis is a deprecated system for development of scienctific codes developed at LLNL.
 
@@ -10,7 +10,7 @@ Note that the images are not the output of the FLORA Python module contained in 
 * [Microfiche set 2](docs/BOXU21_FICHE_SET2)  
 * [Microfiche set 3](docs/BOXU21_FICHE_SET3)
 
-### Using ChatGPT to improve the OCR output. 
+### Using ChatGPT to extract text from images. 
 
 <strong>Note that this option requires a ChatGPT account.</strong> 
 
