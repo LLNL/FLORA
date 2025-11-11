@@ -6,9 +6,9 @@ Note that the images are not the output of the FLORA Python module contained in 
 
 ### Archival microfiche sets.   
 
-* [Microfiche set 1](docs/BOXU21_FICHE_SET1)  
-* [Microfiche set 2](docs/BOXU21_FICHE_SET2)  
-* [Microfiche set 3](docs/BOXU21_FICHE_SET3)
+* [Microfiche set 1](BOXU21_FICHE_SET1)  
+* [Microfiche set 2](BOXU21_FICHE_SET2)  
+* [Microfiche set 3](BOXU21_FICHE_SET3)
 
 ### Using ChatGPT to extract text from images. 
 
